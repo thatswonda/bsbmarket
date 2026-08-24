@@ -1,5 +1,5 @@
 import AppStoreButton from "@/components/AppStoreButton";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/bsb-logo.png";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
