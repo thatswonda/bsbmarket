@@ -43,6 +43,7 @@ const Footer = () => (
             <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
             <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/delete-account" className="hover:text-primary transition-colors">Delete Account</Link></li>
           </ul>
         </div>
         <div>
@@ -73,6 +74,8 @@ const Footer = () => (
           <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
           <span>·</span>
           <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <span>·</span>
+          <Link to="/delete-account" className="hover:text-primary transition-colors">Delete Account</Link>
         </div>
       </div>
     </div>
