@@ -32,10 +32,10 @@ const TestimonialsSection = () => {
   const touchEndX = useRef(0);
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
+    touchStartX.current = e.touches[0]!.clientX;
   };
   const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
+    touchEndX.current = e.touches[0]!.clientX;
   };
   const handleTouchEnd = () => {
     const diff = touchStartX.current - touchEndX.current;

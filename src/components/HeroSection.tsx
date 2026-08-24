@@ -243,7 +243,7 @@ const HeroSection = () => {
             </motion.div>
 
             {features.map((feature, i) => {
-              const pos = iconPositions[i];
+              const pos = iconPositions[i]!;
               return (
                 <motion.button
                   key={feature.label}

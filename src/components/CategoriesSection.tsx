@@ -253,7 +253,7 @@ const CategoriesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ y: -6 }}
-            onClick={() => setSelectedCategory(categories[0].label)}
+            onClick={() => setSelectedCategory(categories[0]!.label)}
             className="flex flex-col items-start justify-center text-left p-6 rounded-[20px] border-2 border-dashed border-primary/40 bg-transparent transition-colors hover:bg-accent/50"
           >
             <h3 className="text-sm font-bold text-primary mb-1">View all</h3>

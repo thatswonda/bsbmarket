@@ -29,17 +29,17 @@ const HeroBanner = () => {
             className="absolute inset-0"
           >
             <img
-              src={slides[current].img}
-              alt={slides[current].subtitle}
+              src={slides[current]!.img}
+              alt={slides[current]!.subtitle}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent" />
             <div className="absolute bottom-6 left-5">
               <p className="text-primary-foreground/90 text-sm font-medium">
-                {slides[current].title}
+                {slides[current]!.title}
               </p>
               <h2 className="text-primary-foreground text-2xl sm:text-3xl font-extrabold tracking-wide uppercase">
-                {slides[current].subtitle}
+                {slides[current]!.subtitle}
               </h2>
             </div>
             <div className="absolute bottom-5 right-5 w-8 h-8 rounded-lg bg-card/80 flex items-center justify-center">
