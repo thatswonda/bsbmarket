@@ -60,7 +60,6 @@ const ExploreServices = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3">
                   <h3 className="text-sm font-bold text-primary-foreground leading-tight">{s.title}</h3>
-                  <p className="text-xs text-primary-foreground/80 font-medium">{s.price}</p>
                 </div>
               </div>
               <div className="flex items-center justify-end gap-2 px-3 py-2.5">
@@ -93,7 +92,6 @@ const ExploreServices = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
                 <div className="absolute bottom-2 left-2.5 right-2.5">
                   <h3 className="text-xs font-bold text-primary-foreground leading-tight">{s.title}</h3>
-                  <p className="text-[10px] text-primary-foreground/80 font-medium">{s.price}</p>
                 </div>
               </div>
               <div className="flex items-center justify-end gap-1.5 px-2.5 py-2">

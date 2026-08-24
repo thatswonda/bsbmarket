@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "How do I post a listing?",
-    a: "Simply download the BSB Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, set your price, and publish — it's that easy.",
+    a: "Simply download the BSB Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, and publish — it's that easy.",
   },
   {
     q: "Is my data safe on BSB Market?",

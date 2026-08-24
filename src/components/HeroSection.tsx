@@ -52,40 +52,40 @@ type Listing = { title: string; desc: string; views: string; img: string };
 
 const featureListings: Record<string, Listing[]> = {
   Sell: [
-    { title: "Electronics Bundle", desc: "Sell your used electronics — phones, tablets and laptops.", price: "$ 250", views: "8,340", img: listingGoods1 },
-    { title: "Furniture Set", desc: "Premium dining table and chairs set in great condition.", price: "$ 400", views: "5,120", img: listingGoods2 },
-    { title: "Clothing Collection", desc: "Designer clothing items ready for resale at great prices.", price: "$ 120", views: "6,780", img: listingGoods3 },
-    { title: "Home Appliances", desc: "Washing machine, microwave and blender in working order.", price: "$ 350", views: "4,560", img: listingGoods4 },
+    { title: "Electronics Bundle", desc: "Sell your used electronics — phones, tablets and laptops.", views: "8,340", img: listingGoods1 },
+    { title: "Furniture Set", desc: "Premium dining table and chairs set in great condition.", views: "5,120", img: listingGoods2 },
+    { title: "Clothing Collection", desc: "Designer clothing items ready for resale at great prices.", views: "6,780", img: listingGoods3 },
+    { title: "Home Appliances", desc: "Washing machine, microwave and blender in working order.", views: "4,560", img: listingGoods4 },
   ],
   Buy: [
-    { title: "iPhone 15 Pro", desc: "Brand new sealed iPhone 15 Pro Max, 256GB storage.", price: "$ 1,100", views: "25,400", img: listingGadgets1 },
-    { title: "HP Laptop", desc: "Core i7 laptop with 16GB RAM and 512GB SSD.", price: "$ 650", views: "18,300", img: listingGadgets2 },
-    { title: "Wireless Earbuds", desc: "AirPods Pro with active noise cancellation.", price: "$ 180", views: "14,200", img: listingGadgets3 },
-    { title: "Smart Watch", desc: "Samsung Galaxy Watch with health tracking features.", price: "$ 220", views: "10,800", img: listingGadgets4 },
+    { title: "iPhone 15 Pro", desc: "Brand new sealed iPhone 15 Pro Max, 256GB storage.", views: "25,400", img: listingGadgets1 },
+    { title: "HP Laptop", desc: "Core i7 laptop with 16GB RAM and 512GB SSD.", views: "18,300", img: listingGadgets2 },
+    { title: "Wireless Earbuds", desc: "AirPods Pro with active noise cancellation.", views: "14,200", img: listingGadgets3 },
+    { title: "Smart Watch", desc: "Samsung Galaxy Watch with health tracking features.", views: "10,800", img: listingGadgets4 },
   ],
   "Get Jobs": [
-    { title: "Software Developer", desc: "Remote full-stack developer role with competitive salary.", price: "$ 2,000/mo", views: "15,620", img: listingJobs1 },
-    { title: "Sales Representative", desc: "Field sales position with commission-based earnings.", price: "$ 800/mo", views: "9,430", img: listingJobs2 },
-    { title: "Graphic Designer", desc: "Creative designer needed for branding and marketing.", price: "$ 1,200/mo", views: "7,890", img: listingJobs3 },
-    { title: "Driver Needed", desc: "Experienced driver for executive transport services.", price: "$ 400/mo", views: "11,200", img: listingJobs4 },
+    { title: "Software Developer", desc: "Remote full-stack developer role with competitive salary.", views: "15,620", img: listingJobs1 },
+    { title: "Sales Representative", desc: "Field sales position with commission-based earnings.", views: "9,430", img: listingJobs2 },
+    { title: "Graphic Designer", desc: "Creative designer needed for branding and marketing.", views: "7,890", img: listingJobs3 },
+    { title: "Driver Needed", desc: "Experienced driver for executive transport services.", views: "11,200", img: listingJobs4 },
   ],
   "Offer Services": [
-    { title: "Home Cleaning", desc: "Professional deep cleaning services for home or office.", price: "$ 50", views: "9,320", img: listingServices1 },
-    { title: "Plumbing Repair", desc: "Expert plumbing solutions for leaks and installations.", price: "$ 40", views: "5,812", img: listingServices2 },
-    { title: "Electrical Work", desc: "Licensed electricians for wiring and repairs.", price: "$ 60", views: "7,105", img: listingServices3 },
-    { title: "Painting Service", desc: "Interior and exterior painting by skilled professionals.", price: "$ 80", views: "4,230", img: listingServices4 },
+    { title: "Home Cleaning", desc: "Professional deep cleaning services for home or office.", views: "9,320", img: listingServices1 },
+    { title: "Plumbing Repair", desc: "Expert plumbing solutions for leaks and installations.", views: "5,812", img: listingServices2 },
+    { title: "Electrical Work", desc: "Licensed electricians for wiring and repairs.", views: "7,105", img: listingServices3 },
+    { title: "Painting Service", desc: "Interior and exterior painting by skilled professionals.", views: "4,230", img: listingServices4 },
   ],
   "Hire Services": [
-    { title: "Electrician", desc: "Certified electrician for all residential and commercial work.", price: "$ 55", views: "8,100", img: listingContracts1 },
-    { title: "Interior Designer", desc: "Transform your space with professional interior design.", price: "$ 200", views: "6,340", img: listingContracts2 },
-    { title: "Private Driver", desc: "Reliable personal driver for daily commute or trips.", price: "$ 30/day", views: "9,780", img: listingContracts3 },
-    { title: "House Cleaner", desc: "Regular house cleaning with flexible scheduling.", price: "$ 25", views: "7,450", img: listingContracts4 },
+    { title: "Electrician", desc: "Certified electrician for all residential and commercial work.", views: "8,100", img: listingContracts1 },
+    { title: "Interior Designer", desc: "Transform your space with professional interior design.", views: "6,340", img: listingContracts2 },
+    { title: "Private Driver", desc: "Reliable personal driver for daily commute or trips.", views: "9,780", img: listingContracts3 },
+    { title: "House Cleaner", desc: "Regular house cleaning with flexible scheduling.", views: "7,450", img: listingContracts4 },
   ],
   Network: [
-    { title: "Business Groups", desc: "Join exclusive business networking groups in your area.", price: "Free", views: "12,500", img: listingShares1 },
-    { title: "Meetups", desc: "Attend industry meetups and connect with professionals.", price: "Free", views: "8,900", img: listingShares2 },
-    { title: "Partnerships", desc: "Find business partners for joint ventures and projects.", price: "Free", views: "6,340", img: listingShares3 },
-    { title: "Mentorship", desc: "Get paired with experienced mentors in your field.", price: "Free", views: "10,200", img: listingShares4 },
+    { title: "Business Groups", desc: "Join exclusive business networking groups in your area.", views: "12,500", img: listingShares1 },
+    { title: "Meetups", desc: "Attend industry meetups and connect with professionals.", views: "8,900", img: listingShares2 },
+    { title: "Partnerships", desc: "Find business partners for joint ventures and projects.", views: "6,340", img: listingShares3 },
+    { title: "Mentorship", desc: "Get paired with experienced mentors in your field.", views: "10,200", img: listingShares4 },
   ],
 };
 
@@ -410,7 +410,6 @@ const HeroSection = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-1.5">
                       <span className="text-muted-foreground text-[11px]">{listing.views}</span>
-                      <span className="text-primary font-bold text-sm">{listing.price}</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Eye className="w-3.5 h-3.5 text-primary" />

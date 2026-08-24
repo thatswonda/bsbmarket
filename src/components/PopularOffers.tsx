@@ -53,7 +53,6 @@ const PopularOffers = () => (
               <h3 className="text-lg font-semibold text-foreground mb-2">{offer.title}</h3>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{offer.desc}</p>
               <div className="flex items-center justify-between">
-                <span className="text-primary font-bold text-lg">{offer.price}</span>
                 <span className="text-xs text-muted-foreground">{offer.views} views</span>
               </div>
             </div>
@@ -84,7 +83,6 @@ const PopularOffers = () => (
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <span className="text-muted-foreground text-[11px]">{offer.views}</span>
-                  <span className="text-primary font-bold text-sm">{offer.price}</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Eye className="w-3.5 h-3.5 text-primary" />
