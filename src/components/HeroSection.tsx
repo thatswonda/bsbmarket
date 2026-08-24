@@ -54,7 +54,7 @@ const featureListings: Record<string, Listing[]> = {
   Sell: [
     { title: "Electronics Bundle", desc: "Sell your used electronics — phones, tablets and laptops.", views: "8,340", img: listingGoods1 },
     { title: "Furniture Set", desc: "Premium dining table and chairs set in great condition.", views: "5,120", img: listingGoods2 },
-    { title: "Clothing Collection", desc: "Designer clothing items ready for resale at great prices.", views: "6,780", img: listingGoods3 },
+    { title: "Clothing Collection", desc: "Designer clothing items ready for resale.", views: "6,780", img: listingGoods3 },
     { title: "Home Appliances", desc: "Washing machine, microwave and blender in working order.", views: "4,560", img: listingGoods4 },
   ],
   Buy: [
