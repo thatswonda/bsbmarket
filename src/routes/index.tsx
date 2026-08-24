@@ -1,24 +1,74 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import TrustSection from "@/components/TrustSection";
+import PopularOffers from "@/components/PopularOffers";
+import CategoriesSection from "@/components/CategoriesSection";
+import HowItWorks from "@/components/HowItWorks";
+import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
+import CtaSection from "@/components/CtaSection";
+import NewsletterSection from "@/components/NewsletterSection";
+import DownloadSection from "@/components/DownloadSection";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
+import EarlyBirdBanner from "@/components/EarlyBirdBanner";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "BSB Market | Buy, Sell, Hire & Connect";
+const DESCRIPTION =
+  "BSB Market makes trade and business easier — buy, sell, offer or hire services, find jobs and network locally and globally.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen">
+      <EarlyBirdBanner />
+      <Navbar />
+      <HeroSection />
+      {/* Desktop: About before Trust */}
+      <div className="hidden sm:block">
+        <AboutSection />
+        <TrustSection />
+      </div>
+      {/* Mobile: HowItWorks before Trust */}
+      <div className="sm:hidden">
+        <HowItWorks />
+        <TrustSection />
+      </div>
+      {/* Desktop: HowItWorks before Popular listings */}
+      <div className="hidden sm:block">
+        <HowItWorks />
+      </div>
+      <PopularOffers />
+      <div className="sm:hidden">
+        <CategoriesSection />
+      </div>
+      <div className="hidden sm:block">
+        <CategoriesSection />
+      </div>
+      <div className="sm:hidden">
+        <AboutSection />
+      </div>
+      <TestimonialsSection />
+      <FAQSection />
+      <CtaSection />
+      <NewsletterSection />
+      <Footer />
+      <BackToTop />
     </div>
   );
 }
