@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { Menu } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/bsb-logo.png";
-
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "About Us", href: "#about-us" },
   { label: "FAQ", href: "#faq" },
@@ -13,6 +18,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -22,13 +28,14 @@ const Navbar = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    setOpen(false);
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <nav
-      className={`fixed top-9 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-card/95 backdrop-blur-xl border-b border-border/50 shadow-sm"
           : "bg-card/80 backdrop-blur-xl border-b border-border/50"
@@ -42,39 +49,46 @@ const Navbar = () => {
           </span>
         </a>
 
-
-        {/* Desktop nav */}
-        <div className="hidden sm:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => handleClick(e, link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="flex items-center gap-3">
           <a
             href="#"
-            className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+            className="hidden sm:inline-flex px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
           >
             Download App
           </a>
-        </div>
 
-        {/* Mobile nav */}
-        <div className="flex sm:hidden items-center gap-4">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => handleClick(e, link.href)}
-              className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger
+              aria-label="Open menu"
+              className="p-2 rounded-lg text-foreground hover:bg-accent transition-colors"
             >
-              {link.label}
-            </a>
-          ))}
+              <Menu className="w-5 h-5" />
+            </SheetTrigger>
+            <SheetContent side="right" className="w-64">
+              <SheetHeader>
+                <SheetTitle className="text-left">Menu</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col gap-1 mt-6">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={(e) => handleClick(e, link.href)}
+                    className="px-3 py-2.5 rounded-lg text-sm font-medium text-foreground hover:bg-accent hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+                <Link
+                  to="/delete-account"
+                  onClick={() => setOpen(false)}
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-foreground hover:bg-accent hover:text-primary transition-colors"
+                >
+                  Delete Account
+                </Link>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
@@ -82,3 +96,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
