@@ -190,7 +190,9 @@ const HeroSection = () => {
                 width={540}
                 height={263}
               />
+              </div>
             </div>
+
             <div className="hidden lg:block">
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Your Social-Business APP
