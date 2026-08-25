@@ -13,7 +13,6 @@ import NewsletterSection from "@/components/NewsletterSection";
 import DownloadSection from "@/components/DownloadSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import EarlyBirdBanner from "@/components/EarlyBirdBanner";
 
 const TITLE = "BSB Market | Buy, Sell, Hire & Connect";
 const DESCRIPTION =
@@ -36,7 +35,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen">
-      <EarlyBirdBanner />
       <Navbar />
       <HeroSection />
       {/* Desktop: About before Trust */}

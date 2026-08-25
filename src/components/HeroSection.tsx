@@ -13,6 +13,7 @@ import phoneMockup from "@/assets/phone-mockup-bsb.png";
 import { Check, Eye, Heart, Share2 } from "lucide-react";
 import AppStoreButton from "@/components/AppStoreButton";
 import { useIsMobile } from "@/hooks/use-mobile";
+import EarlyBirdBanner from "@/components/EarlyBirdBanner";
 import {
   Dialog,
   DialogContent,
@@ -165,7 +166,7 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="relative pt-28 sm:pt-40 pb-6 sm:pb-20">
+      <div className="relative pt-20 sm:pt-28 pb-6 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
           {/* Banner + intro text side by side on desktop */}
           <motion.div
@@ -174,10 +175,15 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
             className="mb-6 sm:mb-10 lg:mb-14 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:text-left"
           >
-            <div
-              className="rounded-2xl sm:rounded-3xl overflow-hidden mx-auto lg:mx-0 max-w-md lg:max-w-none"
-              style={{ boxShadow: "var(--card-shadow)" }}
-            >
+            <div className="max-w-md lg:max-w-none mx-auto lg:mx-0">
+              <div className="mb-2 flex justify-center lg:justify-start">
+                <EarlyBirdBanner />
+              </div>
+              <div
+                className="rounded-2xl sm:rounded-3xl overflow-hidden"
+                style={{ boxShadow: "var(--card-shadow)" }}
+              >
+
               <img
                 src={brandBanner}
                 alt="Bsb Market — Buy, Sell & Connect"
@@ -185,7 +191,9 @@ const HeroSection = () => {
                 width={540}
                 height={263}
               />
+              </div>
             </div>
+
             <div className="hidden lg:block">
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Your Social-Business APP
