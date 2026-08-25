@@ -13,6 +13,7 @@ import phoneMockup from "@/assets/phone-mockup-bsb.png";
 import { Check, Eye, Heart, Share2 } from "lucide-react";
 import AppStoreButton from "@/components/AppStoreButton";
 import { useIsMobile } from "@/hooks/use-mobile";
+import EarlyBirdBanner from "@/components/EarlyBirdBanner";
 import {
   Dialog,
   DialogContent,
