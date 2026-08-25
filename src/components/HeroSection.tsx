@@ -165,7 +165,7 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="relative pt-20 sm:pt-32 pb-6 sm:pb-20">
+      <div className="relative pt-28 sm:pt-40 pb-6 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
           {/* Banner + intro text side by side on desktop */}
           <motion.div
