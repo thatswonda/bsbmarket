@@ -266,14 +266,16 @@ const HeroSection = () => {
                   }}
                 >
                   <div
-                    className="bg-card rounded-xl p-1 sm:p-3 flex flex-col items-center gap-0.5 sm:gap-1 hover:scale-110 transition-transform duration-200"
+                    className="bg-card rounded-xl p-1.5 sm:p-3 flex flex-col items-center gap-0.5 sm:gap-1 hover:scale-110 transition-transform duration-200"
                     style={{ boxShadow: "var(--card-shadow)" }}
                   >
-                    <img
-                      src={feature.icon}
-                      alt={feature.label}
-                      className="w-6 h-6 sm:w-12 sm:h-12 object-contain"
-                    />
+                    <div className="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center">
+                      <img
+                        src={feature.icon}
+                        alt={feature.label}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
                     <span className="text-[7px] sm:text-xs font-semibold text-foreground whitespace-nowrap leading-tight">
                       {feature.label}
                     </span>
