@@ -154,7 +154,11 @@ function DeleteAccount() {
             </button>
 
             <p className="text-xs text-muted-foreground text-center">
-              Prefer email? Write to bsbglobaltech@gmail.com from your registered address.
+              Questions first?{" "}
+              <Link to="/contact" className="text-primary hover:underline">
+                Contact our team
+              </Link>{" "}
+              at team@bsbmarket.com.
             </p>
           </form>
         )}
