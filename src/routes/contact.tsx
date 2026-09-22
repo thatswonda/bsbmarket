@@ -140,7 +140,6 @@ function Contact() {
                 maxLength={100}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Jane Doe"
                 className="w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-ring/30"
               />
             </div>
