@@ -86,6 +86,13 @@ const Navbar = () => {
                 >
                   Delete Account
                 </Link>
+                <a
+                  href="mailto:team@bsbmarket.com"
+                  onClick={() => setOpen(false)}
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-foreground hover:bg-accent hover:text-primary transition-colors"
+                >
+                  Contact Us
+                </a>
               </div>
             </SheetContent>
           </Sheet>
