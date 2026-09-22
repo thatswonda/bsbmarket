@@ -9,12 +9,12 @@ import eventImg from "@/assets/service-event-coverage.jpg";
 import appDesignImg from "@/assets/service-app-design.jpg";
 
 const services = [
-  { img: photoImg, title: "Professional Photography", price: "from $100" },
-  { img: webdevImg, title: "Website Development", price: "from $300" },
-  { img: spaImg, title: "Luxury Spa Treatment", price: "from $30" },
-  { img: fitnessImg, title: "Fitness Coaching", price: "from $50" },
-  { img: eventImg, title: "Event Coverage", price: "from $200" },
-  { img: appDesignImg, title: "Mobile App Design", price: "from $500" },
+  { img: photoImg, title: "Professional Photography" },
+  { img: webdevImg, title: "Website Development" },
+  { img: spaImg, title: "Luxury Spa Treatment" },
+  { img: fitnessImg, title: "Fitness Coaching" },
+  { img: eventImg, title: "Event Coverage" },
+  { img: appDesignImg, title: "Mobile App Design" },
 ];
 
 const ExploreServices = () => {

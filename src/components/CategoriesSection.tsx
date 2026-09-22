@@ -59,7 +59,7 @@ import listingShares2 from "@/assets/listing-shares-2.jpg";
 import listingShares3 from "@/assets/listing-shares-3.jpg";
 import listingShares4 from "@/assets/listing-shares-4.jpg";
 
-const categoryListings: Record<string, { title: string; desc: string; price: string; views: string; img: string }[]> = {
+const categoryListings: Record<string, { title: string; desc: string; views: string; img: string }[]> = {
   Services: [
     { title: "Home Cleaning", desc: "Professional deep cleaning services for your home or office.", price: "$ 50", views: "9,320", img: listingServices1 },
     { title: "Plumbing Repair", desc: "Expert plumbing solutions for leaks, installations and maintenance.", price: "$ 40", views: "5,812", img: listingServices2 },

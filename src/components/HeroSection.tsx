@@ -48,7 +48,7 @@ import listingShares3 from "@/assets/listing-shares-3.jpg";
 import listingShares4 from "@/assets/listing-shares-4.jpg";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
-type Listing = { title: string; desc: string; price: string; views: string; img: string };
+type Listing = { title: string; desc: string; views: string; img: string };
 
 const featureListings: Record<string, Listing[]> = {
   Sell: [
