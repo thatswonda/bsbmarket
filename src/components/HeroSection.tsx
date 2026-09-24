@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
-import brandBanner from "@/assets/bsb-banner.png";
+import heroBg from "@/assets/hero-bg.webp";
+import brandBanner from "@/assets/bsb-banner.webp";
 
-import sellIcon from "@/assets/sell-icon.png";
-import buyIcon from "@/assets/buy-icon.png";
-import servicesIcon from "@/assets/services-icon.png";
-import hireIcon from "@/assets/hire-icon.png";
-import jobsIcon from "@/assets/jobs-icon.png";
-import networkIcon from "@/assets/network-icon.png";
-import phoneMockup from "@/assets/phone-mockup-bsb.png";
+import sellIcon from "@/assets/sell-icon.webp";
+import buyIcon from "@/assets/buy-icon.webp";
+import servicesIcon from "@/assets/services-icon.webp";
+import hireIcon from "@/assets/hire-icon.webp";
+import jobsIcon from "@/assets/jobs-icon.webp";
+import networkIcon from "@/assets/network-icon.webp";
+import phoneMockup from "@/assets/phone-mockup-bsb.webp";
 import { Check, Eye, Heart, Share2 } from "lucide-react";
 import AppStoreButton from "@/components/AppStoreButton";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -23,30 +23,30 @@ import {
 } from "@/components/ui/dialog";
 
 // Reuse listing images from categories
-import listingGoods1 from "@/assets/listing-goods-1.jpg";
-import listingGoods2 from "@/assets/listing-goods-2.jpg";
-import listingGoods3 from "@/assets/listing-goods-3.jpg";
-import listingGoods4 from "@/assets/listing-goods-4.jpg";
-import listingGadgets1 from "@/assets/listing-gadgets-1.jpg";
-import listingGadgets2 from "@/assets/listing-gadgets-2.jpg";
-import listingGadgets3 from "@/assets/listing-gadgets-3.jpg";
-import listingGadgets4 from "@/assets/listing-gadgets-4.jpg";
-import listingJobs1 from "@/assets/listing-jobs-1.jpg";
-import listingJobs2 from "@/assets/listing-jobs-2.jpg";
-import listingJobs3 from "@/assets/listing-jobs-3.jpg";
-import listingJobs4 from "@/assets/listing-jobs-4.jpg";
-import listingServices1 from "@/assets/listing-services-1.jpg";
-import listingServices2 from "@/assets/listing-services-2.jpg";
-import listingServices3 from "@/assets/listing-services-3.jpg";
-import listingServices4 from "@/assets/listing-services-4.jpg";
-import listingContracts1 from "@/assets/listing-contracts-1.jpg";
-import listingContracts2 from "@/assets/listing-contracts-2.jpg";
-import listingContracts3 from "@/assets/listing-contracts-3.jpg";
-import listingContracts4 from "@/assets/listing-contracts-4.jpg";
-import listingShares1 from "@/assets/listing-shares-1.jpg";
-import listingShares2 from "@/assets/listing-shares-2.jpg";
-import listingShares3 from "@/assets/listing-shares-3.jpg";
-import listingShares4 from "@/assets/listing-shares-4.jpg";
+import listingGoods1 from "@/assets/listing-goods-1.webp";
+import listingGoods2 from "@/assets/listing-goods-2.webp";
+import listingGoods3 from "@/assets/listing-goods-3.webp";
+import listingGoods4 from "@/assets/listing-goods-4.webp";
+import listingGadgets1 from "@/assets/listing-gadgets-1.webp";
+import listingGadgets2 from "@/assets/listing-gadgets-2.webp";
+import listingGadgets3 from "@/assets/listing-gadgets-3.webp";
+import listingGadgets4 from "@/assets/listing-gadgets-4.webp";
+import listingJobs1 from "@/assets/listing-jobs-1.webp";
+import listingJobs2 from "@/assets/listing-jobs-2.webp";
+import listingJobs3 from "@/assets/listing-jobs-3.webp";
+import listingJobs4 from "@/assets/listing-jobs-4.webp";
+import listingServices1 from "@/assets/listing-services-1.webp";
+import listingServices2 from "@/assets/listing-services-2.webp";
+import listingServices3 from "@/assets/listing-services-3.webp";
+import listingServices4 from "@/assets/listing-services-4.webp";
+import listingContracts1 from "@/assets/listing-contracts-1.webp";
+import listingContracts2 from "@/assets/listing-contracts-2.webp";
+import listingContracts3 from "@/assets/listing-contracts-3.webp";
+import listingContracts4 from "@/assets/listing-contracts-4.webp";
+import listingShares1 from "@/assets/listing-shares-1.webp";
+import listingShares2 from "@/assets/listing-shares-2.webp";
+import listingShares3 from "@/assets/listing-shares-3.webp";
+import listingShares4 from "@/assets/listing-shares-4.webp";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
 type Listing = { title: string; desc: string; views: string; img: string };
@@ -143,13 +143,17 @@ const HeroSection = () => {
   const selectedFeature = features.find(f => f.label === selectedLabel);
   const listings = selectedLabel ? featureListings[selectedLabel] || [] : [];
 
-  // Preload all listing images on mount
-  useEffect(() => {
-    Object.values(featureListings).flat().forEach(l => {
+  // Warm a feature's listing images only when the user shows intent (hover/focus),
+  // instead of downloading every image on mount and competing with the LCP image.
+  const preloaded = useRef(new Set<string>());
+  const preloadFeature = (label: string) => {
+    if (preloaded.current.has(label)) return;
+    preloaded.current.add(label);
+    (featureListings[label] ?? []).forEach((l) => {
       const img = new Image();
       img.src = l.img;
     });
-  }, []);
+  };
 
   return (
     <section
@@ -169,12 +173,7 @@ const HeroSection = () => {
       <div className="relative pt-20 sm:pt-28 pb-6 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
           {/* Banner + intro text side by side on desktop */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-6 sm:mb-10 lg:mb-14 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:text-left"
-          >
+          <div className="mb-6 sm:mb-10 lg:mb-14 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:text-left">
             <div className="max-w-md lg:max-w-none mx-auto lg:mx-0">
               <div className="mb-2 flex justify-center lg:justify-start">
                 <EarlyBirdBanner />
@@ -190,6 +189,8 @@ const HeroSection = () => {
                 className="w-full h-auto object-cover"
                 width={540}
                 height={263}
+                fetchPriority="high"
+                decoding="async"
               />
               </div>
             </div>
@@ -202,32 +203,20 @@ const HeroSection = () => {
                 Buy, sell, hire, and connect with trusted people and businesses — locally and around the world. BSB Market makes trade and business easier for everyone.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-16 lg:items-center lg:text-left">
           <div className="lg:col-start-1 lg:row-start-1">
 
-          <motion.h1
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 text-balance">
+            Buy, sell, get <span className="text-primary">jobs</span>, book{" "}
+            <span className="text-primary">rides</span> &amp; services in Nigeria
+          </h1>
 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 text-balance"
-          >
-            Get <span className="text-primary">everything</span> you{" "}
-            <span className="text-primary">need</span>
-            <br />
-            in one place
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="text-muted-foreground text-xs sm:text-lg mb-8 sm:mb-16 lg:mb-0 max-w-xl mx-auto lg:mx-0"
-          >
-            <span className="text-primary font-semibold">Making trade and business easier</span>
-          </motion.p>
+          <p className="text-muted-foreground text-xs sm:text-lg mb-8 sm:mb-16 lg:mb-8 max-w-xl mx-auto lg:mx-0">
+            <span className="text-primary font-semibold">BSB Market</span> is the all-in-one
+            marketplace app for Nigerians and Nigerian businesses — with escrow-protected payments.
+          </p>
           </div>
 
           <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-center">
@@ -245,6 +234,7 @@ const HeroSection = () => {
                 src={phoneMockup}
                 alt="BSB Market app onboarding screen on a smartphone"
                 className="w-full h-auto"
+                decoding="async"
                 width={526}
                 height={1039}
               />
@@ -257,6 +247,9 @@ const HeroSection = () => {
                   key={feature.label}
                   {...floatAnimation(0.5 + i * 0.12, pos.x, pos.y)}
                   onClick={() => setSelectedLabel(feature.label)}
+                  onPointerEnter={() => preloadFeature(feature.label)}
+                  onFocus={() => preloadFeature(feature.label)}
+                  aria-label={`Browse ${feature.label} listings`}
                   className="absolute z-20 flex flex-col items-center gap-1 cursor-pointer"
                   style={{
                     top: pos.top,
@@ -272,7 +265,9 @@ const HeroSection = () => {
                     <div className="w-7 h-7 sm:w-10 sm:h-10 flex items-center justify-center">
                       <img
                         src={feature.icon}
-                        alt={feature.label}
+                        alt=""
+                        width={40}
+                        height={40}
                         className="w-full h-full object-contain"
                       />
                     </div>
@@ -368,6 +363,7 @@ const HeroSection = () => {
             <a
               href={PLAY_STORE_URL}
               onClick={openPlayStore}
+              data-location="hero"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-foreground text-card rounded-lg sm:rounded-xl font-medium hover:opacity-90 transition-opacity"
@@ -412,6 +408,8 @@ const HeroSection = () => {
                 <img
                   src={listing.img}
                   alt={listing.title}
+                  width={112}
+                  height={96}
                   className="w-28 h-24 object-cover rounded-xl flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0 py-1">

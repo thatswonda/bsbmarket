@@ -10,14 +10,32 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BookingsRouteImport } from './routes/bookings'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DeleteAccountRouteImport } from './routes/delete-account'
+import { Route as DispatchRouteImport } from './routes/dispatch'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as JobsRouteImport } from './routes/jobs'
+import { Route as MarketplaceRouteImport } from './routes/marketplace'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RidesRouteImport } from './routes/rides'
 import { Route as TermsRouteImport } from './routes/terms'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingsRoute = BookingsRouteImport.update({
+  id: '/bookings',
+  path: '/bookings',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -30,9 +48,39 @@ const DeleteAccountRoute = DeleteAccountRouteImport.update({
   path: '/delete-account',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DispatchRoute = DispatchRouteImport.update({
+  id: '/dispatch',
+  path: '/dispatch',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JobsRoute = JobsRouteImport.update({
+  id: '/jobs',
+  path: '/jobs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketplaceRoute = MarketplaceRouteImport.update({
+  id: '/marketplace',
+  path: '/marketplace',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RidesRoute = RidesRouteImport.update({
+  id: '/rides',
+  path: '/rides',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -43,39 +91,111 @@ const TermsRoute = TermsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bookings': typeof BookingsRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/dispatch': typeof DispatchRoute
+  '/faq': typeof FaqRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/jobs': typeof JobsRoute
+  '/marketplace': typeof MarketplaceRoute
   '/privacy': typeof PrivacyRoute
+  '/rides': typeof RidesRoute
   '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bookings': typeof BookingsRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/dispatch': typeof DispatchRoute
+  '/faq': typeof FaqRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/jobs': typeof JobsRoute
+  '/marketplace': typeof MarketplaceRoute
   '/privacy': typeof PrivacyRoute
+  '/rides': typeof RidesRoute
   '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/bookings': typeof BookingsRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/dispatch': typeof DispatchRoute
+  '/faq': typeof FaqRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/jobs': typeof JobsRoute
+  '/marketplace': typeof MarketplaceRoute
   '/privacy': typeof PrivacyRoute
+  '/rides': typeof RidesRoute
   '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/delete-account' | '/privacy' | '/terms'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/bookings'
+    | '/contact'
+    | '/delete-account'
+    | '/dispatch'
+    | '/faq'
+    | '/how-it-works'
+    | '/jobs'
+    | '/marketplace'
+    | '/privacy'
+    | '/rides'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/delete-account' | '/privacy' | '/terms'
-  id: '__root__' | '/' | '/contact' | '/delete-account' | '/privacy' | '/terms'
+  to:
+    | '/'
+    | '/about'
+    | '/bookings'
+    | '/contact'
+    | '/delete-account'
+    | '/dispatch'
+    | '/faq'
+    | '/how-it-works'
+    | '/jobs'
+    | '/marketplace'
+    | '/privacy'
+    | '/rides'
+    | '/terms'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/bookings'
+    | '/contact'
+    | '/delete-account'
+    | '/dispatch'
+    | '/faq'
+    | '/how-it-works'
+    | '/jobs'
+    | '/marketplace'
+    | '/privacy'
+    | '/rides'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BookingsRoute: typeof BookingsRoute
   ContactRoute: typeof ContactRoute
   DeleteAccountRoute: typeof DeleteAccountRoute
+  DispatchRoute: typeof DispatchRoute
+  FaqRoute: typeof FaqRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  JobsRoute: typeof JobsRoute
+  MarketplaceRoute: typeof MarketplaceRoute
   PrivacyRoute: typeof PrivacyRoute
+  RidesRoute: typeof RidesRoute
   TermsRoute: typeof TermsRoute
 }
 
@@ -86,6 +206,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bookings': {
+      id: '/bookings'
+      path: '/bookings'
+      fullPath: '/bookings'
+      preLoaderRoute: typeof BookingsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -102,11 +236,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeleteAccountRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dispatch': {
+      id: '/dispatch'
+      path: '/dispatch'
+      fullPath: '/dispatch'
+      preLoaderRoute: typeof DispatchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jobs': {
+      id: '/jobs'
+      path: '/jobs'
+      fullPath: '/jobs'
+      preLoaderRoute: typeof JobsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketplace': {
+      id: '/marketplace'
+      path: '/marketplace'
+      fullPath: '/marketplace'
+      preLoaderRoute: typeof MarketplaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rides': {
+      id: '/rides'
+      path: '/rides'
+      fullPath: '/rides'
+      preLoaderRoute: typeof RidesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -121,9 +297,17 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BookingsRoute: BookingsRoute,
   ContactRoute: ContactRoute,
   DeleteAccountRoute: DeleteAccountRoute,
+  DispatchRoute: DispatchRoute,
+  FaqRoute: FaqRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  JobsRoute: JobsRoute,
+  MarketplaceRoute: MarketplaceRoute,
   PrivacyRoute: PrivacyRoute,
+  RidesRoute: RidesRoute,
   TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport

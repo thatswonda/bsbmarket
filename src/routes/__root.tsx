@@ -11,6 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { organizationSchema, websiteSchema, ldJsonMeta, SITE_NAME } from "../lib/seo";
+import { GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION, gaBootstrapScript } from "../lib/analytics";
 
 function NotFoundComponent() {
   return (
@@ -77,14 +79,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "BSB Market | Buy, Sell, Hire & Connect" },
-      { name: "description", content: "BSB Market makes trade and business easier — buy, sell, offer or hire services, find jobs and network." },
+      { title: "BSB Market – Digital Marketplace & Business App in Nigeria" },
+      {
+        name: "description",
+        content:
+          "BSB Market is a Nigerian app to buy and sell with escrow payments, find jobs, book rides and dispatch, and book services.",
+      },
       { name: "author", content: "BSB Global Tech Ltd" },
-      { property: "og:title", content: "BSB Market | Buy, Sell, Hire & Connect" },
-      { property: "og:description", content: "BSB Market makes trade and business easier — buy, sell, offer or hire services, find jobs and network." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#0b1a33" },
+      { name: "application-name", content: SITE_NAME },
+      { property: "og:site_name", content: SITE_NAME },
+      { property: "og:locale", content: "en_NG" },
+      { name: "twitter:site", content: "@bsbmarketapp" },
+      { name: "google-play-app", content: "app-id=com.austindev.bsb" },
+      ...(GOOGLE_SITE_VERIFICATION
+        ? [{ name: "google-site-verification", content: GOOGLE_SITE_VERIFICATION }]
+        : []),
+      ldJsonMeta(organizationSchema()),
+      ldJsonMeta(websiteSchema()),
     ],
     links: [
       {
@@ -92,7 +104,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      ...(GA_MEASUREMENT_ID ? [{ rel: "preconnect", href: "https://www.googletagmanager.com" }] : []),
     ],
+    scripts: GA_MEASUREMENT_ID
+      ? [
+          { src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`, async: true },
+          { children: gaBootstrapScript(GA_MEASUREMENT_ID) },
+        ]
+      : [],
   }),
   shellComponent: RootShell,
   component: RootComponent,

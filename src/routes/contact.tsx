@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { pageHead, breadcrumbSchema, localBusinessSchema, webPageSchema, ADDRESS_TEXT } from "@/lib/seo";
+import { trackEvent } from "@/lib/analytics";
 import { useState } from "react";
-import { ArrowLeft, Mail, Send, Clock, MessageSquare } from "lucide-react";
-import logoAsset from "@/assets/bsb-logo.png";
+import { ArrowLeft, Mail, Send, Clock, MessageSquare, MapPin } from "lucide-react";
+import logoAsset from "@/assets/bsb-logo.webp";
 import { z } from "zod";
 
 const TITLE = "Contact Us | BSB Market";
@@ -9,16 +11,13 @@ const DESCRIPTION =
   "Get in touch with the BSB Market team — email us directly at team@bsbmarket.com or send us a message and we'll reply within 24 hours.";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      path: "/contact",
+      title: TITLE,
+      description: DESCRIPTION,
+      jsonLd: [webPageSchema({ path: "/contact", name: TITLE, description: DESCRIPTION, type: "ContactPage" }), localBusinessSchema(), breadcrumbSchema([{ name: "Contact", path: "/contact" }])],
+    }),
   component: Contact,
 });
 
@@ -51,6 +50,7 @@ function Contact() {
     const body = encodeURIComponent(
       `${parsed.data.message}\n\n—\nFrom: ${parsed.data.name}\nReply to: ${parsed.data.email}`
     );
+    trackEvent("generate_lead", { method: "contact_form" });
     window.location.href = `mailto:team@bsbmarket.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
@@ -69,6 +69,8 @@ function Contact() {
           <img
             src={logoAsset}
             alt="BSB Market logo"
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-lg object-contain"
           />
           <span className="text-lg font-bold text-foreground">
@@ -101,6 +103,9 @@ function Contact() {
             </p>
             <p className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5" /> Support hours: Monday – Saturday, 9am – 6pm
+            </p>
+            <p className="flex items-start gap-1.5">
+              <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0" /> BSB Global Tech Ltd, {ADDRESS_TEXT}
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Shield, Users } from "lucide-react";
-import aboutAsset from "@/assets/handshake-deal.png";
+import aboutAsset from "@/assets/handshake-deal.webp";
 
 const values = [
   { icon: Target, title: "Our Mission", desc: "To simplify trade and business by connecting people with the goods, services, and opportunities they need — locally and globally." },

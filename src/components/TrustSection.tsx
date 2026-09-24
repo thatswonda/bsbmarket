@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Clock, Globe, Headphones, CreditCard, Lock } from "lucide-react";
-import remoteAsset from "@/assets/remote-work-dubai.png";
-import teamAsset from "@/assets/bsb-team-meeting.png";
+import remoteAsset from "@/assets/remote-work-dubai.webp";
+import teamAsset from "@/assets/bsb-team-meeting.webp";
 
 const badges = [
   { icon: ShieldCheck, label: "Verified Listings", desc: "Every listing is screened so you deal with real people and real offers." },

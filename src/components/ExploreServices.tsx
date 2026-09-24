@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Eye, Heart, Share2 } from "lucide-react";
-import photoImg from "@/assets/service-photography.jpg";
-import webdevImg from "@/assets/service-webdev.jpg";
-import spaImg from "@/assets/service-spa.jpg";
-import fitnessImg from "@/assets/service-fitness.jpg";
-import eventImg from "@/assets/service-event-coverage.jpg";
-import appDesignImg from "@/assets/service-app-design.jpg";
+import photoImg from "@/assets/service-photography.webp";
+import webdevImg from "@/assets/service-webdev.webp";
+import spaImg from "@/assets/service-spa.webp";
+import fitnessImg from "@/assets/service-fitness.webp";
+import eventImg from "@/assets/service-event-coverage.webp";
+import appDesignImg from "@/assets/service-app-design.webp";
 
 const services = [
   { img: photoImg, title: "Professional Photography" },

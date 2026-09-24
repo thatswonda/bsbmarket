@@ -1,23 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { pageHead, breadcrumbSchema } from "@/lib/seo";
 import { useState } from "react";
 import { ArrowLeft, ShieldAlert, Trash2, CheckCircle2 } from "lucide-react";
-import logoAsset from "@/assets/bsb-logo.png";
+import logoAsset from "@/assets/bsb-logo.webp";
 
 const TITLE = "Delete Your Account | BSB Market";
 const DESCRIPTION =
   "Request permanent deletion of your BSB Market account and associated data, and learn what happens after your request is submitted.";
 
 export const Route = createFileRoute("/delete-account")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      path: "/delete-account",
+      title: TITLE,
+      description: DESCRIPTION,
+      jsonLd: [breadcrumbSchema([{ name: "Delete Account", path: "/delete-account" }])],
+    }),
   component: DeleteAccount,
 });
 

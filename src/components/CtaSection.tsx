@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import AppStoreButton from "@/components/AppStoreButton";
-import ctaAsset from "@/assets/parcels-shipping.png";
+import ctaAsset from "@/assets/parcels-shipping.webp";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
 const CtaSection = () => (

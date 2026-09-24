@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { pageHead, breadcrumbSchema } from "@/lib/seo";
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 
@@ -133,15 +134,12 @@ const PrivacyPolicy = () => (
 
 
 export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title: "Privacy Policy | BSB Market" },
-      { name: "description", content: "How BSB Market collects, uses and protects your personal data under the Nigeria Data Protection Act." },
-      { property: "og:title", content: "Privacy Policy | BSB Market" },
-      { property: "og:description", content: "How BSB Market collects, uses and protects your personal data under the Nigeria Data Protection Act." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      path: "/privacy",
+      title: "Privacy Policy | BSB Market",
+      description: "How BSB Market (BSB Global Tech Ltd) collects, uses and protects your personal data under the Nigeria Data Protection Act 2023.",
+      jsonLd: [breadcrumbSchema([{ name: "Privacy Policy", path: "/privacy" }])],
+    }),
   component: PrivacyPolicy,
 });

@@ -1,3 +1,5 @@
+import { trackAppDownloadClick } from "@/lib/analytics";
+
 export const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.austindev.bsb&pcampaignid=web_share";
 
@@ -7,6 +9,7 @@ export const PLAY_STORE_URL =
  */
 export const openPlayStore = (e: React.MouseEvent<HTMLAnchorElement>) => {
   e.preventDefault();
+  trackAppDownloadClick("google_play", e.currentTarget.dataset["location"] ?? "unknown");
   const win = window.open(PLAY_STORE_URL, "_blank", "noopener,noreferrer");
   if (win) return;
   try {

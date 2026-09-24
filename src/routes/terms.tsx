@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { pageHead, breadcrumbSchema } from "@/lib/seo";
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 
@@ -197,15 +198,12 @@ const TermsOfUse = () => (
 
 
 export const Route = createFileRoute("/terms")({
-  head: () => ({
-    meta: [
-      { title: "Terms of Use | BSB Market" },
-      { name: "description", content: "The rules and conditions for buying, selling, hiring and networking on the BSB Market platform." },
-      { property: "og:title", content: "Terms of Use | BSB Market" },
-      { property: "og:description", content: "The rules and conditions for buying, selling, hiring and networking on the BSB Market platform." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      path: "/terms",
+      title: "Terms of Use | BSB Market",
+      description: "BSB Market Terms of Use: rules for buying, selling, hiring, jobs, in-app payments, commissions, refunds (RF-TAG) and dispute resolution in Nigeria.",
+      jsonLd: [breadcrumbSchema([{ name: "Terms of Use", path: "/terms" }])],
+    }),
   component: TermsOfUse,
 });

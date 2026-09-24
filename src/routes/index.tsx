@@ -13,22 +13,26 @@ import NewsletterSection from "@/components/NewsletterSection";
 import DownloadSection from "@/components/DownloadSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import FeatureLinksSection from "@/components/FeatureLinksSection";
+import { HOME_FAQS } from "@/content/faqs";
+import { faqSchema, pageHead, softwareApplicationSchema, webPageSchema } from "@/lib/seo";
 
-const TITLE = "BSB Market | Buy, Sell, Hire & Connect";
+const TITLE = "BSB Market – Digital Marketplace & Business App in Nigeria";
 const DESCRIPTION =
-  "BSB Market makes trade and business easier — buy, sell, offer or hire services, find jobs and network locally and globally.";
+  "Buy, sell and hire on BSB Market, Nigeria's escrow payment app. Find jobs and gigs, book rides and dispatch, and take service bookings — all in one app.";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      path: "/",
+      title: TITLE,
+      description: DESCRIPTION,
+      jsonLd: [
+        webPageSchema({ path: "/", name: TITLE, description: DESCRIPTION }),
+        softwareApplicationSchema(),
+        faqSchema(HOME_FAQS),
+      ],
+    }),
   component: Index,
 });
 
@@ -36,7 +40,9 @@ function Index() {
   return (
     <div className="min-h-screen">
       <Navbar />
+      <main>
       <HeroSection />
+      <FeatureLinksSection />
       {/* Desktop: About before Trust */}
       <div className="hidden sm:block">
         <AboutSection />
@@ -65,6 +71,7 @@ function Index() {
       <FAQSection />
       <CtaSection />
       <NewsletterSection />
+      </main>
       <Footer />
       <BackToTop />
     </div>

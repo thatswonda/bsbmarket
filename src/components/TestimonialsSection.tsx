@@ -1,15 +1,15 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
-import testimonialSarah from "@/assets/testimonial-sarah.jpg";
-import testimonialJames from "@/assets/testimonial-james.jpg";
-import testimonialAmara from "@/assets/testimonial-amara.jpg";
-import testimonialLinda from "@/assets/testimonial-linda.jpg";
-import testimonialRaj from "@/assets/testimonial-raj.jpg";
-import testimonialEmma from "@/assets/testimonial-emma.jpg";
-import testimonialCarlos from "@/assets/testimonial-carlos.jpg";
-import testimonialDavid from "@/assets/testimonial-david.jpg";
-import testimonialMei from "@/assets/testimonial-mei.jpg";
+import testimonialSarah from "@/assets/testimonial-sarah.webp";
+import testimonialJames from "@/assets/testimonial-james.webp";
+import testimonialAmara from "@/assets/testimonial-amara.webp";
+import testimonialLinda from "@/assets/testimonial-linda.webp";
+import testimonialRaj from "@/assets/testimonial-raj.webp";
+import testimonialEmma from "@/assets/testimonial-emma.webp";
+import testimonialCarlos from "@/assets/testimonial-carlos.webp";
+import testimonialDavid from "@/assets/testimonial-david.webp";
+import testimonialMei from "@/assets/testimonial-mei.webp";
 
 const testimonials = [
   { name: "Sarah M.", title: "Best Experience", text: "BSB Market made it so easy to find exactly what I needed. The platform is smooth and reliable.", rating: 5, img: testimonialSarah },

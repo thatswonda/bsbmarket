@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Eye, Heart, Share2 } from "lucide-react";
-import spaAsset from "@/assets/service-spa.jpg";
+import spaAsset from "@/assets/service-spa.webp";
 import photoAsset from "@/assets/service-photography.webp";
-import webdevAsset from "@/assets/service-webdev.jpg";
+import webdevAsset from "@/assets/service-webdev.webp";
 import fitnessAsset from "@/assets/service-fitness.webp";
 
 const offers = [

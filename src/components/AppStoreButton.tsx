@@ -7,6 +7,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import { trackAppDownloadClick } from "@/lib/analytics";
 
 interface AppStoreButtonProps {
   className?: string;
@@ -19,7 +20,14 @@ const AppStoreButton = ({ className, children }: AppStoreButtonProps) => {
 
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)} className={className}>
+      <button
+        type="button"
+        onClick={() => {
+          trackAppDownloadClick("app_store", "ios_coming_soon");
+          setOpen(true);
+        }}
+        className={className}
+      >
         {children}
       </button>
 

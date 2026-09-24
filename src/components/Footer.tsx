@@ -1,7 +1,9 @@
 import AppStoreButton from "@/components/AppStoreButton";
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/bsb-logo.png";
+import logoAsset from "@/assets/bsb-logo.webp";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import { FEATURE_NAV, COMPANY_NAV, LEGAL_NAV } from "@/lib/nav";
+import { ADDRESS_TEXT, CONTACT_EMAIL } from "@/lib/seo";
 
 const Footer = () => (
   <footer className="py-6 sm:py-12 bg-card border-t border-border/50">
@@ -10,11 +12,11 @@ const Footer = () => (
       <div className="hidden md:grid grid-cols-4 gap-8 mb-10">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={logoAsset} alt="BSB Market logo" className="w-9 h-9 rounded-lg object-contain" loading="lazy" />
+            <img src={logoAsset} alt="BSB Market logo" className="w-9 h-9 rounded-lg object-contain" loading="lazy" width={36} height={36} />
             <span className="text-xl font-bold text-foreground">Bsb <span className="text-primary">Market</span></span>
           </div>
 
-          <p className="text-sm text-muted-foreground leading-relaxed">Making trade and business easier. Your one-stop marketplace for goods, services, jobs, and networking.</p>
+          <p className="text-sm text-muted-foreground leading-relaxed">BSB Market is a Nigerian marketplace app to buy and sell with escrow, find jobs, book rides and dispatch, and book services.</p>
           <div className="flex items-center gap-3 mt-4">
             <a href="https://www.tiktok.com/@bsbmarketapp?_r=1&_t=ZN-99RFQH7EAfW" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="w-9 h-9 rounded-full bg-accent flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors text-muted-foreground">
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
@@ -31,22 +33,19 @@ const Footer = () => (
           </div>
         </div>
         <div>
-          <h4 className="font-semibold text-foreground mb-4">Marketplace</h4>
+          <h4 className="font-semibold text-foreground mb-4">Features</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-primary transition-colors">Buy & Sell</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Jobs</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Real Estate</a></li>
+            {FEATURE_NAV.map((l) => (
+              <li key={l.to}><Link to={l.to} className="hover:text-primary transition-colors">{l.label}</Link></li>
+            ))}
           </ul>
         </div>
         <div>
           <h4 className="font-semibold text-foreground mb-4">Company</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#about-us" className="hover:text-primary transition-colors">About Us</a></li>
-            <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
-            <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link></li>
-            <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
-            <li><Link to="/delete-account" className="hover:text-primary transition-colors">Delete Account</Link></li>
+            {[...COMPANY_NAV, ...LEGAL_NAV].map((l) => (
+              <li key={l.to}><Link to={l.to} className="hover:text-primary transition-colors">{l.label}</Link></li>
+            ))}
           </ul>
         </div>
         <div>
@@ -57,7 +56,7 @@ const Footer = () => (
               App Store
             </AppStoreButton>
             <a href={PLAY_STORE_URL}
-              onClick={openPlayStore} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2.5 bg-foreground text-card rounded-lg text-sm font-medium hover:opacity-90 transition-opacity w-fit">
+              onClick={openPlayStore} data-location="footer" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2.5 bg-foreground text-card rounded-lg text-sm font-medium hover:opacity-90 transition-opacity w-fit">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L21.884 12l-1.884 1.19-2.302-2.302L19.884 12l-2.186-1.492zM5.864 2.658L16.8 8.99l-2.302 2.303L5.864 2.658z" /></svg>
               Google Play
             </a>
@@ -83,18 +82,27 @@ const Footer = () => (
           </a>
         </div>
 
-        <p className="text-xs text-muted-foreground">
-          23 Urua Udofia, Uyo Akwaibom State.
-        </p>
+        {/* Mobile internal links */}
+        <nav aria-label="Footer" className="md:hidden flex flex-wrap justify-center gap-x-3 gap-y-1.5 text-xs text-muted-foreground">
+          {[...FEATURE_NAV, ...COMPANY_NAV].map((l) => (
+            <Link key={l.to} to={l.to} className="hover:text-primary transition-colors">{l.label}</Link>
+          ))}
+        </nav>
+
+        <address className="not-italic text-xs text-muted-foreground">
+          BSB Global Tech Ltd · {ADDRESS_TEXT} ·{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary">{CONTACT_EMAIL}</a>
+        </address>
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} BSB Market, a product of BSB Global Tech Ltd.
         </p>
         <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground">
-          <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
-          <span>·</span>
-          <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <span>·</span>
-          <Link to="/delete-account" className="hover:text-primary transition-colors">Delete Account</Link>
+          {LEGAL_NAV.map((l, i) => (
+            <span key={l.to} className="flex items-center gap-3">
+              {i > 0 && <span aria-hidden="true">·</span>}
+              <Link to={l.to} className="hover:text-primary transition-colors">{l.label}</Link>
+            </span>
+          ))}
         </div>
       </div>
     </div>

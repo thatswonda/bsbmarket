@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Search, ShoppingCart, Handshake, Star } from "lucide-react";
-import appUserAsset from "@/assets/bsb-app-user-cutout.png";
+import appUserAsset from "@/assets/bsb-app-user-cutout.webp";
 
 const steps = [
   { icon: Search, title: "Browse & Discover", desc: "Explore thousands of listings across goods, services, jobs, and more in your area or globally." },

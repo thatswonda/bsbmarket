@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Camera } from "lucide-react";
-import bannerImg from "@/assets/banner-1.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import bannerImg from "@/assets/banner-1.webp";
+import heroBg from "@/assets/hero-bg.webp";
 
 const slides = [
   { img: bannerImg, title: "Making", subtitle: "NEW MEMORIES" },
