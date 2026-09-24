@@ -36,7 +36,7 @@ const AppStoreButton = ({ className, children }: AppStoreButtonProps) => {
           <DialogHeader>
             <DialogTitle className="text-center text-xl font-bold">Coming soon</DialogTitle>
             <DialogDescription className="text-center">
-              The BSB Market iOS app is on its way. In the meantime, grab it on Google Play.
+              The Bsb Market iOS app is on its way. In the meantime, grab it on Google Play.
             </DialogDescription>
           </DialogHeader>
           <a

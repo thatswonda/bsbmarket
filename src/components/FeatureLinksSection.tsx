@@ -18,11 +18,11 @@ const FeatureLinksSection = () => (
           id="features-heading"
           className="text-xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-4"
         >
-          What can you do on BSB Market?
+          What can you do on Bsb Market?
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-          BSB Market combines four services in one Nigerian app, and every in-app payment is held in
-          escrow until the buyer confirms delivery.{" "}
+          Bsb Market is a social-business space and digital marketplace that combines four services
+          in one app, and every in-app payment is held in escrow until the buyer confirms delivery.{" "}
           <Link to="/how-it-works" className="text-primary font-medium hover:underline">
             See how escrow works
           </Link>

@@ -3,7 +3,7 @@ import { PLAY_STORE_URL } from "@/lib/appLinks";
 
 /** Canonical production origin. Every canonical URL, sitemap entry and schema @id uses it. */
 export const SITE_URL = "https://bsbmarket.com";
-export const SITE_NAME = "BSB Market";
+export const SITE_NAME = "Bsb Market";
 export const LEGAL_NAME = "BSB Global Tech Ltd";
 export const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 export const LOGO_URL = `${SITE_URL}/logo-512.png`;
@@ -11,12 +11,11 @@ export const CONTACT_EMAIL = "team@bsbmarket.com";
 
 /** Single source of truth for NAP (name, address, contact) — keep in sync with the footer. */
 export const ADDRESS = {
-  streetAddress: "23 Urua Udofia",
-  addressLocality: "Uyo",
-  addressRegion: "Akwa Ibom State",
+  addressLocality: "Port Harcourt",
+  addressRegion: "Rivers State",
   addressCountry: "NG",
 } as const;
-export const ADDRESS_TEXT = "23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria";
+export const ADDRESS_TEXT = "Port Harcourt, Nigeria";
 
 export const SOCIAL_PROFILES = [
   "https://www.tiktok.com/@bsbmarketapp",
@@ -76,7 +75,7 @@ export function pageHead({
       { property: "og:image", content: image },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "BSB Market logo and tagline" },
+      { property: "og:image:alt", content: "Bsb Market logo and tagline" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
@@ -95,12 +94,12 @@ export const organizationSchema = (): JsonLd => ({
   "@id": ORG_ID,
   name: SITE_NAME,
   legalName: LEGAL_NAME,
-  alternateName: ["BSB", "Bsb Market", "BSB Market App"],
+  alternateName: ["BSB Market", "Bsb", "Bsb Market App"],
   url: `${SITE_URL}/`,
   logo: { "@type": "ImageObject", url: LOGO_URL, width: 512, height: 512 },
   image: OG_IMAGE,
   description:
-    "BSB Market is a Nigerian digital marketplace and business app by BSB Global Tech Ltd. It lets people buy and sell goods with escrow-protected payments, find and post jobs, book rides and dispatch deliveries, and book services from local businesses.",
+    "Bsb Market is a social-business space and digital marketplace app from Port Harcourt, Nigeria, built by BSB Global Tech Ltd. People and businesses use it to connect and network, buy and sell goods with escrow-protected payments, find and post jobs, book rides and dispatch deliveries, and book services.",
   email: CONTACT_EMAIL,
   address: { "@type": "PostalAddress", ...ADDRESS },
   areaServed: [
@@ -142,9 +141,9 @@ export const softwareApplicationSchema = (): JsonLd => ({
   name: SITE_NAME,
   operatingSystem: "Android",
   applicationCategory: "BusinessApplication",
-  applicationSubCategory: "Marketplace",
+  applicationSubCategory: "Social-business digital marketplace",
   description:
-    "All-in-one Nigerian app to buy and sell with escrow-protected payments, find jobs and gigs, book rides and dispatch deliveries, and book services from businesses.",
+    "Social-business space and digital marketplace app for Nigeria: connect with people and businesses, buy and sell with escrow-protected payments, find jobs and gigs, book rides and dispatch deliveries, and book services.",
   url: `${SITE_URL}/`,
   downloadUrl: PLAY_STORE_URL,
   installUrl: PLAY_STORE_URL,
@@ -228,7 +227,7 @@ export const serviceSchema = (s: {
   availableChannel: {
     "@type": "ServiceChannel",
     serviceUrl: PLAY_STORE_URL,
-    name: "BSB Market Android app",
+    name: "Bsb Market Android app",
   },
 });
 

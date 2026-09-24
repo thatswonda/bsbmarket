@@ -1,4 +1,4 @@
-# BSB Market — https://bsbmarket.com
+# Bsb Market — https://bsbmarket.com
 # All public pages may be crawled, including by search and AI assistants.
 
 User-agent: *

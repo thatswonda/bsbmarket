@@ -6,9 +6,9 @@ import { FEATURE_LIST } from "@/content/features";
 import { breadcrumbSchema, faqSchema, pageHead, type Faq } from "@/lib/seo";
 
 const PATH = "/faq";
-const TITLE = "BSB Market FAQ – Escrow, Jobs, Rides & Bookings Answered";
+const TITLE = "Bsb Market FAQ – Escrow, Jobs, Rides & Bookings Answered";
 const DESCRIPTION =
-  "Direct answers about BSB Market: what it is, escrow payments, fees, selling, finding jobs, booking rides and dispatch, and service bookings in Nigeria.";
+  "Direct answers about Bsb Market: what it is, escrow payments, fees, selling, finding jobs, booking rides and dispatch, and service bookings in Nigeria.";
 
 // Feature questions not already in the general list, so each question appears once.
 const generalQs = new Set(GENERAL_FAQS.map((f) => f.q));
@@ -35,10 +35,10 @@ function FaqPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
         <header className="pt-6 sm:pt-10 pb-8">
           <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">
-            BSB Market frequently asked questions
+            Bsb Market frequently asked questions
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Short, direct answers about BSB Market — the Nigerian app to buy and sell with escrow,
+            Short, direct answers about Bsb Market — the Nigerian app to buy and sell with escrow,
             find jobs, book rides and dispatch, and book services. Can't find your answer?{" "}
             <Link to="/contact" className="text-primary font-medium hover:underline">
               Contact the team
@@ -49,7 +49,7 @@ function FaqPage() {
 
         <section aria-labelledby="general" className="mb-10">
           <h2 id="general" className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-            About BSB Market, payments and fees
+            About Bsb Market, payments and fees
           </h2>
           <FaqList faqs={GENERAL_FAQS} />
           <p className="text-sm text-muted-foreground mt-4">
@@ -73,7 +73,7 @@ function FaqPage() {
             <p className="text-sm text-muted-foreground mt-4">
               Full guide:{" "}
               <Link to={feature.path} className="text-primary font-medium hover:underline">
-                BSB Market {feature.navLabel}
+                Bsb Market {feature.navLabel}
               </Link>
               .
             </p>

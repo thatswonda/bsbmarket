@@ -17,9 +17,9 @@ import FeatureLinksSection from "@/components/FeatureLinksSection";
 import { HOME_FAQS } from "@/content/faqs";
 import { faqSchema, pageHead, softwareApplicationSchema, webPageSchema } from "@/lib/seo";
 
-const TITLE = "BSB Market – Digital Marketplace & Business App in Nigeria";
+const TITLE = "Bsb Market – Social-Business Digital Marketplace in Nigeria";
 const DESCRIPTION =
-  "Buy, sell and hire on BSB Market, Nigeria's escrow payment app. Find jobs and gigs, book rides and dispatch, and take service bookings — all in one app.";
+  "Bsb Market is a social-business space and digital marketplace in Nigeria: connect, buy and sell with escrow, find jobs, book rides, dispatch and services.";
 
 export const Route = createFileRoute("/")({
   head: () =>
@@ -41,36 +41,36 @@ function Index() {
     <div className="min-h-screen">
       <Navbar />
       <main>
-      <HeroSection />
-      <FeatureLinksSection />
-      {/* Desktop: About before Trust */}
-      <div className="hidden sm:block">
-        <AboutSection />
-        <TrustSection />
-      </div>
-      {/* Mobile: HowItWorks before Trust */}
-      <div className="sm:hidden">
-        <HowItWorks />
-        <TrustSection />
-      </div>
-      {/* Desktop: HowItWorks before Popular listings */}
-      <div className="hidden sm:block">
-        <HowItWorks />
-      </div>
-      <PopularOffers />
-      <div className="sm:hidden">
-        <CategoriesSection />
-      </div>
-      <div className="hidden sm:block">
-        <CategoriesSection />
-      </div>
-      <div className="sm:hidden">
-        <AboutSection />
-      </div>
-      <TestimonialsSection />
-      <FAQSection />
-      <CtaSection />
-      <NewsletterSection />
+        <HeroSection />
+        <FeatureLinksSection />
+        {/* Desktop: About before Trust */}
+        <div className="hidden sm:block">
+          <AboutSection />
+          <TrustSection />
+        </div>
+        {/* Mobile: HowItWorks before Trust */}
+        <div className="sm:hidden">
+          <HowItWorks />
+          <TrustSection />
+        </div>
+        {/* Desktop: HowItWorks before Popular listings */}
+        <div className="hidden sm:block">
+          <HowItWorks />
+        </div>
+        <PopularOffers />
+        <div className="sm:hidden">
+          <CategoriesSection />
+        </div>
+        <div className="hidden sm:block">
+          <CategoriesSection />
+        </div>
+        <div className="sm:hidden">
+          <AboutSection />
+        </div>
+        <TestimonialsSection />
+        <FAQSection />
+        <CtaSection />
+        <NewsletterSection />
       </main>
       <Footer />
       <BackToTop />

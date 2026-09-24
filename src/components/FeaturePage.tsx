@@ -117,7 +117,7 @@ export const FeaturePage = ({ feature: f }: { feature: Feature }) => {
         ))}
 
         <p className="text-sm sm:text-base text-muted-foreground mb-10">
-          Every payment on BSB Market follows the same escrow process.{" "}
+          Every payment on Bsb Market follows the same escrow process.{" "}
           <Link to="/how-it-works" className="text-primary font-medium hover:underline">
             See how escrow payments and disputes work
           </Link>
@@ -132,7 +132,7 @@ export const FeaturePage = ({ feature: f }: { feature: Feature }) => {
           <p className="text-sm text-muted-foreground mt-4">
             More answers on the{" "}
             <Link to="/faq" className="text-primary font-medium hover:underline">
-              BSB Market FAQ page
+              Bsb Market FAQ page
             </Link>
             .
           </p>
@@ -140,7 +140,7 @@ export const FeaturePage = ({ feature: f }: { feature: Feature }) => {
 
         <section aria-labelledby="more-features" className="mb-12">
           <h2 id="more-features" className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-            More on BSB Market
+            More on Bsb Market
           </h2>
           <ul className="grid gap-3 sm:grid-cols-3">
             {others.map((o) => (

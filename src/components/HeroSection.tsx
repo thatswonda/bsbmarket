@@ -200,7 +200,7 @@ const HeroSection = () => {
                 Your Social-Business APP
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Buy, sell, hire, and connect with trusted people and businesses — locally and around the world. BSB Market makes trade and business easier for everyone.
+                Buy, sell, hire, and connect with trusted people and businesses — locally and around the world. Bsb Market makes trade and business easier for everyone.
               </p>
             </div>
           </div>
@@ -214,8 +214,9 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-muted-foreground text-xs sm:text-lg mb-8 sm:mb-16 lg:mb-8 max-w-xl mx-auto lg:mx-0">
-            <span className="text-primary font-semibold">BSB Market</span> is the all-in-one
-            marketplace app for Nigerians and Nigerian businesses — with escrow-protected payments.
+            <span className="text-primary font-semibold">Bsb Market</span> is a social-business
+            space and digital marketplace for Nigerians and Nigerian businesses — with
+            escrow-protected payments.
           </p>
           </div>
 
@@ -232,7 +233,7 @@ const HeroSection = () => {
             >
               <img
                 src={phoneMockup}
-                alt="BSB Market app onboarding screen on a smartphone"
+                alt="Bsb Market app onboarding screen on a smartphone"
                 className="w-full h-auto"
                 decoding="async"
                 width={526}

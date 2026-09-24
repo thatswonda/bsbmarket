@@ -4,9 +4,9 @@ import { useState } from "react";
 import { ArrowLeft, ShieldAlert, Trash2, CheckCircle2 } from "lucide-react";
 import logoAsset from "@/assets/bsb-logo.webp";
 
-const TITLE = "Delete Your Account | BSB Market";
+const TITLE = "Delete Your Account | Bsb Market";
 const DESCRIPTION =
-  "Request permanent deletion of your BSB Market account and associated data, and learn what happens after your request is submitted.";
+  "Request permanent deletion of your Bsb Market account and associated data, and learn what happens after your request is submitted.";
 
 export const Route = createFileRoute("/delete-account")({
   head: () =>
@@ -40,7 +40,7 @@ function DeleteAccount() {
         <div className="flex items-center gap-3 mb-6">
           <img
             src={logoAsset}
-            alt="BSB Market logo"
+            alt="Bsb Market logo"
             className="w-10 h-10 rounded-lg object-contain"
           />
           <span className="text-lg font-bold text-foreground">
@@ -50,7 +50,7 @@ function DeleteAccount() {
 
         <h1 className="text-2xl sm:text-4xl font-bold text-foreground mb-2">Delete your account</h1>
         <p className="text-sm text-muted-foreground mb-8">
-          Submit a request to permanently delete your BSB Market account. This action cannot be
+          Submit a request to permanently delete your Bsb Market account. This action cannot be
           undone.
         </p>
 

@@ -6,9 +6,9 @@ import { ArrowLeft, Mail, Send, Clock, MessageSquare, MapPin } from "lucide-reac
 import logoAsset from "@/assets/bsb-logo.webp";
 import { z } from "zod";
 
-const TITLE = "Contact Us | BSB Market";
+const TITLE = "Contact Us | Bsb Market";
 const DESCRIPTION =
-  "Get in touch with the BSB Market team — email us directly at team@bsbmarket.com or send us a message and we'll reply within 24 hours.";
+  "Get in touch with the Bsb Market team — email us directly at team@bsbmarket.com or send us a message and we'll reply within 24 hours.";
 
 export const Route = createFileRoute("/contact")({
   head: () =>
@@ -46,7 +46,7 @@ function Contact() {
       return;
     }
     setError(null);
-    const subject = encodeURIComponent(`BSB Market enquiry from ${parsed.data.name}`);
+    const subject = encodeURIComponent(`Bsb Market enquiry from ${parsed.data.name}`);
     const body = encodeURIComponent(
       `${parsed.data.message}\n\n—\nFrom: ${parsed.data.name}\nReply to: ${parsed.data.email}`
     );
@@ -68,7 +68,7 @@ function Contact() {
         <div className="flex items-center gap-3 mb-6">
           <img
             src={logoAsset}
-            alt="BSB Market logo"
+            alt="Bsb Market logo"
             width={40}
             height={40}
             className="w-10 h-10 rounded-lg object-contain"

@@ -12,18 +12,18 @@ import {
 } from "@/lib/seo";
 
 const PATH = "/how-it-works";
-const TITLE = "How BSB Market Escrow Payments Work (Step by Step)";
+const TITLE = "How Bsb Market Escrow Payments Work (Step by Step)";
 const DESCRIPTION =
-  "How escrow works on BSB Market, Nigeria's escrow payment app: BSB Market holds your payment until delivery is confirmed. Disputes, refunds and fees explained.";
+  "How escrow works on Bsb Market, Nigeria's escrow payment app: Bsb Market holds your payment until delivery is confirmed. Disputes, refunds and fees explained.";
 
 const STEPS = [
   {
     name: "Agree on the deal in the app",
-    text: "The buyer finds a product, job, ride or service on BSB Market and agrees the price and details with the seller or provider through in-app chat.",
+    text: "The buyer finds a product, job, ride or service on Bsb Market and agrees the price and details with the seller or provider through in-app chat.",
   },
   {
-    name: "The buyer pays BSB Market, not the seller",
-    text: "The buyer pays through the BSB Market in-app payment system. BSB Market holds the money in escrow. The seller or provider can see the order is paid, but cannot withdraw the money yet.",
+    name: "The buyer pays Bsb Market, not the seller",
+    text: "The buyer pays through the Bsb Market in-app payment system. Bsb Market holds the money in escrow. The seller or provider can see the order is paid, but cannot withdraw the money yet.",
   },
   {
     name: "The seller delivers",
@@ -31,11 +31,11 @@ const STEPS = [
   },
   {
     name: "The buyer confirms delivery",
-    text: "The buyer checks that the item or service matches the listing and confirms in the app. If something is wrong, the buyer reports it to BSB Market Support instead of confirming.",
+    text: "The buyer checks that the item or service matches the listing and confirms in the app. If something is wrong, the buyer reports it to Bsb Market Support instead of confirming.",
   },
   {
-    name: "BSB Market releases the payment",
-    text: "After confirmation, BSB Market releases the payment to the seller's BSB Market wallet, minus the commission or transaction fee that was disclosed before the buyer paid.",
+    name: "Bsb Market releases the payment",
+    text: "After confirmation, Bsb Market releases the payment to the seller's Bsb Market wallet, minus the commission or transaction fee that was disclosed before the buyer paid.",
   },
   {
     name: "Both sides leave a review",
@@ -46,26 +46,26 @@ const STEPS = [
 const FAQS: Faq[] = [
   {
     q: "What is an escrow payment app?",
-    a: "An escrow payment app holds a buyer's money with a neutral third party until the seller delivers what was agreed. On BSB Market, BSB Market is that third party: it keeps the payment until the buyer confirms delivery, then releases it to the seller's wallet, which protects both sides from fraud.",
+    a: "An escrow payment app holds a buyer's money with a neutral third party until the seller delivers what was agreed. On Bsb Market, Bsb Market is that third party: it keeps the payment until the buyer confirms delivery, then releases it to the seller's wallet, which protects both sides from fraud.",
   },
   {
-    q: "How does escrow payment work on BSB Market?",
-    a: "The buyer pays inside the BSB Market app and the money is held in escrow. The seller delivers the product or service. When the buyer confirms it matches the listing, BSB Market releases the payment to the seller's wallet, minus the disclosed fee. Problems are reported to Support before any release.",
+    q: "How does escrow payment work on Bsb Market?",
+    a: "The buyer pays inside the Bsb Market app and the money is held in escrow. The seller delivers the product or service. When the buyer confirms it matches the listing, Bsb Market releases the payment to the seller's wallet, minus the disclosed fee. Problems are reported to Support before any release.",
   },
   {
-    q: "How are escrow disputes resolved on BSB Market?",
-    a: "The buyer reports the problem to BSB Market Support with evidence such as photos. Support reviews both sides. For product purchases reported within 3 days, an approved claim gets a Refund Tag (RF-TAG); the buyer returns the item within 5 days and receives 80% of the price. Unresolved disputes go to mediation.",
+    q: "How are escrow disputes resolved on Bsb Market?",
+    a: "The buyer reports the problem to Bsb Market Support with evidence such as photos. Support reviews both sides. For product purchases reported within 3 days, an approved claim gets a Refund Tag (RF-TAG); the buyer returns the item within 5 days and receives 80% of the price. Unresolved disputes go to mediation.",
   },
   {
-    q: "What if I pay a seller outside BSB Market?",
-    a: "Payments made outside BSB Market are not protected by escrow. BSB Global Tech Ltd accepts no liability for losses from off-platform transactions and will not mediate them. Always pay through the in-app payment system so your money is held until you confirm delivery.",
+    q: "What if I pay a seller outside Bsb Market?",
+    a: "Payments made outside Bsb Market are not protected by escrow. BSB Global Tech Ltd accepts no liability for losses from off-platform transactions and will not mediate them. Always pay through the in-app payment system so your money is held until you confirm delivery.",
   },
 ];
 
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How escrow payments work on BSB Market",
+  name: "How escrow payments work on Bsb Market",
   description: DESCRIPTION,
   totalTime: "PT10M",
   step: STEPS.map((s, i) => ({
@@ -99,10 +99,10 @@ function HowItWorksPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         <header className="pt-6 sm:pt-10 pb-8">
           <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-foreground mb-4 text-balance">
-            How BSB Market works: escrow payments explained step by step
+            How Bsb Market works: escrow payments explained step by step
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            BSB Market uses escrow to protect every in-app payment. The buyer pays BSB Market, BSB
+            Bsb Market uses escrow to protect every in-app payment. The buyer pays Bsb Market, BSB
             Market holds the money while the seller delivers, and the seller is paid only after the
             buyer confirms the order matches what was agreed.
           </p>
@@ -110,7 +110,7 @@ function HowItWorksPage() {
 
         <section aria-labelledby="escrow-steps" className="mb-10">
           <h2 id="escrow-steps" className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-            The BSB Market escrow payment flow in 6 steps
+            The Bsb Market escrow payment flow in 6 steps
           </h2>
           <ol className="space-y-3">
             {STEPS.map((s, i) => (
@@ -134,10 +134,10 @@ function HowItWorksPage() {
 
         <section className="mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            How are disputes resolved on BSB Market?
+            How are disputes resolved on Bsb Market?
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-3">
-            Disputes are handled by BSB Market Support before any money is released. The buyer
+            Disputes are handled by Bsb Market Support before any money is released. The buyer
             reports the issue in the app or by email with photos or other evidence, and Support
             reviews information from both the buyer and the seller.
           </p>
@@ -152,7 +152,7 @@ function HowItWorksPage() {
               the RF-TAG.
             </li>
             <li>
-              The buyer receives 80% of the purchase price to their BSB Market wallet or original
+              The buyer receives 80% of the purchase price to their Bsb Market wallet or original
               payment method; 20% is retained as a non-refundable handling and processing fee.
             </li>
           </ul>
@@ -169,10 +169,10 @@ function HowItWorksPage() {
 
         <section className="mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            What does BSB Market charge?
+            What does Bsb Market charge?
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            BSB Market charges a commission or transaction fee on completed in-app transactions. The
+            Bsb Market charges a commission or transaction fee on completed in-app transactions. The
             fee is shown before you confirm a transaction and in your account settings. Signing up
             is free, and during early-bird registration listing products and applying for jobs cost
             0 credits.
@@ -184,7 +184,7 @@ function HowItWorksPage() {
             Why you should never pay outside the app
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Escrow only protects payments made through BSB Market. If a seller asks you to transfer
+            Escrow only protects payments made through Bsb Market. If a seller asks you to transfer
             money directly, decline and report the listing. BSB Global Tech Ltd accepts no liability
             for losses from off-platform payments and cannot mediate them.
           </p>
@@ -192,7 +192,7 @@ function HowItWorksPage() {
 
         <section className="mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            Where escrow applies on BSB Market
+            Where escrow applies on Bsb Market
           </h2>
           <ul className="grid gap-3 sm:grid-cols-2">
             {FEATURE_LIST.map((f) => (

@@ -10,7 +10,7 @@ const FAQSection = () => (
           Frequently Asked Questions
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
-          Got questions? We've got answers. Find everything you need to know about BSB Market.
+          Got questions? We've got answers. Find everything you need to know about Bsb Market.
         </p>
       </div>
 
@@ -18,7 +18,7 @@ const FAQSection = () => (
 
       <p className="text-center text-sm text-muted-foreground mt-6">
         <Link to="/faq" className="text-primary font-semibold hover:underline">
-          See all BSB Market FAQs
+          See all Bsb Market FAQs
         </Link>
       </p>
     </div>

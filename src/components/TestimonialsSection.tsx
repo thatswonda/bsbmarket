@@ -12,14 +12,14 @@ import testimonialDavid from "@/assets/testimonial-david.webp";
 import testimonialMei from "@/assets/testimonial-mei.webp";
 
 const testimonials = [
-  { name: "Sarah M.", title: "Best Experience", text: "BSB Market made it so easy to find exactly what I needed. The platform is smooth and reliable.", rating: 5, img: testimonialSarah },
+  { name: "Sarah M.", title: "Best Experience", text: "Bsb Market made it so easy to find exactly what I needed. The platform is smooth and reliable.", rating: 5, img: testimonialSarah },
   { name: "James K.", title: "Amazing Experience", text: "I sold my products within hours of listing them. Highly recommend this marketplace to everyone.", rating: 5, img: testimonialJames },
   { name: "Amara O.", title: "Great Experience", text: "Found a professional photographer for my event in minutes. The service quality was outstanding.", rating: 5, img: testimonialAmara },
   { name: "Linda T.", title: "Super Convenient", text: "The variety of services available is incredible. I found a reliable plumber the same day I searched.", rating: 5, img: testimonialLinda },
-  { name: "Raj P.", title: "Highly Recommend", text: "As a seller, BSB Market gave me access to thousands of buyers. My business grew 3x in just months.", rating: 5, img: testimonialRaj },
+  { name: "Raj P.", title: "Highly Recommend", text: "As a seller, Bsb Market gave me access to thousands of buyers. My business grew 3x in just months.", rating: 5, img: testimonialRaj },
   { name: "Emma W.", title: "Love This Platform", text: "Clean interface, fast transactions, and great customer support. Everything you need in a marketplace.", rating: 5, img: testimonialEmma },
-  { name: "Carlos R.", title: "Game Changer", text: "I landed my dream freelance gig through BSB Market. The job listings are top quality and well-curated.", rating: 5, img: testimonialCarlos },
-  { name: "David A.", title: "Trusted & Reliable", text: "Every transaction I've made has been secure and hassle-free. BSB Market truly cares about its users.", rating: 5, img: testimonialDavid },
+  { name: "Carlos R.", title: "Game Changer", text: "I landed my dream freelance gig through Bsb Market. The job listings are top quality and well-curated.", rating: 5, img: testimonialCarlos },
+  { name: "David A.", title: "Trusted & Reliable", text: "Every transaction I've made has been secure and hassle-free. Bsb Market truly cares about its users.", rating: 5, img: testimonialDavid },
   { name: "Mei L.", title: "Fantastic Service", text: "From browsing to buying, the experience is seamless. I've recommended it to all my friends and family.", rating: 5, img: testimonialMei },
 ];
 

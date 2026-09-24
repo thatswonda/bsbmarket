@@ -15,9 +15,9 @@ import {
 } from "@/lib/seo";
 
 const PATH = "/about";
-const TITLE = "About BSB Market – BSB Global Tech Ltd, Uyo, Nigeria";
+const TITLE = "About Bsb Market – Social-Business Marketplace, Port Harcourt";
 const DESCRIPTION =
-  "BSB Market is built by BSB Global Tech Ltd in Uyo, Nigeria: one app to buy and sell with escrow, find jobs, book rides and dispatch, and book services.";
+  "Bsb Market is a social-business space and digital marketplace by BSB Global Tech Ltd in Port Harcourt, Nigeria: connect, buy, sell, get jobs and book rides.";
 
 /**
  * Leadership shown on the page. Add real people only (name, role, short bio, optional
@@ -54,28 +54,29 @@ function AboutPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         <header className="pt-6 sm:pt-10 pb-8">
           <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-foreground mb-4 text-balance">
-            About BSB Market
+            About Bsb Market
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            BSB Market is a Nigerian all-in-one marketplace and business app built by {LEGAL_NAME},
-            a technology company incorporated in Nigeria and based in Uyo, Akwa Ibom State. It
-            brings buying and selling, jobs, rides and dispatch, and service bookings into one app,
-            with payments protected by escrow.
+            Bsb Market is a social-business space and digital marketplace built by {LEGAL_NAME}, a
+            technology company incorporated in Nigeria and based in Port Harcourt. It is where
+            people and businesses connect, network and trade, and it brings buying and selling,
+            jobs, rides and dispatch, and service bookings into one app, with payments protected by
+            escrow.
           </p>
         </header>
 
         <section className="mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            Why BSB Market exists
+            Why Bsb Market exists
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-3">
-            BSB Market was created to make trade and business easier and safer in Nigeria. Buyers,
+            Bsb Market was created to make trade and business easier and safer in Nigeria. Buyers,
             sellers, job seekers, drivers and service businesses usually rely on separate apps,
             social media and direct bank transfers, where it is hard to know who to trust and money
             sent to the wrong person is rarely recovered.
           </p>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            BSB Market solves this by putting these activities in one app and routing payments
+            Bsb Market solves this by putting these activities in one app and routing payments
             through escrow: the money is held until the buyer confirms delivery. Listings are
             screened, businesses can be verified, and every transaction can be rated and reviewed.
           </p>
@@ -96,7 +97,7 @@ function AboutPage() {
 
         <section className="mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            What you can do on BSB Market
+            What you can do on Bsb Market
           </h2>
           <ul className="grid gap-3 sm:grid-cols-2">
             {FEATURE_LIST.map((f) => (
@@ -196,7 +197,7 @@ function AboutPage() {
 
         <section className="mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-            Find BSB Market online
+            Find Bsb Market online
           </h2>
           <ul className="flex flex-wrap gap-2">
             {SOCIAL_PROFILES.map((url) => {

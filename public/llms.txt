@@ -1,15 +1,17 @@
-# BSB Market
+# Bsb Market
 
-> BSB Market is a Nigerian all-in-one marketplace and business app by BSB Global Tech Ltd (Uyo, Akwa Ibom State, Nigeria). In one app, people and businesses can buy and sell goods, find jobs and gig work, book rides and dispatch deliveries, and book services — with in-app payments held in escrow until the buyer confirms delivery.
+> Bsb Market is a social-business space and digital marketplace app by BSB Global Tech Ltd, based in Port Harcourt, Nigeria. In one app, people and businesses can connect and network, buy and sell goods, find jobs and gig work, book rides and dispatch deliveries, and book services — with in-app payments held in escrow until the buyer confirms delivery.
 
 Key facts:
 
-- Company: BSB Global Tech Ltd, incorporated in Nigeria. Address: 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria. Email: team@bsbmarket.com (Monday–Saturday, 9am–6pm).
+- Name: Bsb Market (written "Bsb Market"; sometimes searched as "BSB Market").
+- What it is: a social-business space — where people and businesses connect, network and trade — and a digital marketplace.
+- Company: BSB Global Tech Ltd, incorporated in Nigeria. Location: Port Harcourt, Nigeria. Email: team@bsbmarket.com (Monday–Saturday, 9am–6pm).
 - Platforms: Android on Google Play (https://play.google.com/store/apps/details?id=com.austindev.bsb). iOS app coming soon.
-- Payments: all transactions must be paid through the in-app payment system. BSB Market holds the payment in escrow and releases it to the seller or provider after the buyer confirms delivery. Off-platform payments are not protected.
-- Fees: signing up is free. During early-bird registration, listing products and applying for jobs cost 0 credits and business profile verification is free. BSB Market charges a disclosed commission or transaction fee on completed in-app transactions.
-- Refunds (product purchases): report within 3 days of receipt; if approved, BSB Market Support issues a Refund Tag (RF-TAG); return the item within 5 days; the buyer receives 80% of the price (20% is a non-refundable handling fee).
-- Disputes: reviewed by BSB Market Support; unresolved disputes go to mediation or arbitration under Nigeria's Arbitration and Mediation Act, 2023.
+- Payments: all transactions must be paid through the in-app payment system. Bsb Market holds the payment in escrow and releases it to the seller or provider after the buyer confirms delivery. Off-platform payments are not protected.
+- Fees: signing up is free. During early-bird registration, listing products and applying for jobs cost 0 credits and business profile verification is free. Bsb Market charges a disclosed commission or transaction fee on completed in-app transactions.
+- Refunds (product purchases): report within 3 days of receipt; if approved, Bsb Market Support issues a Refund Tag (RF-TAG); return the item within 5 days; the buyer receives 80% of the price (20% is a non-refundable handling fee).
+- Disputes: reviewed by Bsb Market Support; unresolved disputes go to mediation or arbitration under Nigeria's Arbitration and Mediation Act, 2023.
 - Data protection: operates under the Nigeria Data Protection Act 2023 (NDPA).
 
 ## Core features
@@ -21,9 +23,9 @@ Key facts:
 
 ## Guides
 
-- [How escrow payments work](https://bsbmarket.com/how-it-works): The six-step BSB Market escrow payment flow, disputes, refunds and fees.
-- [FAQ](https://bsbmarket.com/faq): Direct answers to common questions about BSB Market.
-- [About BSB Market](https://bsbmarket.com/about): Company background, mission and contact details.
+- [How escrow payments work](https://bsbmarket.com/how-it-works): The six-step Bsb Market escrow payment flow, disputes, refunds and fees.
+- [FAQ](https://bsbmarket.com/faq): Direct answers to common questions about Bsb Market.
+- [About Bsb Market](https://bsbmarket.com/about): Company background, mission and contact details.
 
 ## Legal
 

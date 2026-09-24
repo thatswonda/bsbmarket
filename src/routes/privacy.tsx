@@ -15,10 +15,10 @@ const PrivacyPolicy = () => (
 
       <div className="prose prose-sm sm:prose-base max-w-none text-foreground space-y-6">
         <p>
-          BSB Global Tech Ltd ("BSB", "we", "us", "our") is committed to protecting the privacy and personal data of all users of the BSB Market platform ("Platform"). This Privacy Policy describes how we collect, use, store, share, and protect your personal information when you use BSB Market.
+          BSB Global Tech Ltd ("BSB", "we", "us", "our") is committed to protecting the privacy and personal data of all users of the Bsb Market platform ("Platform"). This Privacy Policy describes how we collect, use, store, share, and protect your personal information when you use Bsb Market.
         </p>
         <p>
-          This Policy is issued in compliance with the Nigeria Data Protection Act, 2023 (NDPA), and the Nigeria Data Protection Regulation (NDPR). By using BSB Market, you consent to the practices described in this Policy.
+          This Policy is issued in compliance with the Nigeria Data Protection Act, 2023 (NDPA), and the Nigeria Data Protection Regulation (NDPR). By using Bsb Market, you consent to the practices described in this Policy.
         </p>
 
         <h2 className="text-xl font-bold mt-8">1. Data Controller</h2>
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => (
         <h2 className="text-xl font-bold mt-8">2. Information We Collect</h2>
 
         <h3 className="text-lg font-semibold mt-4">2.1 Information You Provide</h3>
-        <p>When you register or use BSB Market, we may collect the following categories of personal data:</p>
+        <p>When you register or use Bsb Market, we may collect the following categories of personal data:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Identity data: full name, date of birth, profile photograph.</li>
           <li>Contact data: email address, phone number, physical address.</li>
@@ -40,10 +40,10 @@ const PrivacyPolicy = () => (
         </ul>
 
         <h3 className="text-lg font-semibold mt-4">2.2 Information Collected Automatically</h3>
-        <p>When you use BSB Market, we automatically collect certain technical information, including device information such as device type, operating system, and unique device identifiers.</p>
+        <p>When you use Bsb Market, we automatically collect certain technical information, including device information such as device type, operating system, and unique device identifiers.</p>
 
         <h3 className="text-lg font-semibold mt-4">2.3 Information from Third Parties</h3>
-        <p>We may receive information about you from payment processors, identity verification services, and other third-party partners integrated into BSB Market, in accordance with their respective privacy policies.</p>
+        <p>We may receive information about you from payment processors, identity verification services, and other third-party partners integrated into Bsb Market, in accordance with their respective privacy policies.</p>
 
         <h2 className="text-xl font-bold mt-8">3. How We Use Your Information</h2>
         <p>We use your personal data for the following lawful purposes:</p>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => (
         </ul>
 
         <h2 className="text-xl font-bold mt-8">6. International Data Transfers</h2>
-        <p>BSB Market is operated from Nigeria. If your data is transferred outside Nigeria, such transfers will only occur to countries that provide an adequate level of data protection, or under appropriate safeguards as required by the NDPA and NDPR.</p>
+        <p>Bsb Market is operated from Nigeria. If your data is transferred outside Nigeria, such transfers will only occur to countries that provide an adequate level of data protection, or under appropriate safeguards as required by the NDPA and NDPR.</p>
 
         <h2 className="text-xl font-bold mt-8">7. Data Retention</h2>
         <p>We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected, comply with our legal obligations, resolve disputes, and enforce our agreements. Upon account deletion, we will delete or anonymise your personal data within ninety (90) days, except where retention is required by law.</p>
@@ -108,16 +108,16 @@ const PrivacyPolicy = () => (
         </ul>
 
         <h2 className="text-xl font-bold mt-8">10. Cookies & Tracking Technologies</h2>
-        <p>BSB Market may use cookies, web beacons, and similar tracking technologies to enhance your experience, analyse usage, and deliver relevant content. You may control cookie preferences through your device settings or browser.</p>
+        <p>Bsb Market may use cookies, web beacons, and similar tracking technologies to enhance your experience, analyse usage, and deliver relevant content. You may control cookie preferences through your device settings or browser.</p>
 
         <h2 className="text-xl font-bold mt-8">11. Children's Privacy</h2>
-        <p>BSB Market is not intended for use by persons under the age of 18. We do not knowingly collect personal data from minors.</p>
+        <p>Bsb Market is not intended for use by persons under the age of 18. We do not knowingly collect personal data from minors.</p>
 
         <h2 className="text-xl font-bold mt-8">12. Third-Party Links</h2>
-        <p>BSB Market may contain links to third-party websites or services. We are not responsible for the privacy practices of such third parties.</p>
+        <p>Bsb Market may contain links to third-party websites or services. We are not responsible for the privacy practices of such third parties.</p>
 
         <h2 className="text-xl font-bold mt-8">13. Amendments to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Where material changes are made, we will notify you through the Platform or by email. Your continued use of BSB Market after the effective date of any update constitutes acceptance of the revised Policy.</p>
+        <p>We may update this Privacy Policy from time to time. Where material changes are made, we will notify you through the Platform or by email. Your continued use of Bsb Market after the effective date of any update constitutes acceptance of the revised Policy.</p>
 
         <h2 className="text-xl font-bold mt-8">14. Contact & Data Protection Enquiries</h2>
         <p>For any questions, requests, or concerns regarding this Privacy Policy or your personal data, please contact:</p>
@@ -137,8 +137,8 @@ export const Route = createFileRoute("/privacy")({
   head: () =>
     pageHead({
       path: "/privacy",
-      title: "Privacy Policy | BSB Market",
-      description: "How BSB Market (BSB Global Tech Ltd) collects, uses and protects your personal data under the Nigeria Data Protection Act 2023.",
+      title: "Privacy Policy | Bsb Market",
+      description: "How Bsb Market (BSB Global Tech Ltd) collects, uses and protects your personal data under the Nigeria Data Protection Act 2023.",
       jsonLd: [breadcrumbSchema([{ name: "Privacy Policy", path: "/privacy" }])],
     }),
   component: PrivacyPolicy,

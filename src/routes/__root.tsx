@@ -79,11 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "BSB Market – Digital Marketplace & Business App in Nigeria" },
+      { title: "Bsb Market – Social-Business Digital Marketplace in Nigeria" },
       {
         name: "description",
         content:
-          "BSB Market is a Nigerian app to buy and sell with escrow payments, find jobs, book rides and dispatch, and book services.",
+          "Bsb Market is a social-business space and digital marketplace in Nigeria: connect, buy and sell with escrow, find jobs, book rides and services.",
       },
       { name: "author", content: "BSB Global Tech Ltd" },
       { name: "theme-color", content: "#0b1a33" },

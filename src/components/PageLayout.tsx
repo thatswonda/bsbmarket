@@ -51,10 +51,10 @@ const Breadcrumbs = ({ crumbs }: { crumbs: Crumb[] }) => {
 export const DownloadCta = ({ location, heading }: { location: string; heading?: string }) => (
   <section className="rounded-2xl bg-primary text-primary-foreground p-6 sm:p-10 text-center">
     <h2 className="text-xl sm:text-2xl font-bold mb-2">
-      {heading ?? "Get started with BSB Market"}
+      {heading ?? "Get started with Bsb Market"}
     </h2>
     <p className="text-sm sm:text-base opacity-90 mb-5 max-w-xl mx-auto">
-      Download the free BSB Market app on Google Play to buy, sell, get hired, book rides and book
+      Download the free Bsb Market app on Google Play to buy, sell, get hired, book rides and book
       services — with payments protected by escrow.
     </p>
     <a
