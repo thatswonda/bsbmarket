@@ -30,17 +30,23 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold text-foreground mb-4">Marketplace</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-primary transition-colors">Buy & Sell</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Jobs</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Real Estate</a></li>
+            <li><Link to="/categories/goods" className="hover:text-primary transition-colors">Buy & Sell</Link></li>
+            <li><Link to="/categories/services" className="hover:text-primary transition-colors">Services</Link></li>
+            <li><Link to="/categories/jobs" className="hover:text-primary transition-colors">Jobs</Link></li>
+            <li><Link to="/categories/real-estate" className="hover:text-primary transition-colors">Real Estate</Link></li>
+            <li><Link to="/categories/automobiles" className="hover:text-primary transition-colors">Cars</Link></li>
+            <li><Link to="/categories/gadgets" className="hover:text-primary transition-colors">Phones & Gadgets</Link></li>
+            <li><Link to="/categories" className="hover:text-primary transition-colors">All Categories</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold text-foreground mb-4">Company</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#about-us" className="hover:text-primary transition-colors">About Us</a></li>
-            <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
+            <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+            <li><Link to="/how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
+            <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
+            <li><Link to="/safety-tips" className="hover:text-primary transition-colors">Safety Tips</Link></li>
+            <li><Link to="/buy-and-sell-in-uyo" className="hover:text-primary transition-colors">Buy & Sell in Uyo</Link></li>
             <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
             <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
@@ -65,7 +71,7 @@ const Footer = () => (
       {/* Bottom bar */}
       <div className="md:border-t md:border-border/50 md:pt-6 text-center space-y-2">
         <p className="text-xs text-muted-foreground">
-          23 Urua Udofia, Uyo Akwaibom State.
+          23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
         </p>
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} BSB Market, a product of BSB Global Tech Ltd.
@@ -74,6 +80,10 @@ const Footer = () => (
           <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
           <span>·</span>
           <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <span>·</span>
+          <Link to="/categories" className="hover:text-primary transition-colors">Categories</Link>
+          <span>·</span>
+          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
         </div>
       </div>
     </div>
