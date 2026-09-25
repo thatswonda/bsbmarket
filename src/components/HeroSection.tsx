@@ -206,6 +206,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 text-balance"
           >
+            <span className="sr-only">BSB Market: online marketplace app to buy, sell, hire and connect. </span>
             Get <span className="text-primary">everything</span> you{" "}
             <span className="text-primary">need</span>
             <br />

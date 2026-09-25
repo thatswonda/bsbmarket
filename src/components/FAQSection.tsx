@@ -5,33 +5,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
+import { homeFaqs as faqs } from "@/content/faqs";
 
-const faqs = [
-  {
-    q: "What is BSB Market?",
-    a: "BSB Market is a one-stop marketplace where you can buy and sell goods, hire or offer services, find jobs, network with professionals, and explore real estate, contracts, and more — all in one platform.",
-  },
-  {
-    q: "Is BSB Market free to use?",
-    a: "Yes! Creating an account and browsing listings is completely free. You can post listings, connect with buyers and sellers, and explore all categories at no cost.",
-  },
-  {
-    q: "How do I post a listing?",
-    a: "Simply download the BSB Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, set your price, and publish — it's that easy.",
-  },
-  {
-    q: "Is my data safe on BSB Market?",
-    a: "Absolutely. We use industry-standard encryption and security measures to protect your personal information. Read our Privacy Policy for full details on how we handle your data.",
-  },
-  {
-    q: "Can I use BSB Market outside my city?",
-    a: "Yes! BSB Market works both locally and globally. You can browse listings in your area or expand your search to other cities and regions.",
-  },
-  {
-    q: "How do I contact a seller or service provider?",
-    a: "Each listing has a contact button that lets you message or call the seller directly through the app. Communication is seamless and secure.",
-  },
-];
 
 const FAQSection = () => (
   <section className="py-8 sm:py-24 bg-background" id="faq">
@@ -72,6 +48,9 @@ const FAQSection = () => (
             </AccordionItem>
           ))}
         </Accordion>
+        <p className="mt-6 text-center text-sm">
+          <Link to="/faq" className="text-primary font-semibold hover:underline">See all FAQs</Link>
+        </p>
       </motion.div>
     </div>
   </section>
