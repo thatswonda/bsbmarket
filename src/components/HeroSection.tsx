@@ -191,7 +191,7 @@ const HeroSection = () => {
                 Your Social-Business APP
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Buy, sell, hire, and connect with trusted people and businesses — locally and around the world. BSB Market makes trade and business easier for everyone.
+                Buy, sell, hire, and connect with trusted people and businesses — locally and around the world. Bsb Market makes trade and business easier for everyone.
               </p>
             </div>
           </motion.div>
@@ -206,7 +206,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 text-balance"
           >
-            <span className="sr-only">BSB Market: online marketplace app to buy, sell, hire and connect. </span>
+            <span className="sr-only">Bsb Market: online marketplace app to buy, sell, hire and connect. </span>
             Get <span className="text-primary">everything</span> you{" "}
             <span className="text-primary">need</span>
             <br />
@@ -236,7 +236,7 @@ const HeroSection = () => {
             >
               <img
                 src={phoneMockup}
-                alt="BSB Market app onboarding screen on a smartphone"
+                alt="Bsb Market app onboarding screen on a smartphone"
                 className="w-full h-auto"
                 width={526}
                 height={1039}

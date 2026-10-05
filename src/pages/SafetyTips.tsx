@@ -11,7 +11,7 @@ const sections = [
       "Meet the seller in a busy, public place during the day, such as a mall or a bank. Bring someone with you for expensive items.",
       "Inspect and test the item before you pay. For phones, check that the device is not iCloud or Google locked and that the IMEI matches the box.",
       "Avoid paying in advance to someone you have not met or verified, especially if the deal seems too good to be true.",
-      "Keep your conversation inside the BSB Market app so there is a record of what was agreed.",
+      "Keep your conversation inside the Bsb Market app so there is a record of what was agreed.",
       "Ask for a receipt or written agreement, especially for property, vehicles and contracts.",
     ],
   },
@@ -19,7 +19,7 @@ const sections = [
     heading: "Tips for sellers",
     tips: [
       "Do not release an item until you have confirmed payment has reached your account. Fake payment alerts are a common scam.",
-      "Never share your bank PIN, OTP or password with anyone, including people claiming to be BSB Market staff.",
+      "Never share your bank PIN, OTP or password with anyone, including people claiming to be Bsb Market staff.",
       "Use clear photos and honest descriptions. Accurate listings build trust and lead to good reviews.",
       "Meet buyers in public places and avoid inviting strangers to your home.",
     ],
@@ -47,7 +47,7 @@ const SafetyTips = () => (
     breadcrumbs={getPageMeta("/safety-tips").breadcrumbs}
     eyebrow="Trust & safety"
     title={<>Safe buying and selling <span className="text-primary">tips</span></>}
-    lead="Most people on BSB Market trade honestly, but a few simple habits keep you safe from scams when you buy, sell, hire or invest online."
+    lead="Most people on Bsb Market trade honestly, but a few simple habits keep you safe from scams when you buy, sell, hire or invest online."
   >
     <div className="space-y-12">
       {sections.map((s) => (

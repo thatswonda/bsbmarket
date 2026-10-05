@@ -22,7 +22,7 @@ const FAQSection = () => (
           Frequently Asked Questions
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
-          Got questions? We've got answers. Find everything you need to know about BSB Market.
+          Got questions? We've got answers. Find everything you need to know about Bsb Market.
         </p>
       </motion.div>
 

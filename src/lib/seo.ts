@@ -1,5 +1,7 @@
 import { categories, type Faq } from "@/content/categories";
 import { allFaqs, uyoFaqs } from "@/content/faqs";
+import { guides } from "@/content/guides";
+import { cities, cityPath } from "@/content/cities";
 import {
   COMPANY_NAME,
   OG_IMAGE_PATH,
@@ -65,90 +67,90 @@ const webPageJsonLd = (meta: PageMeta): JsonLd => ({
 const staticPages: PageMeta[] = [
   {
     path: "/",
-    title: "BSB Market | Buy, Sell, Hire & Connect – Online Marketplace App",
+    title: "Bsb Market | Buy, Sell, Hire & Connect – Online Marketplace App",
     description:
-      "BSB Market is a free all-in-one marketplace app from Nigeria. Buy and sell goods, gadgets and cars, hire or offer services, find jobs, rent property and network with businesses.",
+      "Bsb Market is a free all-in-one marketplace app from Nigeria. Buy and sell goods, gadgets and cars, hire or offer services, find jobs, rent property and network with businesses.",
     priority: 1.0,
     jsonLd: [organizationJsonLd, websiteJsonLd, mobileAppJsonLd],
   },
   {
     path: "/about",
-    title: "About BSB Market – The Social-Business Marketplace App",
+    title: "About Bsb Market – The Social-Business Marketplace App",
     description:
-      "Learn about BSB Market, the social-business marketplace built by BSB Global Tech Ltd in Uyo, Nigeria, to make trade, hiring and business networking easier for everyone.",
+      "Learn about Bsb Market, the social-business marketplace built by Bsb Global Tech Ltd in Uyo, Nigeria, to make trade, hiring and business networking easier for everyone.",
     breadcrumbs: [HOME, { name: "About", path: "/about" }],
     priority: 0.8,
   },
   {
     path: "/how-it-works",
-    title: "How BSB Market Works – Buy, Sell & Hire in 4 Steps",
+    title: "How Bsb Market Works – Buy, Sell & Hire in 4 Steps",
     description:
-      "See how to use BSB Market: download the free app, create an account, post or browse listings, and connect directly with buyers, sellers, employers and service providers.",
+      "See how to use Bsb Market: download the free app, create an account, post or browse listings, and connect directly with buyers, sellers, employers and service providers.",
     breadcrumbs: [HOME, { name: "How it works", path: "/how-it-works" }],
     priority: 0.8,
   },
   {
     path: "/categories",
-    title: "Marketplace Categories – Goods, Services, Jobs, Cars & More | BSB Market",
+    title: "Marketplace Categories – Goods, Services, Jobs, Cars & More | Bsb Market",
     description:
-      "Browse every BSB Market category: services, goods, contracts, jobs, real estate, automobiles, promotions, Panteka spare parts, gadgets, ebooks and business shares.",
+      "Browse every Bsb Market category: services, goods, contracts, jobs, real estate, automobiles, promotions, Panteka spare parts, gadgets, ebooks and business shares.",
     breadcrumbs: [HOME, { name: "Categories", path: "/categories" }],
     priority: 0.9,
   },
   {
     path: "/faq",
-    title: "BSB Market FAQ – Answers About Buying, Selling & the App",
+    title: "Bsb Market FAQ – Answers About Buying, Selling & the App",
     description:
-      "Answers to common questions about BSB Market: is it free, how to post a listing, how to sell fast, safety, jobs, services, the app download and support.",
+      "Answers to common questions about Bsb Market: is it free, how to post a listing, how to sell fast, safety, jobs, services, the app download and support.",
     breadcrumbs: [HOME, { name: "FAQ", path: "/faq" }],
     priority: 0.7,
     faqs: allFaqs.flatMap((g) => g.items),
   },
   {
     path: "/safety-tips",
-    title: "Safe Buying & Selling Tips – Avoid Online Scams | BSB Market",
+    title: "Safe Buying & Selling Tips – Avoid Online Scams | Bsb Market",
     description:
-      "Practical safety tips for buying and selling online in Nigeria: how to meet safely, inspect items, pay securely, spot scams and report suspicious listings on BSB Market.",
+      "Practical safety tips for buying and selling online in Nigeria: how to meet safely, inspect items, pay securely, spot scams and report suspicious listings on Bsb Market.",
     breadcrumbs: [HOME, { name: "Safety tips", path: "/safety-tips" }],
     priority: 0.6,
   },
   {
     path: "/download",
-    title: "Download the BSB Market App for Android – Free",
+    title: "Download the Bsb Market App for Android – Free",
     description:
-      "Get the free BSB Market app on Google Play to buy, sell, hire, find jobs and network from your phone. iOS version coming soon.",
+      "Get the free Bsb Market app on Google Play to buy, sell, hire, find jobs and network from your phone. iOS version coming soon.",
     breadcrumbs: [HOME, { name: "Download the app", path: "/download" }],
     priority: 0.8,
     jsonLd: [mobileAppJsonLd],
   },
   {
     path: "/buy-and-sell-in-uyo",
-    title: "Buy & Sell in Uyo, Akwa Ibom – Local Online Marketplace | BSB Market",
+    title: "Buy & Sell in Uyo, Akwa Ibom – Local Online Marketplace | Bsb Market",
     description:
-      "BSB Market is Uyo's home-grown marketplace. Buy and sell goods, find artisans, jobs, houses for rent and cars in Uyo and across Akwa Ibom State.",
+      "Bsb Market is Uyo's home-grown marketplace. Buy and sell goods, find artisans, jobs, houses for rent and cars in Uyo and across Akwa Ibom State.",
     breadcrumbs: [HOME, { name: "Buy & sell in Uyo", path: "/buy-and-sell-in-uyo" }],
     priority: 0.7,
     faqs: uyoFaqs,
   },
   {
     path: "/contact",
-    title: "Contact BSB Market – Customer Support",
+    title: "Contact Bsb Market – Customer Support",
     description:
-      "Contact the BSB Market team by email at team@bsbmarket.com or visit our office at 23 Urua Udofia, Uyo, Akwa Ibom State. Support Monday to Saturday.",
+      "Contact the Bsb Market team by email at team@bsbmarket.com or visit our office at 23 Urua Udofia, Uyo, Akwa Ibom State. Support Monday to Saturday.",
     breadcrumbs: [HOME, { name: "Contact", path: "/contact" }],
     priority: 0.5,
   },
   {
     path: "/terms",
-    title: "Terms of Use | BSB Market",
-    description: `The terms that govern your use of the BSB Market app and website, operated by ${COMPANY_NAME}.`,
+    title: "Terms of Use | Bsb Market",
+    description: `The terms that govern your use of the Bsb Market app and website, operated by ${COMPANY_NAME}.`,
     breadcrumbs: [HOME, { name: "Terms of Use", path: "/terms" }],
     priority: 0.3,
   },
   {
     path: "/privacy",
-    title: "Privacy Policy | BSB Market",
-    description: `How ${COMPANY_NAME} collects, uses and protects your personal data when you use BSB Market.`,
+    title: "Privacy Policy | Bsb Market",
+    description: `How ${COMPANY_NAME} collects, uses and protects your personal data when you use Bsb Market.`,
     breadcrumbs: [HOME, { name: "Privacy Policy", path: "/privacy" }],
     priority: 0.3,
   },
@@ -163,15 +165,64 @@ const categoryPages: PageMeta[] = categories.map((c) => ({
   faqs: c.faqs,
 }));
 
+const cityPages: PageMeta[] = cities.map((c) => ({
+  path: cityPath(c),
+  title: c.metaTitle,
+  description: c.metaDescription,
+  breadcrumbs: [HOME, { name: `Buy & sell in ${c.name}`, path: cityPath(c) }],
+  priority: 0.7,
+  faqs: c.faqs,
+}));
+
+const guidesHub: PageMeta = {
+  path: "/guides",
+  title: "Guides – Buying, Selling, Hiring & Jobs in Nigeria | Bsb Market",
+  description:
+    "Step-by-step guides to selling online in Nigeria, hiring trusted artisans, finding jobs, buying a used car safely, and everything you need to know about Bsb Market.",
+  breadcrumbs: [HOME, { name: "Guides", path: "/guides" }],
+  priority: 0.7,
+};
+
+const guidePages: PageMeta[] = guides.map((g) => {
+  const path = `/guides/${g.slug}`;
+  return {
+    path,
+    title: g.metaTitle,
+    description: g.metaDescription,
+    breadcrumbs: [HOME, { name: "Guides", path: "/guides" }, { name: g.name, path }],
+    priority: 0.8,
+    faqs: g.faqs,
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": `${absoluteUrl(path)}#article`,
+        headline: g.heading,
+        description: g.metaDescription,
+        abstract: g.quickAnswer,
+        url: absoluteUrl(path),
+        mainEntityOfPage: { "@id": `${absoluteUrl(path)}#webpage` },
+        image: `${SITE_URL}${OG_IMAGE_PATH}`,
+        datePublished: g.datePublished,
+        dateModified: g.dateModified,
+        inLanguage: "en",
+        author: { "@id": `${SITE_URL}/#organization` },
+        publisher: { "@id": `${SITE_URL}/#organization` },
+        about: { "@id": `${SITE_URL}/#organization` },
+      },
+    ],
+  };
+});
+
 export const notFoundMeta: PageMeta = {
   path: "/404",
-  title: "Page not found | BSB Market",
+  title: "Page not found | Bsb Market",
   description: "The page you are looking for does not exist.",
   noindex: true,
 };
 
 /** Every indexable route, used for pre-rendering and the sitemap. */
-export const pages: PageMeta[] = [...staticPages, ...categoryPages];
+export const pages: PageMeta[] = [...staticPages, ...categoryPages, ...cityPages, guidesHub, ...guidePages];
 
 export const getPageMeta = (path: string): PageMeta => {
   const clean = path.length > 1 ? path.replace(/\/+$/, "") : path;
@@ -188,7 +239,7 @@ const toAbsolute = (src: string) => (/^https?:\/\//.test(src) ? src : `${SITE_UR
 export const renderHeadTags = (meta: PageMeta): string => {
   const url = absoluteUrl(meta.path);
   const image = toAbsolute(meta.image ?? OG_IMAGE_PATH);
-  const imageAlt = meta.imageAlt ?? "BSB Market logo – Buy, Sell, Hire & Connect";
+  const imageAlt = meta.imageAlt ?? "Bsb Market logo – Buy, Sell, Hire & Connect";
   const ld: JsonLd[] = [];
   if (!meta.noindex) {
     ld.push(webPageJsonLd(meta));

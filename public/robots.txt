@@ -1,4 +1,4 @@
-# BSB Market – search engines and AI assistants are welcome to crawl and cite this site.
+# Bsb Market – search engines and AI assistants are welcome to crawl and cite this site.
 
 User-agent: *
 Allow: /

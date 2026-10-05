@@ -18,8 +18,8 @@ const Download = () => (
   <PageLayout
     breadcrumbs={getPageMeta("/download").breadcrumbs}
     eyebrow="Get the app"
-    title={<>Download the <span className="text-primary">BSB Market</span> app</>}
-    lead="Buy, sell, hire, find jobs and network from your phone with the free BSB Market app."
+    title={<>Download the <span className="text-primary">Bsb Market</span> app</>}
+    lead="Buy, sell, hire, find jobs and network from your phone with the free Bsb Market app."
   >
     <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
       <div>
@@ -48,7 +48,7 @@ const Download = () => (
         </div>
         <p className="mt-4 text-sm text-muted-foreground">Available now on Android. The iOS version is coming soon.</p>
       </div>
-      <img src={phoneMockup} alt="BSB Market app on a smartphone" className="w-56 sm:w-72 h-auto mx-auto" width={768} height={1376} />
+      <img src={phoneMockup} alt="Bsb Market app on a smartphone" className="w-56 sm:w-72 h-auto mx-auto" width={768} height={1376} />
     </div>
   </PageLayout>
 );

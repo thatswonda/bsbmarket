@@ -27,7 +27,7 @@ const CtaSection = () => (
               transition={{ delay: 0.1 }}
               className="text-primary-foreground/80 mb-8 leading-relaxed"
             >
-              Join thousands of users already buying, selling, hiring, and networking on BSB Market. Download the app today.
+              Join thousands of users already buying, selling, hiring, and networking on Bsb Market. Download the app today.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -66,7 +66,7 @@ const CtaSection = () => (
       >
         <h2 className="text-lg font-bold text-primary-foreground mb-2">Ready to start trading?</h2>
         <p className="text-xs text-primary-foreground/80 mb-4">
-          Join thousands already on BSB Market. Download the app today.
+          Join thousands already on Bsb Market. Download the app today.
         </p>
         <div className="flex items-center justify-center gap-2">
           <AppStoreButton

@@ -14,6 +14,10 @@ import FaqPage from "./pages/FaqPage.tsx";
 import SafetyTips from "./pages/SafetyTips.tsx";
 import Download from "./pages/Download.tsx";
 import Uyo from "./pages/Uyo.tsx";
+import Guides from "./pages/Guides.tsx";
+import GuidePage from "./pages/GuidePage.tsx";
+import CityPage from "./pages/CityPage.tsx";
+import { cities, cityPath } from "@/content/cities";
 
 /** Route table shared by the browser app and the build-time pre-renderer. */
 const AppRoutes = () => (
@@ -30,6 +34,11 @@ const AppRoutes = () => (
       <Route path="/safety-tips" element={<SafetyTips />} />
       <Route path="/download" element={<Download />} />
       <Route path="/buy-and-sell-in-uyo" element={<Uyo />} />
+      {cities.map((c) => (
+        <Route key={c.slug} path={cityPath(c)} element={<CityPage city={c} />} />
+      ))}
+      <Route path="/guides" element={<Guides />} />
+      <Route path="/guides/:slug" element={<GuidePage />} />
       <Route path="/terms" element={<TermsOfUse />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<Contact />} />

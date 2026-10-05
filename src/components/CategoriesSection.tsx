@@ -257,7 +257,7 @@ const CategoriesSection = () => {
             className="flex flex-col items-start justify-center text-left p-6 rounded-[20px] border-2 border-dashed border-primary/40 bg-transparent transition-colors hover:bg-accent/50"
           >
             <h3 className="text-sm font-bold text-primary mb-1">View all</h3>
-            <span className="text-xs text-muted-foreground">Everything on BSB Market</span>
+            <span className="text-xs text-muted-foreground">Everything on Bsb Market</span>
           </motion.button>
         </div>
       </div>

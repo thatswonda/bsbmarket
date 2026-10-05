@@ -6,9 +6,9 @@ import { PLAY_STORE_URL } from "@/lib/appLinks";
  */
 export const SITE_URL = (import.meta.env.VITE_SITE_URL || "https://bsbmarket.com").replace(/\/$/, "");
 
-export const SITE_NAME = "BSB Market";
+export const SITE_NAME = "Bsb Market";
 export const SITE_TAGLINE = "Buy, Sell, Hire & Connect";
-export const COMPANY_NAME = "BSB Global Tech Ltd";
+export const COMPANY_NAME = "Bsb Global Tech Ltd";
 export const SUPPORT_EMAIL = "team@bsbmarket.com";
 export const LOGO_PATH = "/logo.png";
 export const OG_IMAGE_PATH = "/og-image.png";
@@ -28,7 +28,7 @@ export const organizationJsonLd = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
-  alternateName: ["BSB", "Bsb Market", "BSB Marketplace"],
+  alternateName: ["Bsb", "Bsb Marketplace", "BsbMarket"],
   legalName: COMPANY_NAME,
   url: `${SITE_URL}/`,
   logo: {
@@ -39,7 +39,7 @@ export const organizationJsonLd = {
   },
   image: `${SITE_URL}${OG_IMAGE_PATH}`,
   description:
-    "BSB Market is an all-in-one online marketplace and social-business app from Nigeria for buying and selling goods, hiring and offering services, finding jobs, real estate, cars, contracts and business networking.",
+    "Bsb Market is an all-in-one online marketplace and social-business app from Nigeria for buying and selling goods, hiring and offering services, finding jobs, real estate, cars, contracts and business networking.",
   email: SUPPORT_EMAIL,
   address: {
     "@type": "PostalAddress",
@@ -64,7 +64,7 @@ export const websiteJsonLd = {
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   name: SITE_NAME,
-  alternateName: ["Bsb Market", "BSB Marketplace"],
+  alternateName: ["Bsb", "Bsb Marketplace", "bsbmarket.com"],
   url: `${SITE_URL}/`,
   inLanguage: "en",
   publisher: { "@id": `${SITE_URL}/#organization` },
@@ -74,7 +74,7 @@ export const mobileAppJsonLd = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "@id": `${SITE_URL}/#app`,
-  name: "BSB Market",
+  name: "Bsb Market",
   operatingSystem: "Android",
   applicationCategory: "ShoppingApplication",
   description:

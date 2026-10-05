@@ -17,7 +17,7 @@ const CategoryPage = () => {
   return (
     <PageLayout
       breadcrumbs={getPageMeta(`/categories/${category.slug}`).breadcrumbs}
-      eyebrow={`${category.name} on BSB Market`}
+      eyebrow={`${category.name} marketplace`}
       title={category.heading}
       lead={category.summary}
     >
@@ -29,7 +29,7 @@ const CategoryPage = () => {
         </div>
         <img
           src={category.image}
-          alt={`${category.name} listings on BSB Market`}
+          alt={`${category.name} listings on Bsb Market`}
           className="w-full h-auto rounded-3xl"
           width={512}
           height={512}
@@ -84,7 +84,7 @@ const CategoryPage = () => {
         </ul>
       </section>
 
-      <AppCta heading={`Find ${category.name.toLowerCase()} on the BSB Market app`} />
+      <AppCta heading={`Find ${category.name.toLowerCase()} on the Bsb Market app`} />
     </PageLayout>
   );
 };

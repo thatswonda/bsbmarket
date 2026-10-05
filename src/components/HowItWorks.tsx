@@ -19,7 +19,7 @@ const HowItWorks = () => (
         className="text-center mb-6 sm:mb-16"
       >
         <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-4">How It Works</h2>
-        <p className="text-xs sm:text-base text-muted-foreground max-w-xl mx-auto">Get started in four simple steps and unlock the full power of BSB Market.</p>
+        <p className="text-xs sm:text-base text-muted-foreground max-w-xl mx-auto">Get started in four simple steps and unlock the full power of Bsb Market.</p>
       </motion.div>
 
       <div className="relative">

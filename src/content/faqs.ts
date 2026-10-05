@@ -3,24 +3,24 @@ import type { Faq } from "@/content/categories";
 /** Shown on the home page. */
 export const homeFaqs: Faq[] = [
   {
-    q: "What is BSB Market?",
-    a: "BSB Market is a one-stop marketplace where you can buy and sell goods, hire or offer services, find jobs, network with professionals, and explore real estate, contracts, and more — all in one platform.",
+    q: "What is Bsb Market?",
+    a: "Bsb Market is a one-stop marketplace where you can buy and sell goods, hire or offer services, find jobs, network with professionals, and explore real estate, contracts, and more — all in one platform.",
   },
   {
-    q: "Is BSB Market free to use?",
+    q: "Is Bsb Market free to use?",
     a: "Yes! Creating an account and browsing listings is completely free. You can post listings, connect with buyers and sellers, and explore all categories at no cost.",
   },
   {
     q: "How do I post a listing?",
-    a: "Simply download the BSB Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, set your price, and publish — it's that easy.",
+    a: "Simply download the Bsb Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, set your price, and publish — it's that easy.",
   },
   {
-    q: "Is my data safe on BSB Market?",
+    q: "Is my data safe on Bsb Market?",
     a: "Absolutely. We use industry-standard encryption and security measures to protect your personal information. Read our Privacy Policy for full details on how we handle your data.",
   },
   {
-    q: "Can I use BSB Market outside my city?",
-    a: "Yes! BSB Market works both locally and globally. You can browse listings in your area or expand your search to other cities and regions.",
+    q: "Can I use Bsb Market outside my city?",
+    a: "Yes! Bsb Market works both locally and globally. You can browse listings in your area or expand your search to other cities and regions.",
   },
   {
     q: "How do I contact a seller or service provider?",
@@ -35,15 +35,15 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
     group: "Buying and selling",
     items: [
       {
-        q: "What can I buy and sell on BSB Market?",
+        q: "What can I buy and sell on Bsb Market?",
         a: "Goods (furniture, appliances, fashion), gadgets (phones, laptops), cars and motorcycles, spare parts and hardware (Panteka), real estate, ebooks, business shares, contracts, services and jobs.",
       },
       {
-        q: "Does BSB Market charge commission on sales?",
-        a: "Posting and browsing listings on BSB Market is free. Buyers and sellers agree on prices and payment directly with each other.",
+        q: "Does Bsb Market charge commission on sales?",
+        a: "Posting and browsing listings on Bsb Market is free. Buyers and sellers agree on prices and payment directly with each other.",
       },
       {
-        q: "How do I sell fast on BSB Market?",
+        q: "How do I sell fast on Bsb Market?",
         a: "Use clear, well-lit photos, a specific title (brand, model, size), an honest description of the condition, a fair price and your location. Reply to messages quickly.",
       },
       {
@@ -56,16 +56,16 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
     group: "Services, jobs and business",
     items: [
       {
-        q: "Can I find artisans and freelancers on BSB Market?",
+        q: "Can I find artisans and freelancers on Bsb Market?",
         a: "Yes. The Services category lists plumbers, electricians, cleaners, painters, photographers, designers, developers, tutors and many other professionals.",
       },
       {
-        q: "Can employers post jobs on BSB Market?",
+        q: "Can employers post jobs on Bsb Market?",
         a: "Yes. Employers post full-time, part-time, remote and freelance jobs for free and chat with applicants directly.",
       },
       {
-        q: "What is the networking feature on BSB Market?",
-        a: "BSB Market is a social-business app. Besides trading, you can follow and connect with other businesses and professionals, join business groups and find partners.",
+        q: "What is the networking feature on Bsb Market?",
+        a: "Bsb Market is a social-business app. Besides trading, you can follow and connect with other businesses and professionals, join business groups and find partners.",
       },
     ],
   },
@@ -73,19 +73,19 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
     group: "App, safety and support",
     items: [
       {
-        q: "Where can I download the BSB Market app?",
-        a: "The BSB Market app is available for Android on Google Play. The iOS version is coming soon.",
+        q: "Where can I download the Bsb Market app?",
+        a: "The Bsb Market app is available for Android on Google Play. The iOS version is coming soon.",
       },
       {
-        q: "How do I stay safe when trading on BSB Market?",
+        q: "How do I stay safe when trading on Bsb Market?",
         a: "Meet in busy public places, inspect items before paying, never send money in advance to people you have not verified, and report suspicious listings. See our safety tips page for more.",
       },
       {
-        q: "Who owns BSB Market?",
-        a: "BSB Market is a product of BSB Global Tech Ltd, a technology company registered in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State.",
+        q: "Who owns Bsb Market?",
+        a: "Bsb Market is a product of Bsb Global Tech Ltd, a technology company registered in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State.",
       },
       {
-        q: "How do I contact BSB Market support?",
+        q: "How do I contact Bsb Market support?",
         a: "Email team@bsbmarket.com or use the contact form on our website. Support is available Monday to Saturday, 9:00 AM to 6:00 PM WAT.",
       },
     ],
@@ -95,8 +95,8 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
 /** Local questions for the Uyo landing page. */
 export const uyoFaqs: Faq[] = [
   {
-    q: "Is BSB Market based in Uyo?",
-    a: "Yes. BSB Market is built by BSB Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.",
+    q: "Is Bsb Market based in Uyo?",
+    a: "Yes. Bsb Market is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.",
   },
   {
     q: "Can I buy and sell in other parts of Akwa Ibom and Nigeria?",
