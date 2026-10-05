@@ -10,7 +10,7 @@ const Footer = () => (
       <div className="hidden md:grid grid-cols-4 gap-8 mb-10">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={logoAsset} alt="BSB Market logo" className="w-9 h-9 rounded-lg object-contain" loading="lazy" />
+            <img src={logoAsset} alt="Bsb Market logo" className="w-9 h-9 rounded-lg object-contain" loading="lazy" />
             <span className="text-xl font-bold text-foreground">Bsb <span className="text-primary">Market</span></span>
           </div>
 
@@ -46,7 +46,11 @@ const Footer = () => (
             <li><Link to="/how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
             <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
             <li><Link to="/safety-tips" className="hover:text-primary transition-colors">Safety Tips</Link></li>
+            <li><Link to="/guides" className="hover:text-primary transition-colors">Guides</Link></li>
+            <li><Link to="/guides/what-is-bsb-market" className="hover:text-primary transition-colors">What is Bsb Market?</Link></li>
             <li><Link to="/buy-and-sell-in-uyo" className="hover:text-primary transition-colors">Buy & Sell in Uyo</Link></li>
+            <li><Link to="/buy-and-sell-in-lagos" className="hover:text-primary transition-colors">Buy & Sell in Lagos</Link></li>
+            <li><Link to="/buy-and-sell-in-abuja" className="hover:text-primary transition-colors">Buy & Sell in Abuja</Link></li>
             <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
             <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
@@ -74,7 +78,7 @@ const Footer = () => (
           23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
         </p>
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} BSB Market, a product of BSB Global Tech Ltd.
+          &copy; {new Date().getFullYear()} Bsb Market, a product of Bsb Global Tech Ltd.
         </p>
         <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground">
           <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
@@ -82,6 +86,8 @@ const Footer = () => (
           <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
           <span>·</span>
           <Link to="/categories" className="hover:text-primary transition-colors">Categories</Link>
+          <span>·</span>
+          <Link to="/guides" className="hover:text-primary transition-colors">Guides</Link>
           <span>·</span>
           <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
         </div>

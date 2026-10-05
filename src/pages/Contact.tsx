@@ -38,7 +38,7 @@ const Contact = () => {
     <div className="min-h-screen overflow-hidden bg-[#f7f9fe] text-foreground">
       <header className="relative z-20 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-2.5" aria-label="BSB Market home">
+          <Link to="/" className="flex items-center gap-2.5" aria-label="Bsb Market home">
             <img src={logoAsset} alt="" className="h-9 w-9 rounded-xl object-contain sm:h-10 sm:w-10" />
             <span className="text-lg font-bold tracking-tight sm:text-xl">
               Bsb <span className="text-primary">Market</span>
@@ -84,7 +84,7 @@ const Contact = () => {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">Contact details</p>
                 <h2 className="mt-4 text-2xl font-bold sm:text-3xl">Talk to a real person.</h2>
                 <p className="mt-3 max-w-sm text-sm leading-6 text-blue-100">
-                  Whether you’re buying, selling, or building your business on BSB Market, our support team is ready to help.
+                  Whether you’re buying, selling, or building your business on Bsb Market, our support team is ready to help.
                 </p>
 
                 <div className="mt-9 space-y-5">
@@ -217,7 +217,7 @@ const Contact = () => {
 
       <footer className="border-t border-slate-200 bg-white py-6">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 text-center text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} BSB Market, a product of BSB Global Tech Ltd.</p>
+          <p>© {new Date().getFullYear()} Bsb Market, a product of Bsb Global Tech Ltd.</p>
           <div className="flex items-center gap-4">
             <Link to="/terms" className="transition-colors hover:text-primary">Terms of Use</Link>
             <Link to="/privacy" className="transition-colors hover:text-primary">Privacy Policy</Link>

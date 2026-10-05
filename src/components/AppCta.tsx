@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
 /** Download call-to-action block used at the bottom of content pages. */
-const AppCta = ({ heading = "Start buying, selling and hiring on BSB Market" }: { heading?: string }) => (
+const AppCta = ({ heading = "Start buying, selling and hiring on Bsb Market" }: { heading?: string }) => (
   <section className="mt-12 sm:mt-16 rounded-3xl bg-primary text-primary-foreground p-6 sm:p-10 text-center">
     <h2 className="text-xl sm:text-3xl font-bold mb-3">{heading}</h2>
     <p className="text-sm sm:text-base opacity-90 max-w-2xl mx-auto mb-6">
-      Download the free BSB Market app, create your account in minutes and connect with buyers, sellers, employers and service providers near you.
+      Download the free Bsb Market app, create your account in minutes and connect with buyers, sellers, employers and service providers near you.
     </p>
     <div className="flex flex-wrap items-center justify-center gap-3">
       <a

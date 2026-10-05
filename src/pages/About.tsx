@@ -16,20 +16,20 @@ const About = () => (
   <PageLayout
     breadcrumbs={getPageMeta("/about").breadcrumbs}
     eyebrow="About us"
-    title={<>About <span className="text-primary">BSB Market</span></>}
-    lead="BSB Market is a social-business marketplace app that makes trade and business easier. In one place, you can buy and sell goods, hire or offer services, find jobs, trade property and cars, and network with other businesses."
+    title={<>About <span className="text-primary">Bsb Market</span></>}
+    lead="Bsb Market is a social-business marketplace app that makes trade and business easier. In one place, you can buy and sell goods, hire or offer services, find jobs, trade property and cars, and network with other businesses."
   >
     <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
       <div className="space-y-4 text-foreground leading-relaxed">
         <h2 className="text-2xl font-bold">Who we are</h2>
         <p>
-          BSB Market is built and operated by <strong>BSB Global Tech Ltd</strong>, a technology company registered in Nigeria and headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State. We started with a simple idea: people should not need five different apps to buy, sell, hire, find work and grow their network.
+          Bsb Market is built and operated by <strong>Bsb Global Tech Ltd</strong>, a technology company registered in Nigeria and headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State. We started with a simple idea: people should not need five different apps to buy, sell, hire, find work and grow their network.
         </p>
         <p>
-          BSB Market brings all of that together. Sellers reach buyers, artisans and freelancers find clients, employers find staff, and entrepreneurs meet partners and investors. You can do all of it locally in your city or globally.
+          Bsb Market brings all of that together. Sellers reach buyers, artisans and freelancers find clients, employers find staff, and entrepreneurs meet partners and investors. You can do all of it locally in your city or globally.
         </p>
       </div>
-      <img src={teamImg} alt="The BSB Market team in a business meeting" className="w-full h-auto rounded-3xl" loading="lazy" width={1536} height={1024} />
+      <img src={teamImg} alt="The Bsb Market team in a business meeting" className="w-full h-auto rounded-3xl" loading="lazy" width={1536} height={1024} />
     </div>
 
     <section className="mt-12">
@@ -45,8 +45,8 @@ const About = () => (
     </section>
 
     <section className="mt-12 space-y-4 text-foreground leading-relaxed">
-      <h2 className="text-2xl font-bold">What you can do on BSB Market</h2>
-      <p>BSB Market has {categories.length} marketplace categories, each built for a different kind of deal:</p>
+      <h2 className="text-2xl font-bold">What you can do on Bsb Market</h2>
+      <p>Bsb Market has {categories.length} marketplace categories, each built for a different kind of deal:</p>
       <ul className="grid gap-2 sm:grid-cols-2">
         {categories.map((c) => (
           <li key={c.slug}>
@@ -61,8 +61,8 @@ const About = () => (
       <h2 className="text-2xl font-bold">Key facts</h2>
       <dl className="grid gap-4 sm:grid-cols-2 text-sm">
         {[
-          ["Product", "BSB Market marketplace and social-business app"],
-          ["Company", "BSB Global Tech Ltd"],
+          ["Product", "Bsb Market marketplace and social-business app"],
+          ["Company", "Bsb Global Tech Ltd"],
           ["Headquarters", "23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria"],
           ["Availability", "Android (Google Play); iOS coming soon"],
           ["Price", "Free to join, browse and post listings"],

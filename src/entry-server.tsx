@@ -7,6 +7,8 @@ export { pages, notFoundMeta, renderHeadTags } from "@/lib/seo";
 export { SITE_URL } from "@/lib/site";
 export { categories } from "@/content/categories";
 export { allFaqs } from "@/content/faqs";
+export { guides } from "@/content/guides";
+export { cities, cityPath } from "@/content/cities";
 
 /** Renders a route to static HTML at build time (see scripts/prerender.mjs). */
 export const render = (url: string) =>

@@ -1,6 +1,6 @@
-# BSB Market website
+# Bsb Market website
 
-Marketing site for BSB Market (Vite + React + Tailwind).
+Marketing site for Bsb Market (Vite + React + Tailwind).
 
 ## Build & SEO
 
@@ -11,4 +11,5 @@ running JavaScript. It also generates `sitemap.xml`, `llms.txt` and `404.html`.
 - Page titles, descriptions and structured data: `src/lib/seo.ts`
 - Company details and canonical domain: `src/lib/site.ts` (override the domain with `VITE_SITE_URL`)
 - Category page content: `src/content/categories.ts`; FAQs: `src/content/faqs.ts`
+- Guides (`/guides/<slug>`): `src/content/guides.ts`; city pages (`/buy-and-sell-in-<city>`): `src/content/cities.ts`
 - Adding a page: add a route in `src/AppRoutes.tsx` and an entry in `pages` in `src/lib/seo.ts`

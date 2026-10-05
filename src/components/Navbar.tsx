@@ -28,8 +28,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14 sm:h-16">
-        <Link to="/" className="flex items-center gap-2" aria-label="BSB Market home">
-          <img src={logoAsset} alt="BSB Market logo" className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg object-contain" />
+        <Link to="/" className="flex items-center gap-2" aria-label="Bsb Market home">
+          <img src={logoAsset} alt="Bsb Market logo" className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg object-contain" />
           <span className="text-lg sm:text-xl font-bold tracking-tight text-foreground whitespace-nowrap">
             Bsb <span className="text-primary">Market</span>
           </span>

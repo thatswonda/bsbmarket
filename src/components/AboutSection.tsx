@@ -18,7 +18,7 @@ const AboutSection = () => (
         viewport={{ once: true }}
         className="text-center mb-6 sm:mb-16"
       >
-        <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-4">About BSB Market</h2>
+        <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-4">About Bsb Market</h2>
         <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
           We're building the future of commerce — one connection at a time.
         </p>

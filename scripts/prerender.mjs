@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const ssrDir = path.join(root, "dist-ssr");
 
-const { render, pages, notFoundMeta, renderHeadTags, SITE_URL, categories, allFaqs } = await import(
+const { render, pages, notFoundMeta, renderHeadTags, SITE_URL, categories, allFaqs, guides, cities, cityPath } = await import(
   pathToFileURL(path.join(ssrDir, "entry-server.js")).href
 );
 
@@ -59,13 +59,13 @@ fs.writeFileSync(
 // llms.txt (https://llmstxt.org): a plain-text brief for AI assistants
 const link = (p) => `${SITE_URL}${p === "/" ? "/" : p}`;
 const byPath = Object.fromEntries(pages.map((p) => [p.path, p]));
-const llms = `# BSB Market
+const llms = `# Bsb Market
 
-> BSB Market is a free, all-in-one online marketplace and social-business app from Nigeria. People use it to buy and sell goods, gadgets and cars, hire or offer services (artisans and freelancers), find and post jobs, rent or buy property, find contracts and investment opportunities, and network with businesses — locally and globally. It is built by BSB Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
+> Bsb Market is a free, all-in-one online marketplace and social-business app from Nigeria. People use it to buy and sell goods, gadgets and cars, hire or offer services (artisans and freelancers), find and post jobs, rent or buy property, find contracts and investment opportunities, and network with businesses — locally and globally. It is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
 
 Key facts:
-- Name: BSB Market (also written "Bsb Market")
-- Company: BSB Global Tech Ltd (Nigeria)
+- Name: Bsb Market (short name: Bsb)
+- Company: Bsb Global Tech Ltd (Nigeria)
 - Website: ${SITE_URL}/
 - App: Android on Google Play (https://play.google.com/store/apps/details?id=com.austindev.bsb); iOS coming soon
 - Price: free to join, browse and post listings
@@ -75,13 +75,22 @@ Key facts:
 
 ## Main pages
 
-${["/", "/about", "/how-it-works", "/categories", "/download", "/faq", "/safety-tips", "/buy-and-sell-in-uyo", "/contact"]
+${["/", "/about", "/how-it-works", "/categories", "/download", "/faq", "/safety-tips", "/buy-and-sell-in-uyo", "/guides", "/contact"]
   .map((p) => `- [${byPath[p].title}](${link(p)}): ${byPath[p].description}`)
   .join("\n")}
 
 ## Categories
 
 ${categories.map((c) => `- [${c.name}](${link(`/categories/${c.slug}`)}): ${c.summary}`).join("\n")}
+
+## Guides
+
+${guides.map((g) => `- [${g.heading}](${link(`/guides/${g.slug}`)}): ${g.quickAnswer}`).join("\n")}
+
+## Cities
+
+- [Buy and sell in Uyo](${link("/buy-and-sell-in-uyo")})
+${cities.map((c) => `- [Buy and sell in ${c.name}](${link(cityPath(c))}): ${c.metaDescription}`).join("\n")}
 
 ## Frequently asked questions
 

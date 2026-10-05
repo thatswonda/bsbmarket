@@ -32,13 +32,13 @@ export const categories: Category[] = [
     slug: "services",
     name: "Services",
     heading: "Hire or offer services near you",
-    metaTitle: "Hire Local Services & Offer Your Skills | BSB Market",
+    metaTitle: "Hire Local Services & Offer Your Skills | Bsb Market",
     metaDescription:
-      "Find plumbers, electricians, cleaners, photographers, web developers and other service providers on BSB Market, or list your own skills and get hired. Free to join.",
+      "Find plumbers, electricians, cleaners, photographers, web developers and other service providers on Bsb Market, or list your own skills and get hired. Free to join.",
     image: catServices,
     summary: "Hire trusted professionals or offer your skills to people who need them.",
     intro: [
-      "BSB Market connects people who need work done with the artisans, freelancers and businesses who can do it. Whether you need a plumber in Uyo today or a web developer for a long project, you can browse service listings, compare providers and contact them directly from the app.",
+      "Bsb Market connects people who need work done with the artisans, freelancers and businesses who can do it. Whether you need a plumber in Uyo today or a web developer for a long project, you can browse service listings, compare providers and contact them directly from the app.",
       "If you have a skill, you can list it for free. Add photos of past work, describe what you offer and let customers in your city, or anywhere in the world, find you.",
     ],
     whatYouFind: [
@@ -54,15 +54,15 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "How do I hire a service provider on BSB Market?",
-        a: "Open the BSB Market app, go to Services, browse or search for what you need and tap a listing to message or call the provider directly. Agree on the details and pay only when you are satisfied with the arrangement.",
+        q: "How do I hire a service provider on Bsb Market?",
+        a: "Open the Bsb Market app, go to Services, browse or search for what you need and tap a listing to message or call the provider directly. Agree on the details and pay only when you are satisfied with the arrangement.",
       },
       {
-        q: "Can I offer my services on BSB Market for free?",
+        q: "Can I offer my services on Bsb Market for free?",
         a: "Yes. Creating an account and posting a service listing is free. Add your skill, location, photos of your work and how customers can reach you.",
       },
       {
-        q: "Which service providers can I find on BSB Market?",
+        q: "Which service providers can I find on Bsb Market?",
         a: "Artisans such as plumbers, electricians, painters and cleaners, as well as photographers, event planners, fitness coaches, tutors, web developers, designers and many other freelancers and businesses.",
       },
     ],
@@ -71,13 +71,13 @@ export const categories: Category[] = [
     slug: "goods",
     name: "Goods",
     heading: "Buy and sell goods online",
-    metaTitle: "Buy & Sell Goods Online: New and Used Items | BSB Market",
+    metaTitle: "Buy & Sell Goods Online: New and Used Items | Bsb Market",
     metaDescription:
-      "Buy and sell new and used goods on BSB Market: furniture, home appliances, fashion, shoes, electronics and more. Post a free listing and reach buyers near you.",
+      "Buy and sell new and used goods on Bsb Market: furniture, home appliances, fashion, shoes, electronics and more. Post a free listing and reach buyers near you.",
     image: catGoods,
     summary: "New and fairly used items: furniture, appliances, fashion and household goods.",
     intro: [
-      "The Goods category is where everyday buying and selling happens on BSB Market. Sell things you no longer need, stock up for your shop, or find a good deal on something new or fairly used from a seller near you.",
+      "The Goods category is where everyday buying and selling happens on Bsb Market. Sell things you no longer need, stock up for your shop, or find a good deal on something new or fairly used from a seller near you.",
       "Every listing shows photos, a description and the seller's profile so you can decide with confidence and contact the seller directly in the app.",
     ],
     whatYouFind: [
@@ -93,16 +93,16 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "How do I sell an item on BSB Market?",
-        a: "Download the BSB Market app, create a free account, tap Post, choose Goods, add photos, a title, description and your location, then publish. Interested buyers contact you directly.",
+        q: "How do I sell an item on Bsb Market?",
+        a: "Download the Bsb Market app, create a free account, tap Post, choose Goods, add photos, a title, description and your location, then publish. Interested buyers contact you directly.",
       },
       {
-        q: "Can I sell used items on BSB Market?",
+        q: "Can I sell used items on Bsb Market?",
         a: "Yes. You can sell both new and used (fairly used) items. Describe the condition honestly and include clear photos.",
       },
       {
-        q: "Is it free to post goods on BSB Market?",
-        a: "Yes, posting listings and browsing goods on BSB Market is free.",
+        q: "Is it free to post goods on Bsb Market?",
+        a: "Yes, posting listings and browsing goods on Bsb Market is free.",
       },
     ],
   },
@@ -110,13 +110,13 @@ export const categories: Category[] = [
     slug: "contracts",
     name: "Contracts",
     heading: "Find and post business contracts",
-    metaTitle: "Find Contracts, Tenders & Supply Deals | BSB Market",
+    metaTitle: "Find Contracts, Tenders & Supply Deals | Bsb Market",
     metaDescription:
-      "Discover building, supply, catering, construction and service contracts on BSB Market. Businesses post contracts and qualified contractors connect directly.",
+      "Discover building, supply, catering, construction and service contracts on Bsb Market. Businesses post contracts and qualified contractors connect directly.",
     image: catContracts,
     summary: "Construction, supply, catering and service contracts for businesses and contractors.",
     intro: [
-      "Businesses, organisations and individuals use the Contracts category on BSB Market to find reliable contractors and suppliers. Contractors use it to discover new jobs and grow their business.",
+      "Businesses, organisations and individuals use the Contracts category on Bsb Market to find reliable contractors and suppliers. Contractors use it to discover new jobs and grow their business.",
       "From residential building projects to office supply agreements and event catering, post your requirements once and receive interest from qualified people.",
     ],
     whatYouFind: [
@@ -132,11 +132,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "What kind of contracts are listed on BSB Market?",
+        q: "What kind of contracts are listed on Bsb Market?",
         a: "Construction, supply, catering, cleaning, logistics and other business contracts posted by companies and individuals looking for contractors.",
       },
       {
-        q: "How do I find contractors on BSB Market?",
+        q: "How do I find contractors on Bsb Market?",
         a: "Post your contract with the scope, location and timeline, or browse contractors offering their services, then connect directly through the app.",
       },
     ],
@@ -145,13 +145,13 @@ export const categories: Category[] = [
     slug: "jobs",
     name: "Jobs",
     heading: "Find jobs and hire staff",
-    metaTitle: "Find Jobs & Hire Staff in Nigeria and Remote | BSB Market",
+    metaTitle: "Find Jobs & Hire Staff in Nigeria and Remote | Bsb Market",
     metaDescription:
-      "Search full-time, part-time, remote and freelance jobs on BSB Market, or post a job and hire staff fast. Sales, tech, driving, design, admin and more.",
+      "Search full-time, part-time, remote and freelance jobs on Bsb Market, or post a job and hire staff fast. Sales, tech, driving, design, admin and more.",
     image: catJobs,
     summary: "Full-time, part-time, remote and freelance jobs from employers near you.",
     intro: [
-      "Looking for work or hiring? The Jobs category on BSB Market brings employers and job seekers together, from local shop assistants and drivers to remote software developers.",
+      "Looking for work or hiring? The Jobs category on Bsb Market brings employers and job seekers together, from local shop assistants and drivers to remote software developers.",
       "Employers post openings for free and talk to applicants directly. Job seekers browse by category and location and reply straight from their phone.",
     ],
     whatYouFind: [
@@ -167,16 +167,16 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "How do I apply for jobs on BSB Market?",
-        a: "Open the Jobs category in the BSB Market app, find a role that suits you and contact the employer directly through the listing.",
+        q: "How do I apply for jobs on Bsb Market?",
+        a: "Open the Jobs category in the Bsb Market app, find a role that suits you and contact the employer directly through the listing.",
       },
       {
         q: "Can employers post jobs for free?",
-        a: "Yes. Employers can post job openings on BSB Market for free and chat with candidates directly.",
+        a: "Yes. Employers can post job openings on Bsb Market for free and chat with candidates directly.",
       },
       {
-        q: "Are there remote jobs on BSB Market?",
-        a: "Yes. Alongside local jobs, BSB Market lists remote and freelance roles that you can do from anywhere.",
+        q: "Are there remote jobs on Bsb Market?",
+        a: "Yes. Alongside local jobs, Bsb Market lists remote and freelance roles that you can do from anywhere.",
       },
     ],
   },
@@ -184,13 +184,13 @@ export const categories: Category[] = [
     slug: "real-estate",
     name: "Real Estate",
     heading: "Property for rent and sale",
-    metaTitle: "Houses, Land & Shops for Rent and Sale | BSB Market",
+    metaTitle: "Houses, Land & Shops for Rent and Sale | Bsb Market",
     metaDescription:
-      "Find apartments, houses, land, shops and office space for rent or sale on BSB Market. Agents, landlords and property owners list for free.",
+      "Find apartments, houses, land, shops and office space for rent or sale on Bsb Market. Agents, landlords and property owners list for free.",
     image: catRealEstate,
     summary: "Apartments, houses, land, shops and office space to rent or buy.",
     intro: [
-      "Find your next home, shop or plot of land on BSB Market. Landlords, agents and property owners list apartments, houses, land and commercial space, and you contact them directly from the app.",
+      "Find your next home, shop or plot of land on Bsb Market. Landlords, agents and property owners list apartments, houses, land and commercial space, and you contact them directly from the app.",
       "Browse by location, compare photos and details, and arrange inspections at your convenience.",
     ],
     whatYouFind: [
@@ -206,11 +206,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "Can I find houses for rent on BSB Market?",
+        q: "Can I find houses for rent on Bsb Market?",
         a: "Yes. Landlords and agents list apartments, flats, houses and duplexes for rent. You can contact them directly and arrange an inspection.",
       },
       {
-        q: "Can I sell land on BSB Market?",
+        q: "Can I sell land on Bsb Market?",
         a: "Yes. Post the land with its size, location, photos and available documents. Buyers contact you directly through the app.",
       },
     ],
@@ -219,13 +219,13 @@ export const categories: Category[] = [
     slug: "automobiles",
     name: "Automobiles",
     heading: "Buy and sell cars, buses and motorcycles",
-    metaTitle: "Cars, Buses & Motorcycles for Sale | BSB Market",
+    metaTitle: "Cars, Buses & Motorcycles for Sale | Bsb Market",
     metaDescription:
-      "Buy and sell used and new cars, SUVs, buses and motorcycles on BSB Market. Toyota, Honda, Lexus and more from sellers and dealers near you.",
+      "Buy and sell used and new cars, SUVs, buses and motorcycles on Bsb Market. Toyota, Honda, Lexus and more from sellers and dealers near you.",
     image: catAutomobiles,
     summary: "Used and new cars, SUVs, buses, motorcycles and tricycles.",
     intro: [
-      "Whether you are buying your first car or selling a commercial bus, the Automobiles category on BSB Market connects you with buyers, private sellers and dealers.",
+      "Whether you are buying your first car or selling a commercial bus, the Automobiles category on Bsb Market connects you with buyers, private sellers and dealers.",
       "Compare listings with photos, mileage and condition details, then contact the seller to arrange an inspection and test drive.",
     ],
     whatYouFind: [
@@ -241,11 +241,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "How do I sell my car on BSB Market?",
-        a: "Create a free account in the BSB Market app, post your car in Automobiles with clear photos, the model, year, mileage, condition and location, and buyers will contact you.",
+        q: "How do I sell my car on Bsb Market?",
+        a: "Create a free account in the Bsb Market app, post your car in Automobiles with clear photos, the model, year, mileage, condition and location, and buyers will contact you.",
       },
       {
-        q: "Can I buy a used car on BSB Market?",
+        q: "Can I buy a used car on Bsb Market?",
         a: "Yes. Private sellers and dealers list new and used cars. Always inspect the vehicle and its documents before paying.",
       },
     ],
@@ -254,9 +254,9 @@ export const categories: Category[] = [
     slug: "promotions",
     name: "Promotions",
     heading: "Promote brands and earn",
-    metaTitle: "Brand Promotions, Influencer Gigs & Ads | BSB Market",
+    metaTitle: "Brand Promotions, Influencer Gigs & Ads | Bsb Market",
     metaDescription:
-      "Businesses on BSB Market find promoters, brand ambassadors and influencers. Creators discover paid promotion gigs for products, events and apps.",
+      "Businesses on Bsb Market find promoters, brand ambassadors and influencers. Creators discover paid promotion gigs for products, events and apps.",
     image: catPromotions,
     summary: "Brand ambassador, influencer and product promotion opportunities.",
     intro: [
@@ -275,11 +275,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "How can I promote my business on BSB Market?",
-        a: "Post a promotion listing describing your campaign and budget, or reach out to promoters and influencers listed on BSB Market.",
+        q: "How can I promote my business on Bsb Market?",
+        a: "Post a promotion listing describing your campaign and budget, or reach out to promoters and influencers listed on Bsb Market.",
       },
       {
-        q: "Can I earn money promoting products on BSB Market?",
+        q: "Can I earn money promoting products on Bsb Market?",
         a: "Yes. Creators and promoters can find paid campaigns in the Promotions category and apply directly.",
       },
     ],
@@ -288,13 +288,13 @@ export const categories: Category[] = [
     slug: "panteka",
     name: "Panteka",
     heading: "Panteka: used parts, tools and hardware",
-    metaTitle: "Panteka Market: Spare Parts, Tools & Hardware | BSB Market",
+    metaTitle: "Panteka Market: Spare Parts, Tools & Hardware | Bsb Market",
     metaDescription:
-      "Shop Panteka on BSB Market: used and new spare parts, generator parts, welding materials, plumbing fittings, tools and hardware from sellers near you.",
+      "Shop Panteka on Bsb Market: used and new spare parts, generator parts, welding materials, plumbing fittings, tools and hardware from sellers near you.",
     image: catPanteka,
     summary: "Spare parts, generator parts, tools, fittings and hardware, new and used.",
     intro: [
-      "Panteka is the go-to market for spare parts and hardware. On BSB Market, the Panteka category brings that experience online, so you can find car parts, generator parts, tools and building materials without going from shop to shop.",
+      "Panteka is the go-to market for spare parts and hardware. On Bsb Market, the Panteka category brings that experience online, so you can find car parts, generator parts, tools and building materials without going from shop to shop.",
       "Sellers, mechanics and hardware dealers list what they have, and you contact them directly to confirm availability and compatibility.",
     ],
     whatYouFind: [
@@ -309,11 +309,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "What is Panteka on BSB Market?",
-        a: "Panteka is BSB Market's category for spare parts, tools and hardware, both new and used, such as car parts, generator parts, welding materials and plumbing fittings.",
+        q: "What is Panteka on Bsb Market?",
+        a: "Panteka is Bsb Market's category for spare parts, tools and hardware, both new and used, such as car parts, generator parts, welding materials and plumbing fittings.",
       },
       {
-        q: "Can I find used car parts on BSB Market?",
+        q: "Can I find used car parts on Bsb Market?",
         a: "Yes. Sellers and mechanics list used and new car parts in the Panteka category. Contact them with your vehicle model to confirm compatibility.",
       },
     ],
@@ -322,13 +322,13 @@ export const categories: Category[] = [
     slug: "gadgets",
     name: "Gadgets",
     heading: "Buy and sell phones, laptops and gadgets",
-    metaTitle: "Phones, Laptops & Gadgets for Sale | BSB Market",
+    metaTitle: "Phones, Laptops & Gadgets for Sale | Bsb Market",
     metaDescription:
-      "Buy and sell iPhones, Samsung phones, laptops, smart watches, earbuds and other gadgets on BSB Market. New and used devices from sellers near you.",
+      "Buy and sell iPhones, Samsung phones, laptops, smart watches, earbuds and other gadgets on Bsb Market. New and used devices from sellers near you.",
     image: catGadgets,
     summary: "Smartphones, laptops, tablets, smart watches, earbuds and accessories.",
     intro: [
-      "Upgrade your phone, sell your old laptop or find accessories in the Gadgets category on BSB Market. Buy from individuals and gadget shops near you, new or fairly used.",
+      "Upgrade your phone, sell your old laptop or find accessories in the Gadgets category on Bsb Market. Buy from individuals and gadget shops near you, new or fairly used.",
       "Each listing includes photos and specifications so you can compare devices before contacting the seller.",
     ],
     whatYouFind: [
@@ -344,11 +344,11 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "Can I buy a used iPhone on BSB Market?",
+        q: "Can I buy a used iPhone on Bsb Market?",
         a: "Yes. Individuals and gadget shops list new and used iPhones and other phones. Test the device and check that it is not locked before you pay.",
       },
       {
-        q: "How do I sell my phone or laptop on BSB Market?",
+        q: "How do I sell my phone or laptop on Bsb Market?",
         a: "Post it in the Gadgets category with clear photos, the model, storage, condition and your location. Buyers contact you directly.",
       },
     ],
@@ -357,13 +357,13 @@ export const categories: Category[] = [
     slug: "ebooks",
     name: "Ebooks",
     heading: "Sell and buy ebooks and digital guides",
-    metaTitle: "Sell & Buy Ebooks and Digital Guides | BSB Market",
+    metaTitle: "Sell & Buy Ebooks and Digital Guides | Bsb Market",
     metaDescription:
-      "Authors and creators sell ebooks, guides and courses on BSB Market. Find books on business, forex, cooking, self development and more.",
+      "Authors and creators sell ebooks, guides and courses on Bsb Market. Find books on business, forex, cooking, self development and more.",
     image: catEbooks,
     summary: "Ebooks and digital guides on business, finance, cooking and personal growth.",
     intro: [
-      "Turn your knowledge into income. Authors, coaches and creators use the Ebooks category on BSB Market to sell digital books and guides to a ready audience.",
+      "Turn your knowledge into income. Authors, coaches and creators use the Ebooks category on Bsb Market to sell digital books and guides to a ready audience.",
       "Readers can discover practical guides written by people who have done the work, from growing a business to cooking African dishes.",
     ],
     whatYouFind: [
@@ -378,7 +378,7 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "Can I sell my ebook on BSB Market?",
+        q: "Can I sell my ebook on Bsb Market?",
         a: "Yes. Post your ebook in the Ebooks category with a cover image, description and how buyers can get it.",
       },
     ],
@@ -387,14 +387,14 @@ export const categories: Category[] = [
     slug: "shares",
     name: "Shares",
     heading: "Business shares and investment opportunities",
-    metaTitle: "Business Shares & Investment Opportunities | BSB Market",
+    metaTitle: "Business Shares & Investment Opportunities | Bsb Market",
     metaDescription:
-      "Discover business partnership and investment opportunities on BSB Market: startup equity, restaurants, logistics, agribusiness and more.",
+      "Discover business partnership and investment opportunities on Bsb Market: startup equity, restaurants, logistics, agribusiness and more.",
     image: catShares,
     summary: "Equity, partnerships and investment opportunities in growing businesses.",
     intro: [
       "The Shares category connects business owners looking for capital or partners with people ready to invest. Businesses describe the opportunity, and interested investors reach out directly.",
-      "BSB Market provides the connection only. It does not give investment advice, so do your own research before committing money.",
+      "Bsb Market provides the connection only. It does not give investment advice, so do your own research before committing money.",
     ],
     whatYouFind: [
       "Startup and small business equity",
@@ -409,12 +409,12 @@ export const categories: Category[] = [
     ],
     faqs: [
       {
-        q: "Can I find investors for my business on BSB Market?",
+        q: "Can I find investors for my business on Bsb Market?",
         a: "Yes. Post your business opportunity in the Shares category with clear details and connect with interested investors and partners.",
       },
       {
-        q: "Does BSB Market give investment advice?",
-        a: "No. BSB Market only connects businesses and investors. Always carry out your own due diligence and seek professional advice.",
+        q: "Does Bsb Market give investment advice?",
+        a: "No. Bsb Market only connects businesses and investors. Always carry out your own due diligence and seek professional advice.",
       },
     ],
   },

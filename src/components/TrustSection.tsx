@@ -32,7 +32,7 @@ const TrustSection = () => (
           Trust &amp; Safety
         </span>
         <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-4">
-          Why people trust BSB Market
+          Why people trust Bsb Market
         </h2>
         <p className="text-xs sm:text-base text-muted-foreground">
           A marketplace built on verified people, protected payments and support that answers.
@@ -93,7 +93,7 @@ const TrustSection = () => (
         <div className="text-left">
           <h3 className="text-base sm:text-2xl lg:text-3xl font-bold text-foreground mb-2 sm:mb-4">Do business from anywhere</h3>
           <p className="text-xs sm:text-base text-muted-foreground leading-relaxed">
-            Whether you're trading from home, the office, or halfway across the world, BSB Market keeps your
+            Whether you're trading from home, the office, or halfway across the world, Bsb Market keeps your
             listings, clients, and opportunities in one place — locally and globally.
           </p>
         </div>

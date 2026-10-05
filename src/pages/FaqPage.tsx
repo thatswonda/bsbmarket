@@ -10,7 +10,7 @@ const FaqPage = () => (
     breadcrumbs={getPageMeta("/faq").breadcrumbs}
     eyebrow="Help centre"
     title={<>Frequently asked <span className="text-primary">questions</span></>}
-    lead="Everything you need to know about buying, selling, hiring and networking on BSB Market."
+    lead="Everything you need to know about buying, selling, hiring and networking on Bsb Market."
   >
     <div className="space-y-12">
       {allFaqs.map((group) => (
