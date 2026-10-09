@@ -21,8 +21,9 @@ const MoreThanMarketplace = () => (
             <span className="text-gradient-sky">Connect.</span>
           </h2>
           <p className="mt-9 max-w-[30rem] text-[17px] leading-[1.75] text-white/80 sm:text-lg">
-            From everyday products to professional services, jobs, real estate, cars, ebooks and fairly used items —
-            Bsb Market brings people, opportunities and businesses together across Africa and beyond.
+            From everyday products and fairly used items to jobs, services, dispatch, real estate, cars, ebooks,
+            business pages and brand promotions — Bsb Market brings people, opportunities and businesses together
+            across Africa and beyond.
           </p>
           <span className="mt-10 block h-[3px] w-[70px] rounded-full bg-brand-bright" />
         </motion.div>

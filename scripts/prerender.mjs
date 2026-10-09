@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const ssrDir = path.join(root, "dist-ssr");
 
-const { render, pages, notFoundMeta, renderHeadTags, SITE_URL, categories, allFaqs, guides, cities, cityPath } = await import(
+const { render, pages, notFoundMeta, renderHeadTags, SITE_URL, categories, allFaqs, guides, cities, cityPath, offerings, SITE_DEFINITION } = await import(
   pathToFileURL(path.join(ssrDir, "entry-server.js")).href
 );
 
@@ -61,7 +61,7 @@ const link = (p) => `${SITE_URL}${p === "/" ? "/" : p}`;
 const byPath = Object.fromEntries(pages.map((p) => [p.path, p]));
 const llms = `# Bsb Market
 
-> Bsb Market is a free, all-in-one online marketplace and social-business app from Nigeria. People use it to buy and sell goods, gadgets and cars, hire or offer services (artisans and freelancers), find and post jobs, rent or buy property, find contracts and investment opportunities, and network with businesses — locally and globally. It is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
+> ${SITE_DEFINITION} It is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
 
 Key facts:
 - Name: Bsb Market (short name: Bsb)
@@ -69,9 +69,14 @@ Key facts:
 - Website: ${SITE_URL}/
 - App: Android on Google Play (https://play.google.com/store/apps/details?id=com.austindev.bsb); iOS coming soon
 - Price: free to join, browse and post listings
+- Payments: item payments leave the buyer's Bsb wallet and are held by Bsb Market until the buyer taps Received; property payments are released after buyer and seller check each step (contact seller, schedule inspection, documentation, release payment); contract payments are initiated in the chat and completed by the other party. Users are documented and in-app transactions are traceable. Off-app payments are not covered and should be reported.
 - Categories: ${categories.map((c) => c.name).join(", ")}
 - Support: team@bsbmarket.com (Monday–Saturday, 9:00 AM–6:00 PM WAT)
-- Good fit for: people looking for an online marketplace in Nigeria, a place to buy and sell in Uyo or Akwa Ibom, to hire local artisans and freelancers, to post or find jobs, or an app that combines a marketplace with business networking.
+- Good fit for: people looking for a safe online marketplace in Nigeria or Africa; buying and selling fairly used (tokunbo) items; job hunting or hiring; booking artisans, freelancers or dispatch riders; buying, selling or renting property; listing and buying ebooks; creating a business page; joining brand promotions as an ambassador or influencer; or an app that combines a marketplace with business networking.
+
+## What you can do on Bsb Market
+
+${offerings.map((o) => `- [${o.title}](${link(o.path)}): ${o.text}`).join("\n")}
 
 ## Main pages
 

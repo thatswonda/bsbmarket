@@ -14,6 +14,8 @@ const columns = [
       { label: "Property", to: "/categories/real-estate" },
       { label: "Jobs", to: "/categories/jobs" },
       { label: "Services", to: "/categories/services" },
+      { label: "Dispatch & delivery", to: "/categories/dispatch" },
+      { label: "Ebooks", to: "/categories/ebooks" },
       { label: "All categories", to: "/categories" },
     ],
   },
@@ -45,7 +47,7 @@ const Footer = () => (
             </span>
           </Link>
           <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-white/60">
-            The social trade app connecting buyers, sellers and businesses across Africa and beyond.
+            The digital marketplace and social business app to buy, sell, find jobs, book services and dispatch, trade property and grow your business across Africa and beyond.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <GooglePlayButton size="compact" />

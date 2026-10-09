@@ -35,7 +35,7 @@ const DigitalizingTrade = () => (
             </span>
           </h2>
           <p className="mt-7 max-w-[28rem] text-lg leading-relaxed text-white/85">
-            A social trade platform that connects buyers, sellers and businesses — locally and globally.
+            A social business app that connects buyers, sellers, job seekers, service providers and businesses — locally and globally.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-8">
             <a

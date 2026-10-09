@@ -10,6 +10,7 @@ import ebook from "@/assets/home/listing-ebook.webp";
 
 /** Search words people actually type, mapped to the category page that covers them. */
 const keywordMap: [RegExp, string][] = [
+  [/\b(dispatch|delivery|deliver|rider|courier|logistics|parcel|package)s?\b/i, "dispatch"],
   [/\b(car|cars|toyota|lexus|benz|honda|camry|corolla|highlander|suv|bus|keke|tricycle|okada|motorcycle|bike|tokunbo)\b/i, "automobiles"],
   [/\b(phone|iphone|samsung|tecno|infinix|laptop|macbook|tablet|ipad|airpods|earbuds|watch|gadget)s?\b/i, "gadgets"],
   [/\b(house|duplex|bungalow|flat|apartment|self.?con|land|plot|shop|office|rent|lease|property|estate)s?\b/i, "real-estate"],
@@ -39,7 +40,6 @@ type CardProps = {
   badge: string;
   badgeClass: string;
   title: string;
-  price: string;
   meta: string;
   metaIcon: "pin" | "download";
   className?: string;
@@ -48,7 +48,7 @@ type CardProps = {
   float: number;
 };
 
-const ListingCard = ({ img, alt, badge, badgeClass, title, price, meta, metaIcon, className, imgClass, delay, float }: CardProps) => (
+const ListingCard = ({ img, alt, badge, badgeClass, title, meta, metaIcon, className, imgClass, delay, float }: CardProps) => (
   <div className={className}>
   <motion.div
     initial={{ opacity: 0, y: 40 }}
@@ -68,8 +68,7 @@ const ListingCard = ({ img, alt, badge, badgeClass, title, price, meta, metaIcon
       </div>
       <div className="px-2.5 pt-3">
         <p className="text-[12px] sm:text-[15px] font-bold leading-tight text-navy-900">{title}</p>
-        <p className="mt-1.5 text-[15px] sm:text-lg font-extrabold text-navy-900">{price}</p>
-        <p className="mt-1.5 flex items-center gap-1.5 text-xs font-medium text-slate-500">
+        <p className="mt-2 flex items-center gap-1.5 text-xs font-medium text-slate-500">
           {metaIcon === "pin" ? <MapPin className="h-3.5 w-3.5" /> : <Download className="h-3.5 w-3.5" />}
           {meta}
         </p>
@@ -103,7 +102,7 @@ const HeroTrade = () => {
             transition={{ duration: 0.7 }}
             className="text-[56px] font-extrabold leading-[0.95] tracking-[-0.045em] text-white sm:text-[84px] xl:text-[100px]"
           >
-            <span className="sr-only">Bsb Market, the online marketplace app for Nigeria and Africa: </span>
+            <span className="sr-only">Bsb Market, the digital marketplace and social business app to buy, sell, find jobs, book services and property in Nigeria and Africa: </span>
             Trade without
             <br />
             <span className="text-gradient-sky">borders.</span>
@@ -195,7 +194,6 @@ const HeroTrade = () => {
             badge="Featured"
             badgeClass="bg-emerald-400 text-emerald-950"
             title="Toyota Highlander 2021"
-            price="₦ 28,500,000"
             meta="Lagos, Nigeria"
             metaIcon="pin"
             delay={0.3}
@@ -208,7 +206,6 @@ const HeroTrade = () => {
             badge="For Sale"
             badgeClass="bg-brand text-white"
             title="3 Bedroom Duplex"
-            price="₦ 75,000,000"
             meta="Abuja, Nigeria"
             metaIcon="pin"
             imgClass="aspect-[4/3] w-full object-cover"
@@ -222,7 +219,6 @@ const HeroTrade = () => {
             badge="Digital"
             badgeClass="bg-violet-500 text-white"
             title="Business Growth Playbook (Ebook)"
-            price="₦ 5,000"
             meta="Instant Download"
             metaIcon="download"
             imgClass="aspect-[4/3] w-full object-cover"

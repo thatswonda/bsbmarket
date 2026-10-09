@@ -18,6 +18,7 @@ const cards = [
 ];
 
 const more = [
+  { label: "Dispatch & delivery", slug: "dispatch" },
   { label: "Phones & Gadgets", slug: "gadgets" },
   { label: "Spare parts (Panteka)", slug: "panteka" },
   { label: "Contracts", slug: "contracts" },

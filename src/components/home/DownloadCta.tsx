@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { AppStoreBadge, GooglePlayButton } from "@/components/StoreButtons";
 import appUser from "@/assets/bsb-app-user-cutout.png";
 
-const perks = ["Free to download and list", "Escrow-protected payments", "Chat and call inside the app"];
+const perks = ["Free to download and list", "Payments held until you tap Received", "Chat and call inside the app"];
 
 /** Closing download panel. The marketplace lives in the mobile app, so this is the main call to action. */
 const DownloadCta = () => (

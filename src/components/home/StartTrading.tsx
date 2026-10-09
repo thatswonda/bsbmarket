@@ -11,12 +11,12 @@ const steps = [
   {
     icon: Camera,
     title: "Post or browse",
-    text: "Snap clear photos, add a price and publish. Or search what's for sale from buyers and sellers anywhere.",
+    text: "List an item, service, job, property or ebook in minutes. Or search what's on offer from people anywhere.",
   },
   {
     icon: MessagesSquare,
     title: "Chat and close the deal",
-    text: "Agree on terms in the app chat, pay into escrow, and confirm once you have the item. The seller is paid after you confirm.",
+    text: "Pay from your Bsb wallet. Bsb Market holds the money until your item arrives and you tap Received, then the seller is credited.",
   },
 ];
 
@@ -32,7 +32,7 @@ const StartTrading = () => (
           </h2>
         </div>
         <p className="max-w-sm text-base leading-relaxed text-slate-500 sm:text-lg">
-          Listing is free. Payments go through escrow in the app, so the seller is paid only after the buyer confirms.
+          Listing is free, and every payment made in the app is secure and traceable.
         </p>
       </div>
 

@@ -9,7 +9,7 @@ const Categories = () => (
     breadcrumbs={getPageMeta("/categories").breadcrumbs}
     eyebrow="Marketplace"
     title={<>Everything you need, <span className="text-primary">one marketplace</span></>}
-    lead="From phones and furniture to plumbers, jobs, houses and business shares, Bsb Market organises every kind of deal into easy-to-browse categories."
+    lead="Buy and sell new and fairly used items, find jobs, book services and dispatch riders, buy or rent property, list ebooks and join brand promotions. Every kind of trade on Bsb Market has its own category, with secure in-app payments throughout."
   >
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {categories.map((c) => (
