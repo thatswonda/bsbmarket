@@ -4,7 +4,8 @@ import MoreThanMarketplace from "@/components/home/MoreThanMarketplace";
 import DigitalizingTrade from "@/components/home/DigitalizingTrade";
 import EveryKindOfTrade from "@/components/home/EveryKindOfTrade";
 import StartTrading from "@/components/home/StartTrading";
-import TrustAndCities from "@/components/home/TrustAndCities";
+import TradeTicker from "@/components/home/TradeTicker";
+import TradeProtection from "@/components/home/TradeProtection";
 import HomeFaq from "@/components/home/HomeFaq";
 import DownloadCta from "@/components/home/DownloadCta";
 import Footer from "@/components/Footer";
@@ -15,11 +16,12 @@ const Index = () => (
     <Navbar />
     <main>
       <HeroTrade />
+      <TradeTicker />
       <MoreThanMarketplace />
       <DigitalizingTrade />
       <EveryKindOfTrade />
       <StartTrading />
-      <TrustAndCities />
+      <TradeProtection />
       <HomeFaq />
       <DownloadCta />
     </main>

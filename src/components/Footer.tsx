@@ -18,16 +18,6 @@ const columns = [
     ],
   },
   {
-    title: "Cities",
-    links: [
-      { label: "Uyo", to: "/buy-and-sell-in-uyo" },
-      { label: "Lagos", to: "/buy-and-sell-in-lagos" },
-      { label: "Abuja", to: "/buy-and-sell-in-abuja" },
-      { label: "Port Harcourt", to: "/buy-and-sell-in-port-harcourt" },
-      { label: "Calabar", to: "/buy-and-sell-in-calabar" },
-    ],
-  },
-  {
     title: "Company",
     links: [
       { label: "About us", to: "/about" },
@@ -43,7 +33,7 @@ const columns = [
 const Footer = () => (
   <footer className="bg-navy-950 text-white">
     <div className="mx-auto max-w-[1320px] px-4 pb-10 pt-16 sm:px-8 sm:pt-20">
-      <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
+      <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(2,1fr)]">
         <div>
           <Link to="/" className="flex items-center gap-3" aria-label="Bsb Market home">
             <img src={logoAsset} alt="Bsb Market logo" className="h-12 w-12 rounded-xl ring-1 ring-white/10" loading="lazy" />

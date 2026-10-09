@@ -39,7 +39,7 @@ const MoreThanMarketplace = () => (
           height={1174}
         />
         <div className="absolute inset-y-0 left-0 hidden w-48 bg-gradient-to-r from-[#061a5f] to-transparent lg:block" />
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#061a5f] to-transparent lg:hidden" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05164f] to-transparent lg:h-20" />
       </div>
     </div>
   </section>
