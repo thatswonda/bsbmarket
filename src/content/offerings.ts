@@ -19,9 +19,9 @@ export const offerings: Offering[] = [
     path: "/categories/goods",
   },
   {
-    title: "Fairly used items",
-    text: "Find tokunbo and fairly used phones, laptops, cars and home items from documented sellers, with your payment held until you tap Received.",
-    path: "/categories/goods",
+    title: "Fairly used items (Panteka)",
+    text: "Buy and sell fairly used phones, laptops, furniture, appliances and fashion on Panteka, with your payment held until you tap Received.",
+    path: "/categories/panteka",
   },
   {
     title: "Real estate",

@@ -8,7 +8,7 @@ const columns = [
   {
     title: "Marketplace",
     links: [
-      { label: "Fairly used goods", to: "/categories/goods" },
+      { label: "Fairly used items (Panteka)", to: "/categories/panteka" },
       { label: "Phones & gadgets", to: "/categories/gadgets" },
       { label: "Cars", to: "/categories/automobiles" },
       { label: "Property", to: "/categories/real-estate" },
@@ -73,7 +73,7 @@ const Footer = () => (
       <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-2 sm:flex-row sm:gap-6">
           <span className="flex items-center gap-2">
-            <MapPin className="h-4 w-4" /> {ADDRESS.street}, {ADDRESS.city}, {ADDRESS.region}, {ADDRESS.countryName}
+            <MapPin className="h-4 w-4" /> {ADDRESS.city}, {ADDRESS.region}, {ADDRESS.countryName}
           </span>
           <a href={`mailto:${SUPPORT_EMAIL}`} className="flex items-center gap-2 hover:text-white">
             <Mail className="h-4 w-4" /> {SUPPORT_EMAIL}

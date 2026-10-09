@@ -23,7 +23,7 @@ const About = () => (
       <div className="space-y-4 text-foreground leading-relaxed">
         <h2 className="text-2xl font-bold">Who we are</h2>
         <p>
-          Bsb Market is built and operated by <strong>Bsb Global Tech Ltd</strong>, a technology company registered in Nigeria and headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State. We started with a simple idea: people should not need five different apps to buy, sell, hire, find work and grow their network.
+          Bsb Market is built and operated by <strong>Bsb Global Tech Ltd</strong>, a technology company registered in Nigeria and headquartered in Port Harcourt, Rivers State. We started with a simple idea: people should not need five different apps to buy, sell, hire, find work and grow their network.
         </p>
         <p>
           Bsb Market brings all of that together. Sellers reach buyers, artisans and freelancers find clients, employers find staff, and entrepreneurs meet partners and investors. You can do all of it locally in your city or globally.
@@ -63,7 +63,7 @@ const About = () => (
         {[
           ["Product", "Bsb Market marketplace and social-business app"],
           ["Company", "Bsb Global Tech Ltd"],
-          ["Headquarters", "23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria"],
+          ["Headquarters", "Port Harcourt, Rivers State, Nigeria"],
           ["Availability", "Android (Google Play); iOS coming soon"],
           ["Price", "Free to join, browse and post listings"],
           ["Contact", "team@bsbmarket.com"],

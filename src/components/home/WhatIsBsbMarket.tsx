@@ -15,7 +15,7 @@ const WhatIsBsbMarket = () => (
         <h2 className="mt-4 text-[38px] font-extrabold leading-[1.05] text-navy-900 sm:text-[52px]">What is Bsb Market?</h2>
         <p className="mt-6 text-[17px] leading-[1.75] text-slate-600">{SITE_DEFINITION}</p>
         <p className="mt-4 text-[17px] leading-[1.75] text-slate-600">
-          It's built by Bsb Global Tech Ltd in Uyo, Nigeria, and open to buyers, sellers, job seekers, employers,
+          It's built by Bsb Global Tech Ltd in Port Harcourt, Nigeria, and open to buyers, sellers, job seekers, employers,
           service providers and businesses anywhere.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">

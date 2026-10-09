@@ -115,8 +115,8 @@ const Contact = () => {
                     </span>
                     <div>
                       <p className="text-xs font-medium text-blue-100">Office</p>
-                      <p className="mt-1 text-sm font-semibold sm:text-base">23 Urua Udofia, Uyo</p>
-                      <p className="text-sm text-blue-100">Akwa Ibom State, Nigeria</p>
+                      <p className="mt-1 text-sm font-semibold sm:text-base">Port Harcourt</p>
+                      <p className="text-sm text-blue-100">Rivers State, Nigeria</p>
                     </div>
                   </div>
                 </div>

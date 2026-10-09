@@ -78,7 +78,7 @@ const staticPages: PageMeta[] = [
     path: "/about",
     title: "About Bsb Market – The Social-Business Marketplace App",
     description:
-      "Learn about Bsb Market, the social-business marketplace built by Bsb Global Tech Ltd in Uyo, Nigeria, to make trade, hiring and business networking easier for everyone.",
+      "Learn about Bsb Market, the social-business marketplace built by Bsb Global Tech Ltd in Port Harcourt, Nigeria, to make trade, hiring and business networking easier for everyone.",
     breadcrumbs: [HOME, { name: "About", path: "/about" }],
     priority: 0.8,
   },
@@ -94,7 +94,7 @@ const staticPages: PageMeta[] = [
     path: "/categories",
     title: "Marketplace Categories – Goods, Jobs, Services, Property, Dispatch & More | Bsb Market",
     description:
-      "Browse every Bsb Market category: fairly used and new goods, gadgets, cars, real estate, jobs, services, dispatch and delivery, ebooks, brand promotions, contracts, Panteka spare parts and business shares.",
+      "Browse every Bsb Market category: Panteka fairly used items, new goods, gadgets, cars, real estate, jobs, services, dispatch and delivery, ebooks, brand promotions, contracts and business shares.",
     breadcrumbs: [HOME, { name: "Categories", path: "/categories" }],
     priority: 0.9,
   },
@@ -128,7 +128,7 @@ const staticPages: PageMeta[] = [
     path: "/buy-and-sell-in-uyo",
     title: "Buy & Sell in Uyo, Akwa Ibom – Local Online Marketplace | Bsb Market",
     description:
-      "Bsb Market is Uyo's home-grown marketplace. Buy and sell goods, find artisans, jobs, houses for rent and cars in Uyo and across Akwa Ibom State.",
+      "Buy and sell on Bsb Market in Uyo: goods, find artisans, jobs, houses for rent and cars in Uyo and across Akwa Ibom State.",
     breadcrumbs: [HOME, { name: "Buy & sell in Uyo", path: "/buy-and-sell-in-uyo" }],
     priority: 0.7,
     faqs: uyoFaqs,
@@ -137,7 +137,7 @@ const staticPages: PageMeta[] = [
     path: "/contact",
     title: "Contact Bsb Market – Customer Support",
     description:
-      "Contact the Bsb Market team by email at team@bsbmarket.com or visit our office at 23 Urua Udofia, Uyo, Akwa Ibom State. Support Monday to Saturday.",
+      "Contact the Bsb Market team by email at team@bsbmarket.com or visit our office in Port Harcourt, Rivers State. Support Monday to Saturday.",
     breadcrumbs: [HOME, { name: "Contact", path: "/contact" }],
     priority: 0.5,
   },

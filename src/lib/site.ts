@@ -14,9 +14,8 @@ export const LOGO_PATH = "/logo.png";
 export const OG_IMAGE_PATH = "/og-image.png";
 
 export const ADDRESS = {
-  street: "23 Urua Udofia",
-  city: "Uyo",
-  region: "Akwa Ibom State",
+  city: "Port Harcourt",
+  region: "Rivers State",
   country: "NG",
   countryName: "Nigeria",
 };
@@ -43,7 +42,6 @@ export const organizationJsonLd = {
   email: SUPPORT_EMAIL,
   address: {
     "@type": "PostalAddress",
-    streetAddress: ADDRESS.street,
     addressLocality: ADDRESS.city,
     addressRegion: ADDRESS.region,
     addressCountry: ADDRESS.country,

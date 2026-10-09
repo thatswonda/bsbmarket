@@ -12,12 +12,12 @@ const Uyo = () => (
     breadcrumbs={getPageMeta("/buy-and-sell-in-uyo").breadcrumbs}
     eyebrow="Uyo · Akwa Ibom State"
     title={<>Buy and sell in <span className="text-primary">Uyo</span></>}
-    lead="Bsb Market was built in Uyo. It is a local marketplace for Uyo and Akwa Ibom where you can buy and sell goods, hire artisans, find jobs, rent houses and trade cars, all from your phone."
+    lead="Bsb Market is a marketplace for Uyo and Akwa Ibom where you can buy and sell goods, hire artisans, find jobs, rent houses and trade cars, all from your phone."
   >
     <div className="space-y-4 text-foreground leading-relaxed">
-      <h2 className="text-2xl font-bold">Uyo's home-grown marketplace</h2>
+      <h2 className="text-2xl font-bold">A marketplace for Uyo and Akwa Ibom</h2>
       <p>
-        Our team works from 23 Urua Udofia, Uyo. We know the city's markets, businesses and artisans, and we built Bsb Market so that people in Uyo, Eket, Ikot Ekpene, Oron and across Akwa Ibom State can trade with each other easily, and with the rest of Nigeria and the world.
+        Bsb Market helps people in Uyo, Eket, Ikot Ekpene, Oron and across Akwa Ibom State can trade with each other easily, and with the rest of Nigeria and the world.
       </p>
       <p>
         Whether you want to sell a fairly used phone, find a plumber or electrician nearby, rent a self-contained apartment, hire staff for your shop or find customers for your business, Bsb Market puts you in direct contact with the right people.
