@@ -3,24 +3,23 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import tradeGadgets from "@/assets/home/trade-gadgets.webp";
 import tradeCarShowroom from "@/assets/home/trade-car-showroom.webp";
-import tradeProperty from "@/assets/home/trade-property.webp";
-import tradeJobs from "@/assets/home/trade-jobs.webp";
-import tradeServices from "@/assets/home/trade-services.webp";
-import tradePromo from "@/assets/home/trade-promo.webp";
+import tradeProperty from "@/assets/home/trade-property-home.webp";
+import tradeJobs from "@/assets/home/trade-jobs-desk.webp";
+import tradeServices from "@/assets/home/trade-services-team.webp";
+import tradePromo from "@/assets/home/trade-brand-promo.webp";
 
 const cards = [
-  { label: "Fairly used items", slug: "goods", img: tradeGadgets, alt: "Fairly used iPhones, MacBooks, AirPods and smartwatches" },
+  { label: "Fairly used items", slug: "panteka", img: tradeGadgets, alt: "Fairly used iPhones, MacBooks, AirPods and smartwatches" },
   { label: "Cars", slug: "automobiles", img: tradeCarShowroom, alt: "White Omoda C5 SUV on display in a car showroom" },
-  { label: "Property", slug: "real-estate", img: tradeProperty, alt: "Modern two-storey house with a paved driveway" },
-  { label: "Jobs", slug: "jobs", img: tradeJobs, alt: "Laptop and notebook on an office desk" },
-  { label: "Services", slug: "services", img: tradeServices, alt: "Artisan's tool bag with screwdrivers and a wrench" },
-  { label: "Brand Promotions", slug: "promotions", img: tradePromo, alt: "Shipping box printed with Small Business, Big Dreams" },
+  { label: "Property", slug: "real-estate", img: tradeProperty, alt: "Two-storey house with a navy facade, turquoise door and front porch" },
+  { label: "Jobs", slug: "jobs", img: tradeJobs, alt: "Office desk with a laptop, monitor, coffee and notebooks" },
+  { label: "Services", slug: "services", img: tradeServices, alt: "Two professionals reviewing work together at a laptop" },
+  { label: "Brand Promotions", slug: "promotions", img: tradePromo, alt: "Woman in red sunglasses reaching for a discount coupon" },
 ];
 
 const more = [
   { label: "Dispatch & delivery", slug: "dispatch" },
   { label: "Phones & Gadgets", slug: "gadgets" },
-  { label: "Spare parts (Panteka)", slug: "panteka" },
   { label: "Contracts", slug: "contracts" },
   { label: "Ebooks", slug: "ebooks" },
   { label: "Business shares", slug: "shares" },

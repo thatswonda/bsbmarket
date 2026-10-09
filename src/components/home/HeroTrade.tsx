@@ -11,13 +11,14 @@ import successHabits from "@/assets/home/listing-success-habits.webp";
 /** Search words people actually type, mapped to the category page that covers them. */
 const keywordMap: [RegExp, string][] = [
   [/\b(dispatch|delivery|deliver|rider|courier|logistics|parcel|package)s?\b/i, "dispatch"],
-  [/\b(car|cars|toyota|lexus|benz|honda|camry|corolla|highlander|suv|bus|keke|tricycle|okada|motorcycle|bike|tokunbo)\b/i, "automobiles"],
+  [/\b(car|cars|toyota|lexus|benz|honda|camry|corolla|highlander|suv|bus|keke|tricycle|okada|motorcycle|bike)\b/i, "automobiles"],
   [/\b(phone|iphone|samsung|tecno|infinix|laptop|macbook|tablet|ipad|airpods|earbuds|watch|gadget)s?\b/i, "gadgets"],
   [/\b(house|duplex|bungalow|flat|apartment|self.?con|land|plot|shop|office|rent|lease|property|estate)s?\b/i, "real-estate"],
   [/\b(job|jobs|vacancy|vacancies|hiring|work|intern|internship|salary|cv)\b/i, "jobs"],
   [/\b(plumber|electrician|cleaner|cleaning|painter|photographer|tutor|makeup|barber|caterer|mechanic|developer|designer|service)s?\b/i, "services"],
   [/\b(ebook|book|pdf|guide|course)s?\b/i, "ebooks"],
-  [/\b(spare|part|parts|generator|tools?|hardware|fittings?|panteka)\b/i, "panteka"],
+  [/\b(panteka|tokunbo|used|second.?hand|pre.?owned|fairly)\b/i, "panteka"],
+  [/\b(spare|part|parts|generator|tools?|hardware|fittings?)\b/i, "goods"],
   [/\b(contract|tender|supply|construction)s?\b/i, "contracts"],
   [/\b(share|shares|equity|invest|investment|partner|partnership)\b/i, "shares"],
   [/\b(promo|promotion|influencer|ambassador|advert|ads?)\b/i, "promotions"],
@@ -123,9 +124,9 @@ const HeroTrade = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.22 }}
-            className="mt-10 flex max-w-[730px] flex-col gap-2 rounded-[28px] bg-white p-2 shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_50px_-6px_rgba(90,170,255,0.7)] sm:flex-row sm:items-center sm:rounded-full"
+            className="mt-8 flex max-w-[730px] items-center gap-1 rounded-full bg-white p-1.5 shadow-[0_0_0_3px_rgba(255,255,255,0.12),0_0_40px_-6px_rgba(90,170,255,0.7)] sm:mt-10 sm:gap-2 sm:p-2 sm:shadow-[0_0_0_4px_rgba(255,255,255,0.12),0_0_50px_-6px_rgba(90,170,255,0.7)]"
           >
-            <label className="relative flex items-center gap-3 rounded-full px-4 py-3 text-navy-900 sm:w-[210px] sm:shrink-0 sm:border-r sm:border-slate-200 sm:rounded-none">
+            <label className="relative hidden items-center gap-3 px-4 py-3 text-navy-900 sm:flex sm:w-[210px] sm:shrink-0 sm:border-r sm:border-slate-200">
               <LayoutGrid className="h-5 w-5 shrink-0 text-slate-500" strokeWidth={1.8} />
               <span className="sr-only">Category</span>
               <select
@@ -142,19 +143,19 @@ const HeroTrade = () => {
               </select>
               <ChevronDown className="pointer-events-none absolute right-4 h-4 w-4 text-slate-500" />
             </label>
-            <label className="flex flex-1 items-center gap-3 px-4 py-3 sm:py-0">
-              <Search className="h-5 w-5 shrink-0 text-slate-500" strokeWidth={1.8} />
+            <label className="flex min-w-0 flex-1 items-center gap-2 pl-3 sm:gap-3 sm:px-4">
+              <Search className="h-4 w-4 shrink-0 text-slate-500 sm:h-5 sm:w-5" strokeWidth={1.8} />
               <span className="sr-only">What are you looking for?</span>
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="What are you looking for?"
-                className="w-full bg-transparent text-[15px] text-navy-900 placeholder:text-slate-400 outline-none"
+                className="w-full min-w-0 bg-transparent py-2 text-sm text-navy-900 placeholder:text-slate-400 outline-none sm:py-0 sm:text-[15px]"
               />
             </label>
             <button
               type="submit"
-              className="h-14 shrink-0 rounded-full bg-brand px-10 text-base font-semibold text-white transition-colors hover:bg-brand-bright"
+              className="h-10 shrink-0 rounded-full bg-brand px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-bright sm:h-14 sm:px-10 sm:text-base"
             >
               Search
             </button>

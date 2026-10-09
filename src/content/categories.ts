@@ -1,15 +1,15 @@
-import tradeServices from "@/assets/home/trade-services.webp";
+import tradeServices from "@/assets/home/trade-services-team.webp";
+import marketTrader from "@/assets/home/market-trader.webp";
+import successHabits from "@/assets/home/listing-success-habits.webp";
 import tradeUsed from "@/assets/home/trade-used.webp";
-import tradeJobs from "@/assets/home/trade-jobs.webp";
-import tradeProperty from "@/assets/home/trade-property.webp";
+import tradeJobs from "@/assets/home/trade-jobs-desk.webp";
+import tradeProperty from "@/assets/home/trade-property-home.webp";
 import tradeCarShowroom from "@/assets/home/trade-car-showroom.webp";
 import tradeGadgets from "@/assets/home/trade-gadgets.webp";
-import tradePromo from "@/assets/home/trade-promo.webp";
-import ebookCover from "@/assets/home/listing-ebook.webp";
+import tradePromo from "@/assets/home/trade-brand-promo.webp";
 import dispatchParcels from "@/assets/parcels-shipping.png";
 import businessMeeting from "@/assets/bsb-team-meeting.png";
 import catContracts from "@/assets/cat-contracts.jpg";
-import catPanteka from "@/assets/cat-panteka.jpg";
 
 export type Faq = { q: string; a: string };
 
@@ -114,8 +114,8 @@ export const categories: Category[] = [
     metaTitle: "Buy & Sell Goods Online: New and Used Items | Bsb Market",
     metaDescription:
       "Buy and sell new and used goods on Bsb Market: furniture, home appliances, fashion, shoes, electronics and more. Post a free listing and reach buyers near you.",
-    image: tradeUsed,
-    summary: "New and fairly used items: furniture, appliances, fashion and household goods.",
+    image: marketTrader,
+    summary: "Furniture, appliances, fashion and household goods from shops and sellers.",
     intro: [
       "The Goods category is where everyday buying and selling happens on Bsb Market. Sell things you no longer need, stock up for your shop, or find a good deal on something new or fairly used from a seller near you.",
       "Every listing shows photos, a description and the seller's profile so you can decide with confidence and contact the seller directly in the app.",
@@ -327,34 +327,39 @@ export const categories: Category[] = [
   {
     slug: "panteka",
     name: "Panteka",
-    heading: "Panteka: used parts, tools and hardware",
-    metaTitle: "Panteka Market: Spare Parts, Tools & Hardware | Bsb Market",
+    heading: "Panteka: buy and sell fairly used items",
+    metaTitle: "Panteka – Buy & Sell Fairly Used (Tokunbo) Items in Nigeria | Bsb Market",
     metaDescription:
-      "Shop Panteka on Bsb Market: used and new spare parts, generator parts, welding materials, plumbing fittings, tools and hardware from sellers near you.",
-    image: catPanteka,
-    summary: "Spare parts, generator parts, tools, fittings and hardware, new and used.",
+      "Panteka on Bsb Market is where you buy and sell fairly used items: phones, laptops, furniture, appliances, fashion, car parts and more. Your payment is held until you tap Received.",
+    image: tradeUsed,
+    summary: "Buy and sell fairly used phones, laptops, furniture, appliances, fashion and more.",
     intro: [
-      "Panteka is the go-to market for spare parts and hardware. On Bsb Market, the Panteka category brings that experience online, so you can find car parts, generator parts, tools and building materials without going from shop to shop.",
-      "Sellers, mechanics and hardware dealers list what they have, and you contact them directly to confirm availability and compatibility.",
+      "Panteka is Bsb Market's marketplace for fairly used items. If you have a phone, laptop, TV, fridge, chair, generator or pair of shoes you no longer need, list it on Panteka and sell it to someone who does. If you're buying, Panteka is the place to find good, used items for less than new.",
+      "Every seller on Bsb Market is documented, and when you pay in the app, the money is held by Bsb Market until the item reaches you and you tap Received. That makes buying second-hand safer than meeting a stranger and paying upfront.",
     ],
     whatYouFind: [
-      "Car and motorcycle spare parts",
-      "Generator parts and electrical components",
-      "Welding materials, tools and industrial equipment",
-      "Plumbing fittings, pipes, valves and building hardware",
+      "Fairly used (tokunbo) phones, laptops, tablets and accessories",
+      "Used furniture, fridges, TVs, washing machines and home appliances",
+      "Pre-owned fashion, shoes, bags and watches",
+      "Used generators, tools, car parts and equipment",
     ],
     tips: [
-      "Share your vehicle or machine model so the seller can confirm the part fits.",
-      "Inspect used parts carefully and ask about returns before paying.",
+      "Describe the item's condition honestly and show any scratches or faults in the photos.",
+      "Buyers: check the item works and matches the listing before you tap Received.",
+      "Pay and get paid only inside the app so the deal is protected and traceable.",
     ],
     faqs: [
       {
         q: "What is Panteka on Bsb Market?",
-        a: "Panteka is Bsb Market's category for spare parts, tools and hardware, both new and used, such as car parts, generator parts, welding materials and plumbing fittings.",
+        a: "Panteka is where users buy and sell fairly used items on Bsb Market, from phones and laptops to furniture, appliances, fashion and car parts.",
       },
       {
-        q: "Can I find used car parts on Bsb Market?",
-        a: "Yes. Sellers and mechanics list used and new car parts in the Panteka category. Contact them with your vehicle model to confirm compatibility.",
+        q: "Is it safe to buy fairly used items on Panteka?",
+        a: "Yes. Sellers are documented, and your payment is held by Bsb Market until you receive the item and tap Received. Only then is the seller credited.",
+      },
+      {
+        q: "How do I sell my used items on Panteka?",
+        a: "Open the Bsb Market app, choose Panteka, add clear photos, the condition and your price, then publish. Listing is free.",
       },
     ],
   },
@@ -400,7 +405,7 @@ export const categories: Category[] = [
     metaTitle: "Sell & Buy Ebooks and Digital Guides | Bsb Market",
     metaDescription:
       "Authors and creators sell ebooks, guides and courses on Bsb Market. Find books on business, forex, cooking, self development and more.",
-    image: ebookCover,
+    image: successHabits,
     summary: "Ebooks and digital guides on business, finance, cooking and personal growth.",
     intro: [
       "Turn your knowledge into income. Authors, coaches and creators use the Ebooks category on Bsb Market to sell digital books and guides to a ready audience.",

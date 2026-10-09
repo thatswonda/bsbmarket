@@ -44,7 +44,7 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
     items: [
       {
         q: "What can I buy and sell on Bsb Market?",
-        a: "Goods (furniture, appliances, fashion), gadgets (phones, laptops), cars and motorcycles, spare parts and hardware (Panteka), real estate, ebooks, business shares, contracts, services and jobs.",
+        a: "Goods (furniture, appliances, fashion), gadgets (phones, laptops), cars and motorcycles, fairly used items (Panteka), real estate, ebooks, business shares, contracts, services and jobs.",
       },
       {
         q: "Does Bsb Market charge commission on sales?",
@@ -90,7 +90,7 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
       },
       {
         q: "Who owns Bsb Market?",
-        a: "Bsb Market is a product of Bsb Global Tech Ltd, a technology company registered in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State.",
+        a: "Bsb Market is a product of Bsb Global Tech Ltd, a technology company registered in Nigeria with its office in Port Harcourt, Rivers State.",
       },
       {
         q: "How do I contact Bsb Market support?",
@@ -103,8 +103,8 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
 /** Local questions for the Uyo landing page. */
 export const uyoFaqs: Faq[] = [
   {
-    q: "Is Bsb Market based in Uyo?",
-    a: "Yes. Bsb Market is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.",
+    q: "Can I use Bsb Market in Uyo?",
+    a: "Yes. People in Uyo and across Akwa Ibom use Bsb Market to buy and sell, hire artisans, find jobs and rent property. Bsb Market is built by Bsb Global Tech Ltd, headquartered in Port Harcourt, Rivers State, Nigeria.",
   },
   {
     q: "Can I buy and sell in other parts of Akwa Ibom and Nigeria?",

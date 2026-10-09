@@ -52,7 +52,7 @@ export const guides: Guide[] = [
         list: [
           "Buy and sell new and used goods, from furniture and fashion to appliances.",
           "Buy and sell phones, laptops and other gadgets.",
-          "Buy and sell cars, motorcycles and spare parts (Panteka).",
+          "Buy and sell cars, motorcycles and spare parts.",
           "Hire artisans and freelancers such as plumbers, electricians, designers and developers, or list your own services.",
           "Post jobs and hire staff, or find full-time, part-time, remote and freelance work.",
           "Rent, buy or sell houses, apartments, land and shops.",
@@ -63,7 +63,7 @@ export const guides: Guide[] = [
       {
         heading: "Who Bsb Market is for",
         paragraphs: [
-          "Bsb Market is built for everyday buyers and sellers, small business owners, artisans, freelancers, job seekers, employers, landlords, agents and investors. It started in Uyo, Akwa Ibom State, and is open to users across Nigeria and around the world.",
+          "Bsb Market is built for everyday buyers and sellers, small business owners, artisans, freelancers, job seekers, employers, landlords, agents and investors. It is based in Port Harcourt, Rivers State, and is open to users across Nigeria and around the world.",
         ],
       },
       {
@@ -78,7 +78,7 @@ export const guides: Guide[] = [
       {
         heading: "Who owns Bsb Market?",
         paragraphs: [
-          "Bsb Market is a product of Bsb Global Tech Ltd, a technology company incorporated in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State. Support is available by email at team@bsbmarket.com, Monday to Saturday, 9:00 AM to 6:00 PM WAT.",
+          "Bsb Market is a product of Bsb Global Tech Ltd, a technology company incorporated in Nigeria with its office in Port Harcourt, Rivers State. Support is available by email at team@bsbmarket.com, Monday to Saturday, 9:00 AM to 6:00 PM WAT.",
         ],
       },
     ],
@@ -93,7 +93,7 @@ export const guides: Guide[] = [
       },
       {
         q: "Is Bsb Market a Nigerian company?",
-        a: "Yes. Bsb Market is built by Bsb Global Tech Ltd, incorporated in Nigeria and headquartered in Uyo, Akwa Ibom State.",
+        a: "Yes. Bsb Market is built by Bsb Global Tech Ltd, incorporated in Nigeria and headquartered in Port Harcourt, Rivers State.",
       },
       {
         q: "Is there a Bsb Market app?",
@@ -115,17 +115,17 @@ export const guides: Guide[] = [
     heading: "Is Bsb Market legit and safe to use?",
     metaTitle: "Is Bsb Market Legit? Company, Safety & How to Trade Safely",
     metaDescription:
-      "Yes, Bsb Market is a real marketplace app run by Bsb Global Tech Ltd in Uyo, Nigeria. See the company details, how the platform protects users and how to trade safely.",
+      "Yes, Bsb Market is a real marketplace app run by Bsb Global Tech Ltd in Port Harcourt, Nigeria. See the company details, how the platform protects users and how to trade safely.",
     eyebrow: "Trust & safety",
     lead: "Before you download a marketplace app, it is sensible to check who runs it. Here are the facts about Bsb Market and the steps you can take to trade safely.",
     quickAnswer:
-      "Yes. Bsb Market is a legitimate marketplace app operated by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State. The app is published on Google Play, has public Terms of Use and a Privacy Policy written under Nigeria's Data Protection Act, and a support team you can reach at team@bsbmarket.com. As on any marketplace, individual users can be dishonest, so always meet in public, inspect before paying and never pay in advance to people you have not verified.",
+      "Yes. Bsb Market is a legitimate marketplace app operated by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office in Port Harcourt, Rivers State. The app is published on Google Play, has public Terms of Use and a Privacy Policy written under Nigeria's Data Protection Act, and a support team you can reach at team@bsbmarket.com. As on any marketplace, individual users can be dishonest, so always meet in public, inspect before paying and never pay in advance to people you have not verified.",
     sections: [
       {
         heading: "Who is behind Bsb Market",
         list: [
           "Company: Bsb Global Tech Ltd, incorporated in Nigeria.",
-          "Office: 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.",
+          "Office: Port Harcourt, Rivers State, Nigeria.",
           "App: published on Google Play for Android; iOS coming soon.",
           "Support: team@bsbmarket.com, Monday to Saturday, 9:00 AM to 6:00 PM WAT.",
           "Policies: public Terms of Use and Privacy Policy on this website.",
@@ -168,7 +168,7 @@ export const guides: Guide[] = [
     faqs: [
       {
         q: "Is Bsb Market a real company?",
-        a: "Yes. Bsb Market is run by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office at 23 Urua Udofia, Uyo, Akwa Ibom State.",
+        a: "Yes. Bsb Market is run by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office in Port Harcourt, Rivers State.",
       },
       {
         q: "Is Bsb Market safe?",
@@ -509,7 +509,7 @@ export const guides: Guide[] = [
       },
       {
         q: "Can I buy and sell cars on Bsb Market?",
-        a: "Yes. The Automobiles category on Bsb Market lists cars, motorcycles and other vehicles for sale, and the Panteka category lists spare parts.",
+        a: "Yes. The Automobiles category on Bsb Market lists cars, motorcycles and other vehicles for sale, and Panteka lists fairly used items, including used parts.",
       },
       {
         q: "How do I pay safely for a used car?",
@@ -518,7 +518,7 @@ export const guides: Guide[] = [
     ],
     related: [
       { label: "Automobiles category", path: "/categories/automobiles" },
-      { label: "Panteka spare parts", path: "/categories/panteka" },
+      { label: "Panteka: fairly used items", path: "/categories/panteka" },
       { label: "Safety tips", path: "/safety-tips" },
       { label: "How to sell online", path: "/guides/how-to-sell-online-in-nigeria" },
     ],

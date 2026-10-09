@@ -138,10 +138,10 @@ export const cities: City[] = [
     state: "Cross River State",
     metaTitle: "Buy & Sell in Calabar – Online Marketplace, Jobs & Services | Bsb Market",
     metaDescription:
-      "Buy and sell in Calabar with Bsb Market: gadgets, cars, furniture, property, artisans and jobs. Free to join, a home-grown marketplace from neighbouring Akwa Ibom.",
+      "Buy and sell in Calabar with Bsb Market: gadgets, cars, furniture, property, artisans and jobs. Free to join, with secure in-app payments.",
     lead: "Buy and sell, hire artisans, find jobs and rent houses across Calabar and Cross River State with the free Bsb Market app.",
     intro: [
-      "Bsb Market was built next door in Uyo, Akwa Ibom State, and Calabar is one of our closest neighbours. People in Calabar use Bsb Market to buy and sell goods, find service providers and connect with businesses across the South-South and beyond.",
+      "Bsb Market is headquartered in Port Harcourt, and Calabar is one of our closest neighbours in the South-South. People in Calabar use Bsb Market to buy and sell goods, find service providers and connect with businesses across the South-South and beyond.",
       "Post a listing in minutes, browse what is close to you and chat directly with buyers, sellers, employers and artisans through the app.",
     ],
     areas: ["Calabar Municipality", "Calabar South", "Marian", "Satellite Town", "State Housing", "Akim", "Ekorinim", "Big Qua"],
@@ -162,7 +162,7 @@ export const cities: City[] = [
       },
       {
         q: "Can I trade between Calabar and Uyo on Bsb Market?",
-        a: "Yes. You can browse listings in Calabar, Uyo and other cities and contact sellers directly. Agree on delivery or meet halfway in a safe public place.",
+        a: "Yes. You can browse listings in Calabar, Uyo and other cities, pay safely in the app and book a dispatch rider or courier for delivery.",
       },
       {
         q: "Is Bsb Market free in Calabar?",
