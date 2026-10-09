@@ -2,14 +2,14 @@ import tradeServices from "@/assets/home/trade-services.webp";
 import tradeUsed from "@/assets/home/trade-used.webp";
 import tradeJobs from "@/assets/home/trade-jobs.webp";
 import tradeProperty from "@/assets/home/trade-property.webp";
-import tradeCars from "@/assets/home/trade-cars.webp";
+import tradeCarShowroom from "@/assets/home/trade-car-showroom.webp";
+import tradeGadgets from "@/assets/home/trade-gadgets.webp";
 import tradePromo from "@/assets/home/trade-promo.webp";
 import ebookCover from "@/assets/home/listing-ebook.webp";
 import dispatchParcels from "@/assets/parcels-shipping.png";
 import businessMeeting from "@/assets/bsb-team-meeting.png";
 import catContracts from "@/assets/cat-contracts.jpg";
 import catPanteka from "@/assets/cat-panteka.jpg";
-import catGadgets from "@/assets/cat-gadgets.jpg";
 
 export type Faq = { q: string; a: string };
 
@@ -262,7 +262,7 @@ export const categories: Category[] = [
     metaTitle: "Cars, Buses & Motorcycles for Sale | Bsb Market",
     metaDescription:
       "Buy and sell used and new cars, SUVs, buses and motorcycles on Bsb Market. Toyota, Honda, Lexus and more from sellers and dealers near you.",
-    image: tradeCars,
+    image: tradeCarShowroom,
     summary: "Used and new cars, SUVs, buses, motorcycles and tricycles.",
     intro: [
       "Whether you are buying your first car or selling a commercial bus, the Automobiles category on Bsb Market connects you with buyers, private sellers and dealers.",
@@ -365,7 +365,7 @@ export const categories: Category[] = [
     metaTitle: "Phones, Laptops & Gadgets for Sale | Bsb Market",
     metaDescription:
       "Buy and sell iPhones, Samsung phones, laptops, smart watches, earbuds and other gadgets on Bsb Market. New and used devices from sellers near you.",
-    image: catGadgets,
+    image: tradeGadgets,
     summary: "Smartphones, laptops, tablets, smart watches, earbuds and accessories.",
     intro: [
       "Upgrade your phone, sell your old laptop or find accessories in the Gadgets category on Bsb Market. Buy from individuals and gadget shops near you, new or fairly used.",

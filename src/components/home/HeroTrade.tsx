@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Download, Heart, LayoutGrid, MapPin, Search } from "lucide-react";
 import { categories } from "@/content/categories";
 import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
-import highlander from "@/assets/home/listing-highlander.webp";
-import duplex from "@/assets/home/listing-duplex.webp";
-import ebook from "@/assets/home/listing-ebook.webp";
+import audiQ8 from "@/assets/home/listing-audi-q8.webp";
+import familyHome from "@/assets/home/listing-family-home.webp";
+import successHabits from "@/assets/home/listing-success-habits.webp";
 
 /** Search words people actually type, mapped to the category page that covers them. */
 const keywordMap: [RegExp, string][] = [
@@ -189,11 +189,11 @@ const HeroTrade = () => {
         <div className="relative mx-auto h-[440px] w-full max-w-[360px] sm:h-[600px] sm:max-w-[640px] lg:h-[640px] lg:max-w-none" aria-hidden="true">
           <div className="absolute inset-[10%] rounded-full bg-brand/50 blur-[90px]" />
           <ListingCard
-            img={highlander}
-            alt="Dark blue 2021 Toyota Highlander"
+            img={audiQ8}
+            alt="White Audi Q8 SUV"
             badge="Featured"
             badgeClass="bg-emerald-400 text-emerald-950"
-            title="Toyota Highlander 2021"
+            title="Audi Q8"
             meta="Lagos, Nigeria"
             metaIcon="pin"
             delay={0.3}
@@ -201,30 +201,30 @@ const HeroTrade = () => {
             className="absolute left-0 top-0 w-[56%] [transform:perspective(1200px)_rotateY(14deg)_rotateZ(-7deg)] sm:left-[2%] sm:w-[58%]"
           />
           <ListingCard
-            img={duplex}
-            alt="Modern three-bedroom duplex at dusk"
+            img={familyHome}
+            alt="White two-storey family home with a wooden garage door and front porch"
             badge="For Sale"
             badgeClass="bg-brand text-white"
             title="3 Bedroom Duplex"
             meta="Abuja, Nigeria"
             metaIcon="pin"
-            imgClass="aspect-[4/3] w-full object-cover"
+            imgClass="aspect-[4/3] w-full object-cover object-[50%_60%]"
             delay={0.45}
             float={14}
             className="absolute right-0 top-[22%] w-[52%] [transform:perspective(1200px)_rotateY(-16deg)_rotateZ(8deg)] sm:top-[16%] sm:w-[52%]"
           />
           <ListingCard
-            img={ebook}
-            alt="Cover of The Business Growth Playbook ebook"
+            img={successHabits}
+            alt="Millionaire Success Habits by Dean Graziosi on top of a notebook"
             badge="Digital"
             badgeClass="bg-violet-500 text-white"
-            title="Business Growth Playbook (Ebook)"
+            title="Millionaire Success Habits (Ebook)"
             meta="Instant Download"
             metaIcon="download"
-            imgClass="aspect-[4/3] w-full object-cover"
+            imgClass="aspect-square w-full object-cover object-[50%_40%]"
             delay={0.6}
             float={8}
-            className="absolute bottom-0 left-[4%] w-[46%] [transform:perspective(1200px)_rotateX(8deg)_rotateZ(4deg)] sm:bottom-[2%] sm:left-[14%] sm:w-[38%]"
+            className="absolute bottom-0 left-[4%] w-[46%] [transform:perspective(1200px)_rotateX(8deg)_rotateZ(4deg)] sm:bottom-[2%] sm:left-[9%] sm:w-[38%]"
           />
         </div>
       </div>

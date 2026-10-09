@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import tradeUsed from "@/assets/home/trade-used.webp";
-import tradeCars from "@/assets/home/trade-cars.webp";
+import tradeGadgets from "@/assets/home/trade-gadgets.webp";
+import tradeCarShowroom from "@/assets/home/trade-car-showroom.webp";
 import tradeProperty from "@/assets/home/trade-property.webp";
 import tradeJobs from "@/assets/home/trade-jobs.webp";
 import tradeServices from "@/assets/home/trade-services.webp";
 import tradePromo from "@/assets/home/trade-promo.webp";
 
 const cards = [
-  { label: "Fairly used items", slug: "goods", img: tradeUsed, alt: "Fairly used iPhone, sneakers and wristwatch on a shop counter" },
-  { label: "Cars", slug: "automobiles", img: tradeCars, alt: "Black Toyota Camry parked outside a car lot" },
+  { label: "Fairly used items", slug: "goods", img: tradeGadgets, alt: "Fairly used iPhones, MacBooks, AirPods and smartwatches" },
+  { label: "Cars", slug: "automobiles", img: tradeCarShowroom, alt: "White Omoda C5 SUV on display in a car showroom" },
   { label: "Property", slug: "real-estate", img: tradeProperty, alt: "Modern two-storey house with a paved driveway" },
   { label: "Jobs", slug: "jobs", img: tradeJobs, alt: "Laptop and notebook on an office desk" },
   { label: "Services", slug: "services", img: tradeServices, alt: "Artisan's tool bag with screwdrivers and a wrench" },
