@@ -47,7 +47,7 @@ const HowItWorksPage = () => (
     <section className="mt-12 space-y-3 text-foreground leading-relaxed">
       <h2 className="text-2xl font-bold">Is it free?</h2>
       <p>
-        Yes. Creating an account, browsing and posting listings on Bsb Market is free. Buyers and sellers agree on prices and payment directly. Before you meet anyone, read our{" "}
+        Yes. Creating an account, browsing and posting listings on Bsb Market is free. When you buy, you pay from your Bsb wallet and Bsb Market holds the money until you confirm you received the item. Before you trade, read our{" "}
         <Link to="/safety-tips" className="text-primary font-semibold hover:underline">safety tips</Link>, or see the{" "}
         <Link to="/faq" className="text-primary font-semibold hover:underline">FAQ</Link> for more answers.
       </p>

@@ -244,7 +244,7 @@ export const guides: Guide[] = [
       {
         heading: "Getting paid safely",
         paragraphs: [
-          "For face-to-face sales, meet in a busy public place and accept payment before handing over the item. For bank transfers, check your banking app or statement to confirm the money has actually arrived; do not rely on screenshots or SMS alerts, which can be faked. For deliveries to other cities, agree on who pays for shipping and use a reliable courier.",
+          "Let the buyer pay through the Bsb Market app. The money leaves their Bsb wallet and is held by Bsb Market, then credited to you as soon as the buyer receives the item and taps Received. Never accept bank transfers, cash deposits or screenshots of payment alerts outside the app: those payments can't be traced or protected. For deliveries to other cities, book a dispatch rider or courier and keep the tracking details in the order chat.",
         ],
       },
     ],
@@ -341,7 +341,7 @@ export const guides: Guide[] = [
       },
       {
         q: "Should I pay an artisan upfront?",
-        a: "For small jobs, pay on completion where possible. For larger jobs, agree on milestone payments, such as a part payment for materials and the balance after the work is finished and checked.",
+        a: "Pay through the Bsb Market app so the payment is secure and traceable. For contract work, one party initiates the payment inside the chat and the other completes it from their end. For larger jobs, agree on milestones in the chat, such as a part payment for materials and the balance once the work is finished and checked.",
       },
       {
         q: "Can artisans advertise on Bsb Market for free?",
@@ -455,7 +455,7 @@ export const guides: Guide[] = [
     eyebrow: "Car buyer guide",
     lead: "Buying a used car is one of the biggest purchases most people make. This checklist helps you choose well, inspect properly and avoid paying for a car with problems or bad papers.",
     quickAnswer:
-      "To buy a used car safely in Nigeria: set a budget that includes registration and repairs, compare listings for the same model, inspect the car in daylight with a trusted mechanic, test-drive it, verify that the vehicle papers and chassis (VIN) number match the car and the seller's identity, and pay only after you have checked everything, ideally by traceable bank transfer with a signed receipt or sale agreement.",
+      "To buy a used car safely in Nigeria: set a budget that includes registration and repairs, compare listings for the same model, inspect the car in daylight with a trusted mechanic, test-drive it, verify that the vehicle papers and chassis (VIN) number match the car and the seller's identity, and pay only through the Bsb Market app after you have checked everything, so the payment is protected and traceable, with a signed sale agreement for your records.",
     sections: [
       {
         heading: "Before you look at cars",

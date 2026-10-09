@@ -1,56 +1,61 @@
 import { Link } from "react-router-dom";
-import { ShieldCheck } from "lucide-react";
+import { AlertTriangle, Check, ShieldCheck } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AppCta from "@/components/AppCta";
 import { getPageMeta } from "@/lib/seo";
-
-const sections = [
-  {
-    heading: "Tips for buyers",
-    tips: [
-      "Meet the seller in a busy, public place during the day, such as a mall or a bank. Bring someone with you for expensive items.",
-      "Inspect and test the item before you pay. For phones, check that the device is not iCloud or Google locked and that the IMEI matches the box.",
-      "Avoid paying in advance to someone you have not met or verified, especially if the deal seems too good to be true.",
-      "Keep your conversation inside the Bsb Market app so there is a record of what was agreed.",
-      "Ask for a receipt or written agreement, especially for property, vehicles and contracts.",
-    ],
-  },
-  {
-    heading: "Tips for sellers",
-    tips: [
-      "Do not release an item until you have confirmed payment has reached your account. Fake payment alerts are a common scam.",
-      "Never share your bank PIN, OTP or password with anyone, including people claiming to be Bsb Market staff.",
-      "Use clear photos and honest descriptions. Accurate listings build trust and lead to good reviews.",
-      "Meet buyers in public places and avoid inviting strangers to your home.",
-    ],
-  },
-  {
-    heading: "Property, cars and investments",
-    tips: [
-      "Inspect property in person and verify land documents at the relevant land registry before paying any fee.",
-      "Take a trusted mechanic to inspect a vehicle and confirm the papers and chassis number before you buy.",
-      "Treat promises of guaranteed or unusually high returns as a warning sign. Get legal advice for share or partnership deals.",
-    ],
-  },
-  {
-    heading: "Jobs and services",
-    tips: [
-      "Genuine employers do not ask for money to give you a job. Never pay an application or training fee to get hired.",
-      "Agree on the scope, timeline and price of any service in writing before work starts.",
-      "For larger jobs, pay in milestones as work is completed.",
-    ],
-  },
-];
+import { paymentFlows, safetyTips } from "@/content/safety";
 
 const SafetyTips = () => (
   <PageLayout
     breadcrumbs={getPageMeta("/safety-tips").breadcrumbs}
     eyebrow="Trust & safety"
-    title={<>Safe buying and selling <span className="text-primary">tips</span></>}
-    lead="Most people on Bsb Market trade honestly, but a few simple habits keep you safe from scams when you buy, sell, hire or invest online."
+    title={<>How payments stay <span className="text-primary">safe</span></>}
+    lead="Every transaction inside Bsb Market is secure. Every user is documented, every in-app payment is traceable, and money only moves when the right person confirms it. Here's how it works, and how to keep it that way."
   >
-    <div className="space-y-12">
-      {sections.map((s) => (
+    <div className="space-y-14">
+      <section>
+        <h2 className="text-2xl font-bold text-foreground mb-6">How payments work on Bsb Market</h2>
+        <div className="grid gap-5 md:grid-cols-3">
+          {paymentFlows.map((f) => (
+            <article key={f.key} className="flex flex-col rounded-2xl bg-card p-6" style={{ boxShadow: "var(--card-shadow)" }}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{f.label}</p>
+              <h3 className="mt-2 text-lg font-bold text-foreground">{f.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.summary}</p>
+              <ol className="mt-5 space-y-3">
+                {f.steps.map((step, i) => (
+                  <li key={step} className="flex gap-3 text-sm text-foreground">
+                    <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand text-[11px] font-bold text-white">
+                      {i + 1}
+                    </span>
+                    <span className="pt-0.5">{step}</span>
+                  </li>
+                ))}
+              </ol>
+              {f.note && (
+                <p className="mt-5 flex gap-2 border-t border-border pt-4 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 shrink-0 text-brand mt-0.5" aria-hidden="true" />
+                  {f.note}
+                </p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-4 rounded-2xl border border-amber-300 bg-amber-50 p-6 sm:flex-row">
+        <AlertTriangle className="h-7 w-7 shrink-0 text-amber-600" aria-hidden="true" />
+        <div>
+          <h2 className="text-xl font-bold text-foreground">Deals made outside the app can't be traced</h2>
+          <p className="mt-2 leading-relaxed text-foreground/80">
+            These protections only cover payments made inside Bsb Market. If someone asks you to pay or get paid by bank
+            transfer, cash or another app, don't. Report their profile in the app straight away. Our{" "}
+            <Link to="/terms" className="text-primary font-semibold hover:underline">Terms of Use</Link> explain that
+            Bsb Market can't mediate or recover money for off-app transactions.
+          </p>
+        </div>
+      </section>
+
+      {safetyTips.map((s) => (
         <section key={s.heading}>
           <h2 className="text-2xl font-bold text-foreground mb-5">{s.heading}</h2>
           <ul className="space-y-3">
@@ -63,12 +68,13 @@ const SafetyTips = () => (
           </ul>
         </section>
       ))}
+
       <section className="space-y-3 text-foreground leading-relaxed">
         <h2 className="text-2xl font-bold">Report a problem</h2>
         <p>
-          If you see a suspicious listing or have been contacted by a scammer, report it in the app or{" "}
-          <Link to="/contact" className="text-primary font-semibold hover:underline">contact our support team</Link>. Read our{" "}
-          <Link to="/terms" className="text-primary font-semibold hover:underline">Terms of Use</Link> for the full rules of the marketplace.
+          If something doesn't look right, report the listing or profile in the app, or{" "}
+          <Link to="/contact" className="text-primary font-semibold hover:underline">contact our support team</Link>.
+          Because every in-app transaction is recorded, we can trace what happened.
         </p>
       </section>
     </div>

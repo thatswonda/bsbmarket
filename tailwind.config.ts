@@ -13,7 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", "Arial", "sans-serif"],
+      },
       colors: {
+        navy: {
+          950: "#020a2b",
+          900: "#041650",
+          800: "#07206b",
+          700: "#0b2f96",
+        },
+        brand: {
+          DEFAULT: "#1570ff",
+          bright: "#2f86ff",
+          sky: "#5cc8ff",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -64,6 +78,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -82,6 +100,7 @@ export default {
         },
       },
       animation: {
+        marquee: "marquee 40s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

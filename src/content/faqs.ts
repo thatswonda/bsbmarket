@@ -4,27 +4,35 @@ import type { Faq } from "@/content/categories";
 export const homeFaqs: Faq[] = [
   {
     q: "What is Bsb Market?",
-    a: "Bsb Market is a one-stop marketplace where you can buy and sell goods, hire or offer services, find jobs, network with professionals, and explore real estate, contracts, and more — all in one platform.",
+    a: "Bsb Market is a digital marketplace and social business app for Nigeria and Africa. In one app you can buy and sell new and fairly used items, find jobs, book services and dispatch riders, buy or rent property, list and buy ebooks, run a business page and join brand promotions.",
   },
   {
-    q: "Is Bsb Market free to use?",
-    a: "Yes! Creating an account and browsing listings is completely free. You can post listings, connect with buyers and sellers, and explore all categories at no cost.",
+    q: "Is Bsb Market safe and legit?",
+    a: "Yes. Bsb Market is built by Bsb Global Tech Ltd, a company registered in Nigeria. Every user is documented, every transaction in the app is traceable, and payments for items are held by Bsb Market until the buyer confirms they received what they ordered.",
   },
   {
-    q: "How do I post a listing?",
-    a: "Simply download the Bsb Market app, create an account, and tap the 'Post' button. Fill in your listing details, add photos, set your price, and publish — it's that easy.",
+    q: "How do payments work on Bsb Market?",
+    a: "When you buy an item, the money leaves your Bsb wallet but is not credited to the seller. Bsb Market holds it until you receive the item and tap Received. For property, payment is released only after both buyer and seller check each step: contacting the seller, scheduling an inspection and completing documentation. For contracts, one party initiates the payment in the chat and the other completes it.",
   },
   {
-    q: "Is my data safe on Bsb Market?",
-    a: "Absolutely. We use industry-standard encryption and security measures to protect your personal information. Read our Privacy Policy for full details on how we handle your data.",
+    q: "Can I find a job or hire staff on Bsb Market?",
+    a: "Yes. Job seekers can search full-time, part-time, remote and freelance roles, and employers can post vacancies for free and chat with applicants directly in the app.",
   },
   {
-    q: "Can I use Bsb Market outside my city?",
-    a: "Yes! Bsb Market works both locally and globally. You can browse listings in your area or expand your search to other cities and regions.",
+    q: "Can I book services and dispatch riders on Bsb Market?",
+    a: "Yes. You can book artisans, freelancers and professionals such as plumbers, electricians, photographers and tutors, as well as dispatch riders and courier companies to deliver packages.",
   },
   {
-    q: "How do I contact a seller or service provider?",
-    a: "Each listing has a contact button that lets you message or call the seller directly through the app. Communication is seamless and secure.",
+    q: "Can I sell ebooks on Bsb Market?",
+    a: "Yes. Authors and creators can list ebooks and digital guides for sale, and buyers get an instant download after paying in the app.",
+  },
+  {
+    q: "What are business pages and brand promotions?",
+    a: "A business page lets you showcase your products and services, post updates and gain followers. Brand promotions connect businesses with ambassadors and influencers who get paid to promote them.",
+  },
+  {
+    q: "Is Bsb Market free, and where do I get it?",
+    a: "Yes. Downloading the app, creating an account and posting listings are free. Get Bsb Market on Google Play or the App Store and trade with anyone, from anywhere.",
   },
 ];
 
@@ -40,7 +48,7 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
       },
       {
         q: "Does Bsb Market charge commission on sales?",
-        a: "Posting and browsing listings on Bsb Market is free. Buyers and sellers agree on prices and payment directly with each other.",
+        a: "Downloading the app, creating an account, browsing and posting listings on Bsb Market are free. When a buyer pays for an item, the money moves from their Bsb wallet and is held by Bsb Market until they tap Received, then it is credited to the seller.",
       },
       {
         q: "How do I sell fast on Bsb Market?",
@@ -78,7 +86,7 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
       },
       {
         q: "How do I stay safe when trading on Bsb Market?",
-        a: "Meet in busy public places, inspect items before paying, never send money in advance to people you have not verified, and report suspicious listings. See our safety tips page for more.",
+        a: "Keep every chat and payment inside the Bsb Market app. In-app payments are held by Bsb Market until the buyer confirms delivery, every user is documented and every transaction is traceable. Payments made outside the app can't be traced, so report anyone who asks you to pay off the app. See our safety tips page for more.",
       },
       {
         q: "Who owns Bsb Market?",

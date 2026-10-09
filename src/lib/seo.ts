@@ -1,5 +1,5 @@
 import { categories, type Faq } from "@/content/categories";
-import { allFaqs, uyoFaqs } from "@/content/faqs";
+import { allFaqs, homeFaqs, uyoFaqs } from "@/content/faqs";
 import { guides } from "@/content/guides";
 import { cities, cityPath } from "@/content/cities";
 import {
@@ -67,10 +67,11 @@ const webPageJsonLd = (meta: PageMeta): JsonLd => ({
 const staticPages: PageMeta[] = [
   {
     path: "/",
-    title: "Bsb Market | Buy, Sell, Hire & Connect – Online Marketplace App",
+    title: "Bsb Market – Buy, Sell, Find Jobs, Book Services & Property | Marketplace App",
     description:
-      "Bsb Market is a free all-in-one marketplace app from Nigeria. Buy and sell goods, gadgets and cars, hire or offer services, find jobs, rent property and network with businesses.",
+      "Bsb Market is Nigeria's digital marketplace and social business app. Buy and sell new and fairly used items, find jobs, book services and dispatch riders, buy or rent property, sell ebooks and join brand promotions, with payments held until you confirm delivery.",
     priority: 1.0,
+    faqs: homeFaqs,
     jsonLd: [organizationJsonLd, websiteJsonLd, mobileAppJsonLd],
   },
   {
@@ -91,9 +92,9 @@ const staticPages: PageMeta[] = [
   },
   {
     path: "/categories",
-    title: "Marketplace Categories – Goods, Services, Jobs, Cars & More | Bsb Market",
+    title: "Marketplace Categories – Goods, Jobs, Services, Property, Dispatch & More | Bsb Market",
     description:
-      "Browse every Bsb Market category: services, goods, contracts, jobs, real estate, automobiles, promotions, Panteka spare parts, gadgets, ebooks and business shares.",
+      "Browse every Bsb Market category: fairly used and new goods, gadgets, cars, real estate, jobs, services, dispatch and delivery, ebooks, brand promotions, contracts, Panteka spare parts and business shares.",
     breadcrumbs: [HOME, { name: "Categories", path: "/categories" }],
     priority: 0.9,
   },
@@ -108,9 +109,9 @@ const staticPages: PageMeta[] = [
   },
   {
     path: "/safety-tips",
-    title: "Safe Buying & Selling Tips – Avoid Online Scams | Bsb Market",
+    title: "How Payments Stay Safe on Bsb Market – Escrow, Property & Contract Payments",
     description:
-      "Practical safety tips for buying and selling online in Nigeria: how to meet safely, inspect items, pay securely, spot scams and report suspicious listings on Bsb Market.",
+      "How Bsb Market protects every in-app transaction: item payments held until the buyer taps Received, a checked four-step property process, in-chat contract payments, documented users and traceable records.",
     breadcrumbs: [HOME, { name: "Safety tips", path: "/safety-tips" }],
     priority: 0.6,
   },

@@ -1,14 +1,15 @@
-import catServices from "@/assets/cat-services.jpg";
-import catGoods from "@/assets/cat-goods.jpg";
+import tradeServices from "@/assets/home/trade-services.webp";
+import tradeUsed from "@/assets/home/trade-used.webp";
+import tradeJobs from "@/assets/home/trade-jobs.webp";
+import tradeProperty from "@/assets/home/trade-property.webp";
+import tradeCars from "@/assets/home/trade-cars.webp";
+import tradePromo from "@/assets/home/trade-promo.webp";
+import ebookCover from "@/assets/home/listing-ebook.webp";
+import dispatchParcels from "@/assets/parcels-shipping.png";
+import businessMeeting from "@/assets/bsb-team-meeting.png";
 import catContracts from "@/assets/cat-contracts.jpg";
-import catJobs from "@/assets/cat-jobs.jpg";
-import catRealEstate from "@/assets/cat-realestate.jpg";
-import catAutomobiles from "@/assets/cat-automobiles.jpg";
-import catPromotions from "@/assets/cat-promotions.jpg";
 import catPanteka from "@/assets/cat-panteka.jpg";
 import catGadgets from "@/assets/cat-gadgets.jpg";
-import catEbooks from "@/assets/cat-ebooks.jpg";
-import catShares from "@/assets/cat-shares.jpg";
 
 export type Faq = { q: string; a: string };
 
@@ -35,7 +36,7 @@ export const categories: Category[] = [
     metaTitle: "Hire Local Services & Offer Your Skills | Bsb Market",
     metaDescription:
       "Find plumbers, electricians, cleaners, photographers, web developers and other service providers on Bsb Market, or list your own skills and get hired. Free to join.",
-    image: catServices,
+    image: tradeServices,
     summary: "Hire trusted professionals or offer your skills to people who need them.",
     intro: [
       "Bsb Market connects people who need work done with the artisans, freelancers and businesses who can do it. Whether you need a plumber in Uyo today or a web developer for a long project, you can browse service listings, compare providers and contact them directly from the app.",
@@ -68,13 +69,52 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "dispatch",
+    name: "Dispatch",
+    heading: "Book dispatch riders and delivery services",
+    metaTitle: "Book Dispatch Riders & Delivery Services in Nigeria | Bsb Market",
+    metaDescription:
+      "Book dispatch riders, bike delivery and courier companies on Bsb Market to send packages, online orders and documents within your city or across Nigeria. Pay securely in the app.",
+    image: dispatchParcels,
+    summary: "Dispatch riders and courier companies for packages, orders and documents.",
+    intro: [
+      "Selling online only works when your goods reach the buyer. The Dispatch category on Bsb Market connects you with dispatch riders, bike delivery services and courier companies that pick up and deliver packages, online orders and documents.",
+      "Sellers can book a rider for an order in minutes, and anyone can send a parcel across town or to another state. Riders and logistics businesses can list their service for free and get booked by buyers and sellers already trading on the app.",
+    ],
+    whatYouFind: [
+      "Same-day dispatch riders for deliveries within your city",
+      "Interstate courier and logistics companies for parcels and bulk goods",
+      "Document delivery for offices, schools and businesses",
+      "Delivery partners for online shops, food vendors and small businesses",
+    ],
+    tips: [
+      "Book and pay the rider through the app so the delivery is recorded and traceable.",
+      "Package items securely and add the buyer's correct address and phone number before pickup.",
+      "Keep the order chat updated with pickup and delivery times so everyone knows where the item is.",
+    ],
+    faqs: [
+      {
+        q: "Can I book a dispatch rider on Bsb Market?",
+        a: "Yes. Open the Bsb Market app, go to Dispatch, choose a rider or courier company and book them for your pickup and delivery. Payment is made inside the app.",
+      },
+      {
+        q: "Can I list my dispatch or logistics business on Bsb Market?",
+        a: "Yes. Riders and logistics companies can list their delivery service for free, set the areas they cover and get booked by buyers and sellers on the app.",
+      },
+      {
+        q: "Does Bsb Market deliver across Nigeria?",
+        a: "Delivery is handled by the dispatch riders and courier companies listed on Bsb Market. Many cover same-day delivery within a city, and courier companies cover interstate delivery.",
+      },
+    ],
+  },
+  {
     slug: "goods",
     name: "Goods",
     heading: "Buy and sell goods online",
     metaTitle: "Buy & Sell Goods Online: New and Used Items | Bsb Market",
     metaDescription:
       "Buy and sell new and used goods on Bsb Market: furniture, home appliances, fashion, shoes, electronics and more. Post a free listing and reach buyers near you.",
-    image: catGoods,
+    image: tradeUsed,
     summary: "New and fairly used items: furniture, appliances, fashion and household goods.",
     intro: [
       "The Goods category is where everyday buying and selling happens on Bsb Market. Sell things you no longer need, stock up for your shop, or find a good deal on something new or fairly used from a seller near you.",
@@ -148,7 +188,7 @@ export const categories: Category[] = [
     metaTitle: "Find Jobs & Hire Staff in Nigeria and Remote | Bsb Market",
     metaDescription:
       "Search full-time, part-time, remote and freelance jobs on Bsb Market, or post a job and hire staff fast. Sales, tech, driving, design, admin and more.",
-    image: catJobs,
+    image: tradeJobs,
     summary: "Full-time, part-time, remote and freelance jobs from employers near you.",
     intro: [
       "Looking for work or hiring? The Jobs category on Bsb Market brings employers and job seekers together, from local shop assistants and drivers to remote software developers.",
@@ -187,7 +227,7 @@ export const categories: Category[] = [
     metaTitle: "Houses, Land & Shops for Rent and Sale | Bsb Market",
     metaDescription:
       "Find apartments, houses, land, shops and office space for rent or sale on Bsb Market. Agents, landlords and property owners list for free.",
-    image: catRealEstate,
+    image: tradeProperty,
     summary: "Apartments, houses, land, shops and office space to rent or buy.",
     intro: [
       "Find your next home, shop or plot of land on Bsb Market. Landlords, agents and property owners list apartments, houses, land and commercial space, and you contact them directly from the app.",
@@ -222,7 +262,7 @@ export const categories: Category[] = [
     metaTitle: "Cars, Buses & Motorcycles for Sale | Bsb Market",
     metaDescription:
       "Buy and sell used and new cars, SUVs, buses and motorcycles on Bsb Market. Toyota, Honda, Lexus and more from sellers and dealers near you.",
-    image: catAutomobiles,
+    image: tradeCars,
     summary: "Used and new cars, SUVs, buses, motorcycles and tricycles.",
     intro: [
       "Whether you are buying your first car or selling a commercial bus, the Automobiles category on Bsb Market connects you with buyers, private sellers and dealers.",
@@ -257,7 +297,7 @@ export const categories: Category[] = [
     metaTitle: "Brand Promotions, Influencer Gigs & Ads | Bsb Market",
     metaDescription:
       "Businesses on Bsb Market find promoters, brand ambassadors and influencers. Creators discover paid promotion gigs for products, events and apps.",
-    image: catPromotions,
+    image: tradePromo,
     summary: "Brand ambassador, influencer and product promotion opportunities.",
     intro: [
       "The Promotions category helps businesses reach more customers and helps creators earn from their audience. Brands post campaigns, and promoters, influencers and brand ambassadors apply to take part.",
@@ -360,7 +400,7 @@ export const categories: Category[] = [
     metaTitle: "Sell & Buy Ebooks and Digital Guides | Bsb Market",
     metaDescription:
       "Authors and creators sell ebooks, guides and courses on Bsb Market. Find books on business, forex, cooking, self development and more.",
-    image: catEbooks,
+    image: ebookCover,
     summary: "Ebooks and digital guides on business, finance, cooking and personal growth.",
     intro: [
       "Turn your knowledge into income. Authors, coaches and creators use the Ebooks category on Bsb Market to sell digital books and guides to a ready audience.",
@@ -390,7 +430,7 @@ export const categories: Category[] = [
     metaTitle: "Business Shares & Investment Opportunities | Bsb Market",
     metaDescription:
       "Discover business partnership and investment opportunities on Bsb Market: startup equity, restaurants, logistics, agribusiness and more.",
-    image: catShares,
+    image: businessMeeting,
     summary: "Equity, partnerships and investment opportunities in growing businesses.",
     intro: [
       "The Shares category connects business owners looking for capital or partners with people ready to invest. Businesses describe the opportunity, and interested investors reach out directly.",

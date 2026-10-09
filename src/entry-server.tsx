@@ -9,6 +9,7 @@ export { categories } from "@/content/categories";
 export { allFaqs } from "@/content/faqs";
 export { guides } from "@/content/guides";
 export { cities, cityPath } from "@/content/cities";
+export { offerings, SITE_DEFINITION } from "@/content/offerings";
 
 /** Renders a route to static HTML at build time (see scripts/prerender.mjs). */
 export const render = (url: string) =>

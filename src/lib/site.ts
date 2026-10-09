@@ -39,7 +39,7 @@ export const organizationJsonLd = {
   },
   image: `${SITE_URL}${OG_IMAGE_PATH}`,
   description:
-    "Bsb Market is an all-in-one online marketplace and social-business app from Nigeria for buying and selling goods, hiring and offering services, finding jobs, real estate, cars, contracts and business networking.",
+    "Bsb Market is a digital marketplace and social business app from Nigeria for buying and selling new and fairly used items, job hunting, booking services and dispatch riders, real estate, cars, ebooks, business pages and brand promotions, with in-app payments held until the buyer confirms delivery.",
   email: SUPPORT_EMAIL,
   address: {
     "@type": "PostalAddress",
@@ -78,7 +78,7 @@ export const mobileAppJsonLd = {
   operatingSystem: "Android",
   applicationCategory: "ShoppingApplication",
   description:
-    "Free marketplace app to buy and sell goods, hire or offer services, find jobs, rent or buy property, trade cars and network with businesses in Nigeria and beyond.",
+    "Free digital marketplace app to buy and sell new and fairly used items, find jobs, book services and dispatch riders, buy or rent property, list and buy ebooks, run a business page and join brand promotions, with secure in-app payments.",
   downloadUrl: PLAY_STORE_URL.split("&")[0],
   installUrl: PLAY_STORE_URL.split("&")[0],
   image: `${SITE_URL}${LOGO_PATH}`,
