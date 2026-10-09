@@ -85,7 +85,32 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Cyan-to-blue gradient used for the highlighted word in headings */
+  .text-gradient-sky {
+    background-image: linear-gradient(180deg, #7ad8ff 0%, #36a6ff 55%, #1873ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-navy-hero {
+    background:
+      radial-gradient(60% 70% at 78% 45%, rgba(26, 102, 255, 0.55) 0%, rgba(26, 102, 255, 0) 70%),
+      radial-gradient(50% 60% at 10% 100%, rgba(18, 74, 214, 0.35) 0%, rgba(18, 74, 214, 0) 70%),
+      linear-gradient(180deg, #03114a 0%, #05185c 60%, #05175a 100%);
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-4 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.32em] text-brand-sky;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply block h-[2px] w-8 sm:w-11 rounded-full bg-brand-sky;
   }
 }
 

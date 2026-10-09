@@ -13,7 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", "Arial", "sans-serif"],
+      },
       colors: {
+        navy: {
+          950: "#020a2b",
+          900: "#041650",
+          800: "#07206b",
+          700: "#0b2f96",
+        },
+        brand: {
+          DEFAULT: "#1570ff",
+          bright: "#2f86ff",
+          sky: "#5cc8ff",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

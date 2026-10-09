@@ -1,95 +1,98 @@
-import AppStoreButton from "@/components/AppStoreButton";
 import { Link } from "react-router-dom";
+import { Mail, MapPin } from "lucide-react";
 import logoAsset from "@/assets/bsb-logo.png";
-import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import { AppStoreBadge, GooglePlayButton } from "@/components/StoreButtons";
+import { ADDRESS, COMPANY_NAME, SUPPORT_EMAIL } from "@/lib/site";
+
+const columns = [
+  {
+    title: "Marketplace",
+    links: [
+      { label: "Fairly used goods", to: "/categories/goods" },
+      { label: "Phones & gadgets", to: "/categories/gadgets" },
+      { label: "Cars", to: "/categories/automobiles" },
+      { label: "Property", to: "/categories/real-estate" },
+      { label: "Jobs", to: "/categories/jobs" },
+      { label: "Services", to: "/categories/services" },
+      { label: "All categories", to: "/categories" },
+    ],
+  },
+  {
+    title: "Cities",
+    links: [
+      { label: "Uyo", to: "/buy-and-sell-in-uyo" },
+      { label: "Lagos", to: "/buy-and-sell-in-lagos" },
+      { label: "Abuja", to: "/buy-and-sell-in-abuja" },
+      { label: "Port Harcourt", to: "/buy-and-sell-in-port-harcourt" },
+      { label: "Calabar", to: "/buy-and-sell-in-calabar" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About us", to: "/about" },
+      { label: "How it works", to: "/how-it-works" },
+      { label: "Blog & guides", to: "/guides" },
+      { label: "Safety tips", to: "/safety-tips" },
+      { label: "FAQ", to: "/faq" },
+      { label: "Contact", to: "/contact" },
+    ],
+  },
+];
 
 const Footer = () => (
-  <footer className="py-6 sm:py-12 bg-card border-t border-border/50">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      {/* Desktop footer */}
-      <div className="hidden md:grid grid-cols-4 gap-8 mb-10">
+  <footer className="bg-navy-950 text-white">
+    <div className="mx-auto max-w-[1320px] px-4 pb-10 pt-16 sm:px-8 sm:pt-20">
+      <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <img src={logoAsset} alt="Bsb Market logo" className="w-9 h-9 rounded-lg object-contain" loading="lazy" />
-            <span className="text-xl font-bold text-foreground">Bsb <span className="text-primary">Market</span></span>
-          </div>
-
-          <p className="text-sm text-muted-foreground leading-relaxed">Making trade and business easier. Your one-stop marketplace for goods, services, jobs, and networking.</p>
-          <div className="flex items-center gap-3 mt-4">
-            <a href="#" className="w-9 h-9 rounded-full bg-accent flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors text-muted-foreground">
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-accent flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors text-muted-foreground">
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-accent flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors text-muted-foreground">
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
+          <Link to="/" className="flex items-center gap-3" aria-label="Bsb Market home">
+            <img src={logoAsset} alt="Bsb Market logo" className="h-12 w-12 rounded-xl ring-1 ring-white/10" loading="lazy" />
+            <span className="leading-none">
+              <span className="block text-2xl font-extrabold">
+                Bsb <span className="text-gradient-sky">Market</span>
+              </span>
+              <span className="mt-1 block text-xs text-white/70">Buy, Sell &amp; Connect</span>
+            </span>
+          </Link>
+          <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-white/60">
+            The social trade app connecting buyers, sellers and businesses across Africa and beyond.
+          </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <GooglePlayButton size="compact" />
+            <AppStoreBadge size="compact" />
           </div>
         </div>
-        <div>
-          <h4 className="font-semibold text-foreground mb-4">Marketplace</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/categories/goods" className="hover:text-primary transition-colors">Buy & Sell</Link></li>
-            <li><Link to="/categories/services" className="hover:text-primary transition-colors">Services</Link></li>
-            <li><Link to="/categories/jobs" className="hover:text-primary transition-colors">Jobs</Link></li>
-            <li><Link to="/categories/real-estate" className="hover:text-primary transition-colors">Real Estate</Link></li>
-            <li><Link to="/categories/automobiles" className="hover:text-primary transition-colors">Cars</Link></li>
-            <li><Link to="/categories/gadgets" className="hover:text-primary transition-colors">Phones & Gadgets</Link></li>
-            <li><Link to="/categories" className="hover:text-primary transition-colors">All Categories</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-foreground mb-4">Company</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-            <li><Link to="/how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
-            <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
-            <li><Link to="/safety-tips" className="hover:text-primary transition-colors">Safety Tips</Link></li>
-            <li><Link to="/guides" className="hover:text-primary transition-colors">Guides</Link></li>
-            <li><Link to="/guides/what-is-bsb-market" className="hover:text-primary transition-colors">What is Bsb Market?</Link></li>
-            <li><Link to="/buy-and-sell-in-uyo" className="hover:text-primary transition-colors">Buy & Sell in Uyo</Link></li>
-            <li><Link to="/buy-and-sell-in-lagos" className="hover:text-primary transition-colors">Buy & Sell in Lagos</Link></li>
-            <li><Link to="/buy-and-sell-in-abuja" className="hover:text-primary transition-colors">Buy & Sell in Abuja</Link></li>
-            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
-            <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link></li>
-            <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-foreground mb-4">Download App</h4>
-          <div className="flex flex-col gap-2">
-            <AppStoreButton className="inline-flex items-center gap-2 px-4 py-2.5 bg-foreground text-card rounded-lg text-sm font-medium hover:opacity-90 transition-opacity w-fit">
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.81 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.07 4.83 18.97 5.08 20.18 6.88C20.07 6.95 17.7 8.32 17.73 11.16C17.76 14.56 20.67 15.65 20.7 15.66C20.67 15.74 20.22 17.33 19.11 18.97L18.71 19.5ZM13.05 4.24C13.78 3.38 14.25 2.19 14.12 1C13.09 1.04 11.85 1.69 11.1 2.55C10.42 3.31 9.85 4.53 10 5.69C11.14 5.78 12.31 5.1 13.05 4.24Z" /></svg>
-              App Store
-            </AppStoreButton>
-            <a href={PLAY_STORE_URL}
-              onClick={openPlayStore} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2.5 bg-foreground text-card rounded-lg text-sm font-medium hover:opacity-90 transition-opacity w-fit">
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L21.884 12l-1.884 1.19-2.302-2.302L19.884 12l-2.186-1.492zM5.864 2.658L16.8 8.99l-2.302 2.303L5.864 2.658z" /></svg>
-              Google Play
-            </a>
+        {columns.map((col) => (
+          <div key={col.title}>
+            <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-white/50">{col.title}</h3>
+            <ul className="mt-5 space-y-3">
+              {col.links.map((l) => (
+                <li key={l.to}>
+                  <Link to={l.to} className="text-[15px] text-white/80 transition-colors hover:text-brand-sky">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
+        ))}
       </div>
 
-      {/* Bottom bar */}
-      <div className="md:border-t md:border-border/50 md:pt-6 text-center space-y-2">
-        <p className="text-xs text-muted-foreground">
-          23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
-        </p>
-        <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Bsb Market, a product of Bsb Global Tech Ltd.
-        </p>
-        <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground">
-          <Link to="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
-          <span>·</span>
-          <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <span>·</span>
-          <Link to="/categories" className="hover:text-primary transition-colors">Categories</Link>
-          <span>·</span>
-          <Link to="/guides" className="hover:text-primary transition-colors">Guides</Link>
-          <span>·</span>
-          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
+      <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-2 sm:flex-row sm:gap-6">
+          <span className="flex items-center gap-2">
+            <MapPin className="h-4 w-4" /> {ADDRESS.street}, {ADDRESS.city}, {ADDRESS.region}, {ADDRESS.countryName}
+          </span>
+          <a href={`mailto:${SUPPORT_EMAIL}`} className="flex items-center gap-2 hover:text-white">
+            <Mail className="h-4 w-4" /> {SUPPORT_EMAIL}
+          </a>
+        </div>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <span>
+            &copy; {new Date().getFullYear()} Bsb Market, a product of {COMPANY_NAME}.
+          </span>
+          <Link to="/terms" className="hover:text-white">Terms</Link>
+          <Link to="/privacy" className="hover:text-white">Privacy</Link>
         </div>
       </div>
     </div>
