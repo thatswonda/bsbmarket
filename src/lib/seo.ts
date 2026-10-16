@@ -117,9 +117,9 @@ const staticPages: PageMeta[] = [
   },
   {
     path: "/download",
-    title: "Download the Bsb Market App for Android – Free",
+    title: "Download the Bsb Market App for Android & iPhone – Free",
     description:
-      "Get the free Bsb Market app on Google Play to buy, sell, hire, find jobs and network from your phone. iOS version coming soon.",
+      "Get the free Bsb Market app on Google Play to buy, sell, hire, find jobs and network from your phone. Also on the App Store for iPhone.",
     breadcrumbs: [HOME, { name: "Download the app", path: "/download" }],
     priority: 0.8,
     jsonLd: [mobileAppJsonLd],

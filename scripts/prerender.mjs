@@ -61,13 +61,13 @@ const link = (p) => `${SITE_URL}${p === "/" ? "/" : p}`;
 const byPath = Object.fromEntries(pages.map((p) => [p.path, p]));
 const llms = `# Bsb Market
 
-> ${SITE_DEFINITION} It is built by Bsb Global Tech Ltd, headquartered at 23 Urua Udofia, Uyo, Akwa Ibom State, Nigeria.
+> ${SITE_DEFINITION} It is built by Bsb Global Tech Ltd, headquartered in Port Harcourt, Rivers State, Nigeria.
 
 Key facts:
 - Name: Bsb Market (short name: Bsb)
 - Company: Bsb Global Tech Ltd (Nigeria)
 - Website: ${SITE_URL}/
-- App: Android on Google Play (https://play.google.com/store/apps/details?id=com.austindev.bsb); iOS coming soon
+- App: Android on Google Play (https://play.google.com/store/apps/details?id=com.austindev.bsb) and iPhone on the App Store (https://apps.apple.com/ng/app/bsb-market/id6813940119)
 - Price: free to join, browse and post listings
 - Payments: item payments leave the buyer's Bsb wallet and are held by Bsb Market until the buyer taps Received; property payments are released after buyer and seller check each step (contact seller, schedule inspection, documentation, release payment); contract payments are initiated in the chat and completed by the other party. Users are documented and in-app transactions are traceable. Off-app payments are not covered and should be reported.
 - Categories: ${categories.map((c) => c.name).join(", ")}

@@ -4,7 +4,7 @@ import AppCta from "@/components/AppCta";
 import { getPageMeta } from "@/lib/seo";
 
 const buyerSteps = [
-  { title: "Download the app and sign up", desc: "Install Bsb Market from Google Play and create a free account with your name, phone number or email." },
+  { title: "Download the app and sign up", desc: "Install Bsb Market from Google Play or the App Store and create a free account with your name, phone number or email." },
   { title: "Browse and discover", desc: "Explore listings by category: goods, gadgets, services, jobs, real estate, cars and more, near you or anywhere." },
   { title: "Connect with the seller", desc: "Tap a listing to chat or call the seller, service provider or employer directly and ask your questions." },
   { title: "Deal safely and leave a review", desc: "Inspect before you pay, complete the deal and rate your experience to help the community." },

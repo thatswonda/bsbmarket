@@ -82,7 +82,7 @@ export const allFaqs: { group: string; items: Faq[] }[] = [
     items: [
       {
         q: "Where can I download the Bsb Market app?",
-        a: "The Bsb Market app is available for Android on Google Play. The iOS version is coming soon.",
+        a: "The Bsb Market app is available for Android on Google Play and for iPhone on the App Store.",
       },
       {
         q: "How do I stay safe when trading on Bsb Market?",
