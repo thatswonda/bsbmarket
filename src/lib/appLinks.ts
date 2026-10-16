@@ -22,3 +22,13 @@ export const openPlayStore = (e: React.MouseEvent<HTMLAnchorElement>) => {
   }
   window.location.href = PLAY_STORE_URL;
 };
+
+/** Which store suits the visitor's device: "ios", "android", or null on a computer. */
+export const detectStore = (): "ios" | "android" | null => {
+  if (typeof navigator === "undefined") return null;
+  const ua = navigator.userAgent;
+  // iPadOS reports itself as a Mac, so also check for a touch screen.
+  if (/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1)) return "ios";
+  if (/Android/i.test(ua)) return "android";
+  return null;
+};

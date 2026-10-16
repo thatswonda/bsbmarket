@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Globe2, ShieldCheck, ShoppingCart, Users } from "lucide-react";
 import DeviceShowcase from "@/components/home/DeviceShowcase";
-import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import GetAppLink from "@/components/GetAppLink";
 import africaTile from "@/assets/home/africa-tile.webp";
 
 const pillars = [
@@ -38,16 +38,12 @@ const DigitalizingTrade = () => (
             A social business app that connects buyers, sellers, job seekers, service providers and businesses — locally and globally.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-8">
-            <a
-              href={PLAY_STORE_URL}
-              onClick={openPlayStore}
-              target="_blank"
-              rel="noopener noreferrer"
+            <GetAppLink
               className="group inline-flex h-[60px] items-center gap-3 rounded-full bg-white px-9 text-[17px] font-bold text-navy-900 shadow-[0_14px_30px_-12px_rgba(0,0,0,0.6)] transition-transform hover:-translate-y-0.5"
             >
               Get Started
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
+            </GetAppLink>
             <Link
               to="/categories"
               className="border-b-2 border-brand-sky pb-1.5 text-[16px] font-semibold text-white transition-colors hover:text-brand-sky"
@@ -97,16 +93,12 @@ const DigitalizingTrade = () => (
             We're building a stronger, more connected trade ecosystem across Africa and beyond.
           </p>
         </div>
-        <a
-          href={PLAY_STORE_URL}
-          onClick={openPlayStore}
-          target="_blank"
-          rel="noopener noreferrer"
+        <GetAppLink
           className="group inline-flex h-14 items-center gap-3 rounded-full bg-brand px-8 text-base font-semibold text-white shadow-[0_12px_26px_-10px_rgba(21,112,255,0.8)] transition-colors hover:bg-brand-bright"
         >
           Join Bsb Market
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-        </a>
+        </GetAppLink>
       </div>
     </div>
   </section>
