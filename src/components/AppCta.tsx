@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import { APP_STORE_URL, PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
 
 /** Download call-to-action block used at the bottom of content pages. */
 const AppCta = ({ heading = "Start buying, selling and hiring on Bsb Market" }: { heading?: string }) => (
@@ -17,6 +17,14 @@ const AppCta = ({ heading = "Start buying, selling and hiring on Bsb Market" }: 
         className="inline-flex items-center px-6 py-3 rounded-xl bg-card text-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
       >
         Get it on Google Play
+      </a>
+      <a
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-6 py-3 rounded-xl bg-card text-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
+      >
+        Download on the App Store
       </a>
       <Link to="/how-it-works" className="inline-flex items-center px-6 py-3 rounded-xl border border-primary-foreground/40 text-sm font-semibold hover:bg-primary-foreground/10 transition-colors">
         How it works

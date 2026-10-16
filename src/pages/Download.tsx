@@ -42,11 +42,11 @@ const Download = () => (
           >
             Get it on Google Play
           </a>
-          <AppStoreButton className="inline-flex items-center px-6 py-3 bg-accent text-foreground rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
-            App Store (coming soon)
+          <AppStoreButton className="inline-flex items-center px-6 py-3 bg-foreground text-card rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
+            Download on the App Store
           </AppStoreButton>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground">Available now on Android. The iOS version is coming soon.</p>
+        <p className="mt-4 text-sm text-muted-foreground">Free on Android (Google Play) and iPhone (App Store).</p>
       </div>
       <img src={phoneMockup} alt="Bsb Market app on a smartphone" className="w-56 sm:w-72 h-auto mx-auto" width={768} height={1376} />
     </div>

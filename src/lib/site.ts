@@ -1,4 +1,4 @@
-import { PLAY_STORE_URL } from "@/lib/appLinks";
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/appLinks";
 
 /**
  * Canonical public origin of the website (no trailing slash).
@@ -54,7 +54,7 @@ export const organizationJsonLd = {
     availableLanguage: ["English"],
   },
   areaServed: ["Nigeria", "Africa", "Worldwide"],
-  sameAs: [PLAY_STORE_URL.split("&")[0]],
+  sameAs: [PLAY_STORE_URL.split("&")[0], APP_STORE_URL],
 };
 
 export const websiteJsonLd = {
@@ -73,12 +73,12 @@ export const mobileAppJsonLd = {
   "@type": "MobileApplication",
   "@id": `${SITE_URL}/#app`,
   name: "Bsb Market",
-  operatingSystem: "Android",
+  operatingSystem: "Android, iOS",
   applicationCategory: "ShoppingApplication",
   description:
     "Free digital marketplace app to buy and sell new and fairly used items, find jobs, book services and dispatch riders, buy or rent property, list and buy ebooks, run a business page and join brand promotions, with secure in-app payments.",
-  downloadUrl: PLAY_STORE_URL.split("&")[0],
-  installUrl: PLAY_STORE_URL.split("&")[0],
+  downloadUrl: [PLAY_STORE_URL.split("&")[0], APP_STORE_URL],
+  installUrl: [PLAY_STORE_URL.split("&")[0], APP_STORE_URL],
   image: `${SITE_URL}${LOGO_PATH}`,
   offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
   publisher: { "@id": `${SITE_URL}/#organization` },

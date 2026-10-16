@@ -39,7 +39,7 @@ export const guides: Guide[] = [
     eyebrow: "Explained",
     lead: "A plain-English overview of Bsb Market: what it is, who it is for, what you can do on it and how it is different from other marketplace apps.",
     quickAnswer:
-      "Bsb Market is a free, all-in-one online marketplace and social-business app built in Nigeria by Bsb Global Tech Ltd. On one app you can buy and sell goods, gadgets and cars, hire or offer services, find and post jobs, rent or buy property, find contracts and investment opportunities, and network with other businesses. It is available on Android through Google Play, with iOS coming soon.",
+      "Bsb Market is a free, all-in-one online marketplace and social-business app built in Nigeria by Bsb Global Tech Ltd. On one app you can buy and sell goods, gadgets and cars, hire or offer services, find and post jobs, rent or buy property, find contracts and investment opportunities, and network with other businesses. It is available on Android through Google Play and on iPhone through the App Store.",
     sections: [
       {
         heading: "Bsb Market in one sentence",
@@ -97,7 +97,7 @@ export const guides: Guide[] = [
       },
       {
         q: "Is there a Bsb Market app?",
-        a: "Yes. The Bsb Market app is available for Android on Google Play. The iOS version is coming soon.",
+        a: "Yes. The Bsb Market app is available for Android on Google Play and for iPhone on the App Store.",
       },
     ],
     related: [
@@ -119,14 +119,14 @@ export const guides: Guide[] = [
     eyebrow: "Trust & safety",
     lead: "Before you download a marketplace app, it is sensible to check who runs it. Here are the facts about Bsb Market and the steps you can take to trade safely.",
     quickAnswer:
-      "Yes. Bsb Market is a legitimate marketplace app operated by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office in Port Harcourt, Rivers State. The app is published on Google Play, has public Terms of Use and a Privacy Policy written under Nigeria's Data Protection Act, and a support team you can reach at team@bsbmarket.com. As on any marketplace, individual users can be dishonest, so always meet in public, inspect before paying and never pay in advance to people you have not verified.",
+      "Yes. Bsb Market is a legitimate marketplace app operated by Bsb Global Tech Ltd, a company incorporated in Nigeria with its office in Port Harcourt, Rivers State. The app is published on Google Play and the App Store, has public Terms of Use and a Privacy Policy written under Nigeria's Data Protection Act, and a support team you can reach at team@bsbmarket.com. As on any marketplace, individual users can be dishonest, so always meet in public, inspect before paying and never pay in advance to people you have not verified.",
     sections: [
       {
         heading: "Who is behind Bsb Market",
         list: [
           "Company: Bsb Global Tech Ltd, incorporated in Nigeria.",
           "Office: Port Harcourt, Rivers State, Nigeria.",
-          "App: published on Google Play for Android; iOS coming soon.",
+          "App: published on Google Play for Android and the App Store for iPhone.",
           "Support: team@bsbmarket.com, Monday to Saturday, 9:00 AM to 6:00 PM WAT.",
           "Policies: public Terms of Use and Privacy Policy on this website.",
         ],
@@ -208,7 +208,7 @@ export const guides: Guide[] = [
         heading: "Step-by-step: selling on Bsb Market",
         ordered: true,
         list: [
-          "Download the free Bsb Market app from Google Play and create your account.",
+          "Download the free Bsb Market app from Google Play or the App Store and create your account.",
           "Tap 'Post' and choose the right category, such as Goods, Gadgets, Automobiles or Real Estate.",
           "Add 4 to 8 clear photos taken in daylight from different angles, including any defects.",
           "Write a specific title with brand, model, size or capacity, for example 'iPhone 13, 128GB, UK used, 88% battery'.",

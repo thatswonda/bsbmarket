@@ -64,7 +64,7 @@ const About = () => (
           ["Product", "Bsb Market marketplace and social-business app"],
           ["Company", "Bsb Global Tech Ltd"],
           ["Headquarters", "Port Harcourt, Rivers State, Nigeria"],
-          ["Availability", "Android (Google Play); iOS coming soon"],
+          ["Availability", "Android (Google Play) and iPhone (App Store)"],
           ["Price", "Free to join, browse and post listings"],
           ["Contact", "team@bsbmarket.com"],
         ].map(([k, v]) => (
