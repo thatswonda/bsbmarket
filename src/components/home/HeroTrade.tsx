@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, Download, Heart, LayoutGrid, MapPin, Search } from "lucide-react";
 import { categories } from "@/content/categories";
-import { PLAY_STORE_URL, openPlayStore } from "@/lib/appLinks";
+import GetAppLink from "@/components/GetAppLink";
 import audiQ8 from "@/assets/home/listing-audi-q8.webp";
 import familyHome from "@/assets/home/listing-family-home.webp";
 import successHabits from "@/assets/home/listing-success-habits.webp";
@@ -167,16 +167,12 @@ const HeroTrade = () => {
             transition={{ duration: 0.7, delay: 0.32 }}
             className="mt-10 flex flex-wrap items-center gap-4 sm:gap-6"
           >
-            <a
-              href={PLAY_STORE_URL}
-              onClick={openPlayStore}
-              target="_blank"
-              rel="noopener noreferrer"
+            <GetAppLink
               className="group inline-flex h-[60px] items-center gap-3 rounded-full bg-brand px-11 text-[17px] font-semibold text-white shadow-[0_14px_30px_-10px_rgba(21,112,255,0.9)] transition-colors hover:bg-brand-bright"
             >
               Start selling
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
+            </GetAppLink>
             <Link
               to="/categories"
               className="inline-flex h-[60px] items-center rounded-full border-[1.5px] border-brand-bright/80 px-11 text-[17px] font-semibold text-white transition-colors hover:bg-white/5"
