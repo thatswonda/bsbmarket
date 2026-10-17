@@ -141,6 +141,15 @@ const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
+              <li>
+                <Link
+                  to="/delete-account"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-4 block py-3.5 text-base font-semibold text-white/90"
+                >
+                  Delete Account
+                </Link>
+              </li>
             </ul>
             <div className="mt-5 flex flex-wrap gap-3 md:hidden">
               <GooglePlayButton size="compact" />
