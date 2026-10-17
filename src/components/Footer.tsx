@@ -85,6 +85,7 @@ const Footer = () => (
           </span>
           <Link to="/terms" className="hover:text-white">Terms</Link>
           <Link to="/privacy" className="hover:text-white">Privacy</Link>
+          <Link to="/delete-account" className="hover:text-white">Delete account</Link>
         </div>
       </div>
     </div>

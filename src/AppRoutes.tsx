@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound.tsx";
 import TermsOfUse from "./pages/TermsOfUse.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import Contact from "./pages/Contact.tsx";
+import DeleteAccount from "./pages/DeleteAccount.tsx";
 import About from "./pages/About.tsx";
 import HowItWorksPage from "./pages/HowItWorksPage.tsx";
 import Categories from "./pages/Categories.tsx";
@@ -42,6 +43,7 @@ const AppRoutes = () => (
       <Route path="/terms" element={<TermsOfUse />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/delete-account" element={<DeleteAccount />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </>

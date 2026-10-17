@@ -142,6 +142,14 @@ const staticPages: PageMeta[] = [
     priority: 0.5,
   },
   {
+    path: "/delete-account",
+    title: "Delete Your Account | Bsb Market",
+    description:
+      "Request permanent deletion of your Bsb Market account and associated data, and learn what happens after your request is submitted.",
+    breadcrumbs: [HOME, { name: "Delete account", path: "/delete-account" }],
+    priority: 0.3,
+  },
+  {
     path: "/terms",
     title: "Terms of Use | Bsb Market",
     description: `The terms that govern your use of the Bsb Market app and website, operated by ${COMPANY_NAME}.`,
