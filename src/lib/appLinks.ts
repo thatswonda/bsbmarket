@@ -1,3 +1,6 @@
+/** Bsb Market web app. */
+export const WEB_APP_URL = "https://web.bsbmarket.com";
+
 export const APP_STORE_ID = "6813940119";
 export const APP_STORE_URL = `https://apps.apple.com/ng/app/bsb-market/id${APP_STORE_ID}`;
 
