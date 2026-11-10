@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, Search, X } from "lucide-react";
+import { ArrowUpRight, Menu, Search, X } from "lucide-react";
 import logoAsset from "@/assets/bsb-logo.png";
 import SiteSearch from "@/components/SiteSearch";
 import { AppStoreBadge, GooglePlayButton } from "@/components/StoreButtons";
 import { cn } from "@/lib/utils";
+import { WEB_APP_URL } from "@/lib/appLinks";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -93,6 +94,15 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href={WEB_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex items-center gap-1 py-2 text-[15px] font-medium text-white/90 transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-brand-sky after:transition-all hover:after:w-full"
+            >
+              Web
+              <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+            </a>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
@@ -141,6 +151,18 @@ const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
+              <li>
+                <a
+                  href={WEB_APP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-1.5 border-b border-white/[0.06] py-3.5 text-base font-semibold text-white/90"
+                >
+                  Web
+                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+              </li>
               <li>
                 <Link
                   to="/delete-account"
